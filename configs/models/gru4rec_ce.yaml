@@ -1,0 +1,2 @@
+objective: next_ce
+architecture: gru4rec_ce_user_history_adaptation

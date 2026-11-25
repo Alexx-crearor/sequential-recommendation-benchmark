@@ -1,0 +1,44 @@
+[
+  {
+    "dataset": "beauty",
+    "kind": "interactions",
+    "url": "https://snap.stanford.edu/data/amazon/productGraph/categoryFiles/reviews_Beauty_5.json.gz",
+    "http_status": 200,
+    "content_length": "44819276"
+  },
+  {
+    "dataset": "beauty",
+    "kind": "metadata",
+    "url": "https://snap.stanford.edu/data/amazon/productGraph/categoryFiles/meta_Beauty.json.gz",
+    "http_status": 200,
+    "content_length": "99156148"
+  },
+  {
+    "dataset": "sports",
+    "kind": "interactions",
+    "url": "https://snap.stanford.edu/data/amazon/productGraph/categoryFiles/reviews_Sports_and_Outdoors_5.json.gz",
+    "http_status": 200,
+    "content_length": "68275834"
+  },
+  {
+    "dataset": "sports",
+    "kind": "metadata",
+    "url": "https://snap.stanford.edu/data/amazon/productGraph/categoryFiles/meta_Sports_and_Outdoors.json.gz",
+    "http_status": 200,
+    "content_length": "183143051"
+  },
+  {
+    "dataset": "toys",
+    "kind": "interactions",
+    "url": "https://snap.stanford.edu/data/amazon/productGraph/categoryFiles/reviews_Toys_and_Games_5.json.gz",
+    "http_status": 200,
+    "content_length": "42057555"
+  },
+  {
+    "dataset": "toys",
+    "kind": "metadata",
+    "url": "https://snap.stanford.edu/data/amazon/productGraph/categoryFiles/meta_Toys_and_Games.json.gz",
+    "http_status": 200,
+    "content_length": "145043023"
+  }
+]

@@ -1,0 +1,65 @@
+schema: 1
+seeds: [7, 42, 2026]
+defaults:
+  embedding_dim: 64
+  hidden_dim: 64
+  num_heads: 2
+  num_layers: 2
+  ffn_dim: 256
+  max_seq_length: 50
+  batch_size: 128
+  learning_rate: 0.001
+  dropout: 0.2
+  optimizer: adam
+  max_epochs: 300
+  early_stopping_patience: 20
+  validation_metric: ndcg@10
+  mask_ratio: 0.2
+  retention: 1.0
+  variant: default
+tuning:
+  max_trials_per_model_dataset: 12
+  selection_split: validation
+  equal_budget: true
+experiments:
+  E1:
+    datasets: [beauty, sports, toys]
+    models: [mostpopular, gru4rec_ce, sasrec_bce, sasrec_ce, bert4rec, fenrec, tiger]
+  E2:
+    datasets: [beauty]
+    variants:
+      A1: {model: attention_ablation, attention: causal, objective: next_bce}
+      A2: {model: attention_ablation, attention: causal, objective: next_ce}
+      A3: {model: attention_ablation, attention: causal, objective: masked_ce}
+      A4: {model: attention_ablation, attention: bidirectional, objective: masked_ce}
+    # A3/A4 must use the same backbone and masking protocol. No assumed E1 reuse.
+  E3:
+    datasets: [beauty]
+    models: [sasrec_ce, bert4rec, fenrec]
+    retention: [0.2, 0.4, 0.6, 0.8, 1.0]
+  E4:
+    datasets: [beauty]
+    models: [fenrec]
+    retention: [0.4, 1.0]
+    variants:
+      F0: {soft_labels: false, contrastive: none, enduring: false}
+      F1: {soft_labels: true, contrastive: none, enduring: false}
+      F2: {soft_labels: false, contrastive: standard, enduring: false}
+      F3: {soft_labels: false, contrastive: reference_hard, enduring: true}
+      F4: {soft_labels: true, contrastive: standard, enduring: false}
+      F5: {soft_labels: true, contrastive: reference_hard, enduring: true}
+    verification_gate: paper_code_component_audit
+  E5:
+    datasets: [beauty]
+    models: [gru4rec_ce, sasrec_ce, bert4rec, fenrec]
+    max_seq_length: [10, 20, 50, 100]
+  E6:
+    datasets: [beauty]
+    models: [tiger]
+    variants:
+      T0: {id_type: atomic}
+      T1: {id_type: random_hierarchical}
+      T2: {id_type: semantic_rqvae}
+    verification_gate: tokenizer_generator_audit
+  E7: {reuse: E1, task: efficiency}
+  E8: {reuse: E1, task: error_analysis}

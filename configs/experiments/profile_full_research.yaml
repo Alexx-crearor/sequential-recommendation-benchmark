@@ -1,0 +1,26 @@
+# The original experiment_grid.yaml remains the source of all axes.
+name: full_research
+initial_seeds: [7, 42, 2026]
+final_seeds: [7, 42, 2026]
+overrides:
+  pilot: false
+  max_epochs: 300
+  min_epochs: 1
+  min_post_warmup_epochs: 20
+  validation_every: 1
+  checkpoint_every: 1
+  early_stopping_patience: 20
+  max_train_batches: null
+  validation_user_limit: null
+tuning:
+  max_trials_per_model_dataset: 12
+  max_allowed_trials: 12
+  seed: 7
+  selection_metric: ndcg@10
+  search:
+    learning_rate: [0.0005, 0.001, 0.002]
+    batch_size: [64, 128, 256]
+    dropout: [0.2, 0.5]
+  model_search:
+    bert4rec: {mask_ratio: [0.15, 0.2, 0.3]}
+    fenrec: {soft_label_gamma: [0.1, 0.2, 0.4], lambda_0: [0.1, 0.3], beta_0: [0.05, 0.1]}

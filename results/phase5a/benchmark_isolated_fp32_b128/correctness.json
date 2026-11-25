@@ -1,0 +1,32 @@
+[
+  {
+    "model": "gru4rec_ce",
+    "note": "AMP or differing stochastic arithmetic may change trained weights; exact ranking equivalence is separately tested with identical weights",
+    "rank_mismatches_after_training": 0,
+    "top_k_mismatches_after_training": 0
+  },
+  {
+    "model": "sasrec_bce",
+    "note": "AMP or differing stochastic arithmetic may change trained weights; exact ranking equivalence is separately tested with identical weights",
+    "rank_mismatches_after_training": 0,
+    "top_k_mismatches_after_training": 0
+  },
+  {
+    "model": "sasrec_ce",
+    "note": "AMP or differing stochastic arithmetic may change trained weights; exact ranking equivalence is separately tested with identical weights",
+    "rank_mismatches_after_training": 0,
+    "top_k_mismatches_after_training": 0
+  },
+  {
+    "model": "bert4rec",
+    "note": "AMP or differing stochastic arithmetic may change trained weights; exact ranking equivalence is separately tested with identical weights",
+    "rank_mismatches_after_training": 0,
+    "top_k_mismatches_after_training": 0
+  },
+  {
+    "model": "fenrec",
+    "note": "AMP or differing stochastic arithmetic may change trained weights; exact ranking equivalence is separately tested with identical weights",
+    "rank_mismatches_after_training": 1,
+    "top_k_mismatches_after_training": 0
+  }
+]

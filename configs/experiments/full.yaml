@@ -1,0 +1,8 @@
+pilot: false
+max_epochs: 300
+max_train_batches: null
+validation_user_limit: null
+early_stopping_patience: 20
+batch_size: 128
+eval_batch_size: 128
+amp: false

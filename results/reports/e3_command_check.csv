@@ -1,0 +1,2 @@
+experiment,embedding_dim,hidden_dim,num_heads,num_layers,ffn_dim,max_seq_length,batch_size,learning_rate,dropout,optimizer,max_epochs,early_stopping_patience,validation_metric,mask_ratio,retention,variant,dataset,model,seed,planning_fingerprint,split_version,reuse_candidate,state,estimated_seconds,estimated_peak_gpu_bytes
+E3,64,64,2,2,256,50,128,0.001,0.2,adam,300,20,ndcg@10,0.2,0.4,default,beauty,fenrec,7,fa00703beac70a16533cb59c5f925e6ddca82e7cb4a8e0f69c7c42ed541bef65,UNRESOLVED,,PLANNED,,

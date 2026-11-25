@@ -1,0 +1,3 @@
+objective: next_ce
+architecture: original_sasrec_blocks_ce_adaptation
+adam_beta2: 0.98

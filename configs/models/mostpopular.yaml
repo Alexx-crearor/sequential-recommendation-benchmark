@@ -1,0 +1,4 @@
+model: mostpopular
+fit: training_frequency
+seed: 7
+device: cpu

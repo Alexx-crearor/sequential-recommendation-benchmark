@@ -1,0 +1,7 @@
+dataset: toys
+version: Amazon Reviews 2014
+core: 5
+interactions: data/raw/reviews_Toys_and_Games_5.json.gz
+metadata: data/raw/meta_Toys_and_Games.json.gz
+interactions_url: https://snap.stanford.edu/data/amazon/productGraph/categoryFiles/reviews_Toys_and_Games_5.json.gz
+metadata_url: https://snap.stanford.edu/data/amazon/productGraph/categoryFiles/meta_Toys_and_Games.json.gz

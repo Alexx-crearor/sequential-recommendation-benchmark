@@ -1,0 +1,42 @@
+{
+  "benchmark": "results\\phase5a\\benchmark_isolated_fp32_b128",
+  "estimates": [
+    {
+      "entries": 55,
+      "known_beauty_budget_floor_hours": 0.3094313788580662,
+      "known_beauty_max_budget_hours": 0.3570692979585157,
+      "note": "Budget floor is minimum permitted training, not predicted convergence. Excludes tuning, final test evaluation, E7/E8, setup and export. Full-profile unknown costs are additional, not zero.",
+      "profile": "pilot_initial",
+      "reused_entries": 7,
+      "unknown_entries": 0
+    },
+    {
+      "entries": 45,
+      "known_beauty_budget_floor_hours": 16.947443396339082,
+      "known_beauty_max_budget_hours": 54.41180351482226,
+      "note": "Budget floor is minimum permitted training, not predicted convergence. Excludes tuning, final test evaluation, E7/E8, setup and export. Full-profile unknown costs are additional, not zero.",
+      "profile": "core_research_initial",
+      "reused_entries": 7,
+      "unknown_entries": 0
+    },
+    {
+      "entries": 129,
+      "known_beauty_budget_floor_hours": 50.84233018901728,
+      "known_beauty_max_budget_hours": 163.23541054446682,
+      "note": "Budget floor is minimum permitted training, not predicted convergence. Excludes tuning, final test evaluation, E7/E8, setup and export. Full-profile unknown costs are additional, not zero.",
+      "profile": "core_research_final",
+      "reused_entries": 21,
+      "unknown_entries": 0
+    },
+    {
+      "entries": 209,
+      "known_beauty_budget_floor_hours": 43.476530557252936,
+      "known_beauty_max_budget_hours": 562.3742007051605,
+      "note": "Budget floor is minimum permitted training, not predicted convergence. Excludes tuning, final test evaluation, E7/E8, setup and export. Full-profile unknown costs are additional, not zero.",
+      "profile": "full_research_final",
+      "reused_entries": 21,
+      "unknown_entries": 50
+    }
+  ],
+  "full_epoch_measurements": "results\\phase5a\\full_epoch_b128\\full_epoch_measurements.csv"
+}

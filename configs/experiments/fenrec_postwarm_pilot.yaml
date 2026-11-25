@@ -1,0 +1,10 @@
+# Explicit branch-verification pilot; not the source 20-epoch schedule.
+pilot: true
+max_epochs: 1
+max_train_batches: 4
+validation_user_limit: 128
+batch_size: 64
+eval_batch_size: 128
+warm_up_epochs: 0
+variant: F5
+cpu_threads: 4

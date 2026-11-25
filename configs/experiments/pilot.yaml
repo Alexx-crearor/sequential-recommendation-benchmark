@@ -1,0 +1,8 @@
+# Real Beauty data, deliberately truncated training; never final research scores.
+pilot: true
+max_epochs: 2
+max_train_batches: 20
+validation_user_limit: 512
+batch_size: 64
+eval_batch_size: 128
+cpu_threads: 4

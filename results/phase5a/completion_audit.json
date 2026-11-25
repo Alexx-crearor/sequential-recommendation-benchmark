@@ -1,0 +1,26 @@
+{
+  "benchmark_source": "results\\phase5a\\benchmark_isolated_fp32_b128",
+  "date": "2026-11-26",
+  "gpu_utilization_over_complete_benchmark_mean_percent": 12.212389380530974,
+  "independent_fenrec_centroid_max_abs_difference": 3.5762786865234375e-07,
+  "measured_models": [
+    "gru4rec_ce",
+    "sasrec_bce",
+    "sasrec_ce",
+    "bert4rec",
+    "fenrec"
+  ],
+  "original_grid_sha256": "dc179acd54fd409c1f5b5b6ceef0964ff46f335200521f6e070340fb983d82af",
+  "same_checkpoint_ranking_mismatches": 0,
+  "same_checkpoint_ranking_users_per_model": 1024,
+  "tests": {
+    "errors": "0",
+    "failures": "0",
+    "hostname": "DESKTOP-EQBGU28",
+    "name": "pytest",
+    "skipped": "0",
+    "tests": "129",
+    "time": "33.282",
+    "timestamp": "2026-11-26T00:47:46.575672+07:00"
+  }
+}

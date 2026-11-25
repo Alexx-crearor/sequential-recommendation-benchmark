@@ -1,0 +1,6 @@
+{
+  "BERT4Rec": {"url": "https://github.com/FeiSun/BERT4Rec.git", "commit": "615eaf2004abecda487a38d5b0c72f3dcfcae5b3"},
+  "FENRec": {"url": "https://github.com/uikdwnd/FENRec.git", "commit": "fd111eccc36bd37dac57b05133966548ab2547bb"},
+  "GRU4Rec": {"url": "https://github.com/hidasib/GRU4Rec.git", "commit": "a4ed5fbdba35bcc18bf1d4a9b76692ef462bb284"},
+  "SASRec": {"url": "https://github.com/kang205/SASRec.git", "commit": "e3738967fddab206d6eeb4fda433e7a7034dd8b1"}
+}

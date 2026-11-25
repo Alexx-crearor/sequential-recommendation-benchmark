@@ -1,0 +1,5 @@
+objective: masked_ce
+attention: bidirectional
+architecture: bert4rec_dynamic_cloze
+dropout: 0.5
+attention_dropout: 0.2

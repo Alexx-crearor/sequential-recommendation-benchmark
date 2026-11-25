@@ -1,0 +1,44 @@
+name: core_research
+experiments: [E1, E2, E3, E4, E5, E7, E8]
+datasets: [beauty]
+implemented_only: true
+initial_seeds: [7]
+final_seeds: [7, 42, 2026]
+retention: [0.4, 0.7, 1.0]
+sequence_lengths: [10, 20, 50]
+overrides:
+  pilot: false
+  max_epochs: 120
+  min_epochs: 10
+  early_stopping_patience: 10
+  validation_every: 2
+  checkpoint_every: 1
+  batch_size: 128
+  eval_batch_size: 128
+  num_workers: 0
+  gradient_accumulation_steps: 1
+  cache_preprocessing: true
+  amp: false
+  max_train_batches: null
+  validation_user_limit: null
+  min_post_warmup_epochs: 20
+model_overrides:
+  bert4rec: {max_epochs: 150}
+  fenrec: {max_epochs: 120, min_epochs: 40, amp: false}
+tuning:
+  max_trials_per_model_dataset: 6
+  max_allowed_trials: 12
+  seed: 7
+  selection_metric: ndcg@10
+  overrides: {max_epochs: 60, min_epochs: 10}
+  model_overrides:
+    gru4rec_ce: {max_epochs: 80}
+    bert4rec: {max_epochs: 80}
+    fenrec: {max_epochs: 60, min_epochs: 40}
+  search:
+    learning_rate: [0.0005, 0.001, 0.002]
+    batch_size: [64, 128]
+    dropout: [0.2, 0.5]
+  model_search:
+    bert4rec: {mask_ratio: [0.15, 0.2, 0.3]}
+    fenrec: {soft_label_gamma: [0.1, 0.2, 0.4], lambda_0: [0.1, 0.3], beta_0: [0.05, 0.1]}

@@ -1,0 +1,42 @@
+[
+  {
+    "checkpoint": "results\\pilots\\PILOT\\beauty\\gru4rec_ce\\ca329e3980d7c531ec915def6e5efa15aa99570f6345d8d89b285f89c29a2b60\\7\\checkpoint.pt",
+    "metrics_equal": true,
+    "model": "gru4rec_ce",
+    "rank_mismatches": 0,
+    "top_k_mismatches": 0,
+    "users": 1024
+  },
+  {
+    "checkpoint": "results\\pilots\\PILOT\\beauty\\sasrec_bce\\c6a6983d319908eabec257e165c3ff32e2dccf7be69fe69ef556c711910ec5b9\\7\\checkpoint.pt",
+    "metrics_equal": true,
+    "model": "sasrec_bce",
+    "rank_mismatches": 0,
+    "top_k_mismatches": 0,
+    "users": 1024
+  },
+  {
+    "checkpoint": "results\\pilots\\PILOT\\beauty\\sasrec_ce\\a1acd5bf34acc60382aeb44b71ab3a19f71944103cf29dfd9f129127e45d7aa8\\7\\checkpoint.pt",
+    "metrics_equal": true,
+    "model": "sasrec_ce",
+    "rank_mismatches": 0,
+    "top_k_mismatches": 0,
+    "users": 1024
+  },
+  {
+    "checkpoint": "results\\pilots\\PILOT\\beauty\\bert4rec\\867aa7bb30783efa4950687aa8d236918f91f61a01a441565aabdbaeeee2f62b\\7\\checkpoint.pt",
+    "metrics_equal": true,
+    "model": "bert4rec",
+    "rank_mismatches": 0,
+    "top_k_mismatches": 0,
+    "users": 1024
+  },
+  {
+    "checkpoint": "results\\pilots\\PILOT\\beauty\\fenrec\\4681ab9072d2c109278128c0c08f943ae1ca2603e671c2a3c73b0e76b3804cdf\\7\\checkpoint.pt",
+    "metrics_equal": true,
+    "model": "fenrec",
+    "rank_mismatches": 0,
+    "top_k_mismatches": 0,
+    "users": 1024
+  }
+]

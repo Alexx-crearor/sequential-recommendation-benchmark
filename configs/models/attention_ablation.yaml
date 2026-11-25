@@ -1,0 +1,5 @@
+objective: masked_ce
+attention: causal
+architecture: matched_postnorm_attention_ablation
+dropout: 0.2
+attention_dropout: 0.2

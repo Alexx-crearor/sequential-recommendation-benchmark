@@ -1,0 +1,16 @@
+name: pilot
+experiments: [E1, E2, E3, E4, E5, E7, E8]
+datasets: [beauty]
+implemented_only: true
+initial_seeds: [7]
+final_seeds: [7]
+overrides:
+  pilot: true
+  max_epochs: 2
+  min_epochs: 1
+  max_train_batches: 20
+  validation_user_limit: 512
+  batch_size: 64
+  validation_every: 1
+  checkpoint_every: 1
+  evaluate_test: true
