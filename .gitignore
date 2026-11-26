@@ -1,6 +1,11 @@
 ﻿# Datasets and third-party comparison checkouts stay local.
 /data/
 /references/
+# Binary artifacts are distributed via Releases, not the Git object history.
+/artifacts/*
+!/artifacts/README.md
+/checkpoints/*
+!/checkpoints/README.md
 # Immutable imported archives and derived private provenance remain local.
 /results/raw/
 /results/derived/

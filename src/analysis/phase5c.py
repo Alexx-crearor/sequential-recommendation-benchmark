@@ -1,6 +1,7 @@
 """Audit the original Phase 5C ZIP and derive publication summaries on CPU only."""
 import hashlib
 import json
+import os
 from pathlib import Path, PurePosixPath
 import shutil
 import stat
@@ -20,6 +21,14 @@ MODELS = ("sasrec_ce", "sasrec_bce", "gru4rec_ce", "bert4rec", "fenrec")
 LABELS = {"sasrec_ce": "SASRec-CE", "sasrec_bce": "SASRec-BCE", "gru4rec_ce": "GRU4Rec-CE", "bert4rec": "BERT4Rec", "fenrec": "FENRec"}
 REQUIRED = {"checkpoint.pt", "latest.pt", "config.yaml", "efficiency.json", "environment.json", "run.log",
             "train_history.csv", "validation_metrics.csv", "validation_predictions.parquet", "validation_selection.json"}
+
+
+def resolve_archive_path(root, explicit=None):
+    """Use a portable repository path unless explicitly overridden; never scan Downloads."""
+    root = Path(root).resolve()
+    override = explicit or os.environ.get("SEQREC_PHASE5C_ARCHIVE")
+    path = Path(override).expanduser() if override else root / "artifacts/phase5c" / ARCHIVE_NAME
+    return path.resolve() if path.is_absolute() else (root / path).resolve()
 
 
 def require(condition, message):

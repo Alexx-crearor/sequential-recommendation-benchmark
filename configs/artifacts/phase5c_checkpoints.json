@@ -1,0 +1,575 @@
+{
+  "bundles": {
+    "all": {
+      "bytes": 236683484,
+      "filename": "seqrec-phase5c-all-checkpoints-v1.zip",
+      "paths": [
+        "checkpoints/phase5c/beauty/bert4rec/selected_config.yaml",
+        "checkpoints/phase5c/beauty/bert4rec/trials/0/checkpoint.pt",
+        "checkpoints/phase5c/beauty/bert4rec/trials/0/config.yaml",
+        "checkpoints/phase5c/beauty/bert4rec/trials/0/latest.pt",
+        "checkpoints/phase5c/beauty/bert4rec/trials/1/checkpoint.pt",
+        "checkpoints/phase5c/beauty/bert4rec/trials/1/config.yaml",
+        "checkpoints/phase5c/beauty/bert4rec/trials/1/latest.pt",
+        "checkpoints/phase5c/beauty/bert4rec/trials/2/checkpoint.pt",
+        "checkpoints/phase5c/beauty/bert4rec/trials/2/config.yaml",
+        "checkpoints/phase5c/beauty/bert4rec/trials/2/latest.pt",
+        "checkpoints/phase5c/beauty/fenrec/selected_config.yaml",
+        "checkpoints/phase5c/beauty/fenrec/trials/0/checkpoint.pt",
+        "checkpoints/phase5c/beauty/fenrec/trials/0/config.yaml",
+        "checkpoints/phase5c/beauty/fenrec/trials/0/latest.pt",
+        "checkpoints/phase5c/beauty/fenrec/trials/1/checkpoint.pt",
+        "checkpoints/phase5c/beauty/fenrec/trials/1/config.yaml",
+        "checkpoints/phase5c/beauty/fenrec/trials/1/latest.pt",
+        "checkpoints/phase5c/beauty/fenrec/trials/2/checkpoint.pt",
+        "checkpoints/phase5c/beauty/fenrec/trials/2/config.yaml",
+        "checkpoints/phase5c/beauty/fenrec/trials/2/latest.pt",
+        "checkpoints/phase5c/beauty/gru4rec_ce/selected_config.yaml",
+        "checkpoints/phase5c/beauty/gru4rec_ce/trials/0/checkpoint.pt",
+        "checkpoints/phase5c/beauty/gru4rec_ce/trials/0/config.yaml",
+        "checkpoints/phase5c/beauty/gru4rec_ce/trials/0/latest.pt",
+        "checkpoints/phase5c/beauty/gru4rec_ce/trials/1/checkpoint.pt",
+        "checkpoints/phase5c/beauty/gru4rec_ce/trials/1/config.yaml",
+        "checkpoints/phase5c/beauty/gru4rec_ce/trials/1/latest.pt",
+        "checkpoints/phase5c/beauty/gru4rec_ce/trials/2/checkpoint.pt",
+        "checkpoints/phase5c/beauty/gru4rec_ce/trials/2/config.yaml",
+        "checkpoints/phase5c/beauty/gru4rec_ce/trials/2/latest.pt",
+        "checkpoints/phase5c/beauty/sasrec_bce/selected_config.yaml",
+        "checkpoints/phase5c/beauty/sasrec_bce/trials/0/checkpoint.pt",
+        "checkpoints/phase5c/beauty/sasrec_bce/trials/0/config.yaml",
+        "checkpoints/phase5c/beauty/sasrec_bce/trials/0/latest.pt",
+        "checkpoints/phase5c/beauty/sasrec_bce/trials/1/checkpoint.pt",
+        "checkpoints/phase5c/beauty/sasrec_bce/trials/1/config.yaml",
+        "checkpoints/phase5c/beauty/sasrec_bce/trials/1/latest.pt",
+        "checkpoints/phase5c/beauty/sasrec_bce/trials/2/checkpoint.pt",
+        "checkpoints/phase5c/beauty/sasrec_bce/trials/2/config.yaml",
+        "checkpoints/phase5c/beauty/sasrec_bce/trials/2/latest.pt",
+        "checkpoints/phase5c/beauty/sasrec_ce/selected_config.yaml",
+        "checkpoints/phase5c/beauty/sasrec_ce/trials/0/checkpoint.pt",
+        "checkpoints/phase5c/beauty/sasrec_ce/trials/0/config.yaml",
+        "checkpoints/phase5c/beauty/sasrec_ce/trials/0/latest.pt",
+        "checkpoints/phase5c/beauty/sasrec_ce/trials/1/checkpoint.pt",
+        "checkpoints/phase5c/beauty/sasrec_ce/trials/1/config.yaml",
+        "checkpoints/phase5c/beauty/sasrec_ce/trials/1/latest.pt",
+        "checkpoints/phase5c/beauty/sasrec_ce/trials/2/checkpoint.pt",
+        "checkpoints/phase5c/beauty/sasrec_ce/trials/2/config.yaml",
+        "checkpoints/phase5c/beauty/sasrec_ce/trials/2/latest.pt"
+      ],
+      "sha256": "00160df8c34a2a1c4a8dd7d78c15e9df10d0fc547ca5d894f3d42a456914ada2",
+      "url": "https://github.com/Alexx-crearor/sequential-recommendation-benchmark/releases/download/phase5c-checkpoints-v1/seqrec-phase5c-all-checkpoints-v1.zip"
+    },
+    "selected": {
+      "bytes": 15760991,
+      "filename": "seqrec-phase5c-selected-checkpoints-v1.zip",
+      "paths": [
+        "checkpoints/phase5c/beauty/bert4rec/selected_config.yaml",
+        "checkpoints/phase5c/beauty/bert4rec/trials/1/checkpoint.pt",
+        "checkpoints/phase5c/beauty/bert4rec/trials/1/config.yaml",
+        "checkpoints/phase5c/beauty/fenrec/selected_config.yaml",
+        "checkpoints/phase5c/beauty/fenrec/trials/2/checkpoint.pt",
+        "checkpoints/phase5c/beauty/fenrec/trials/2/config.yaml",
+        "checkpoints/phase5c/beauty/gru4rec_ce/selected_config.yaml",
+        "checkpoints/phase5c/beauty/gru4rec_ce/trials/1/checkpoint.pt",
+        "checkpoints/phase5c/beauty/gru4rec_ce/trials/1/config.yaml",
+        "checkpoints/phase5c/beauty/sasrec_bce/selected_config.yaml",
+        "checkpoints/phase5c/beauty/sasrec_bce/trials/0/checkpoint.pt",
+        "checkpoints/phase5c/beauty/sasrec_bce/trials/0/config.yaml",
+        "checkpoints/phase5c/beauty/sasrec_ce/selected_config.yaml",
+        "checkpoints/phase5c/beauty/sasrec_ce/trials/2/checkpoint.pt",
+        "checkpoints/phase5c/beauty/sasrec_ce/trials/2/config.yaml"
+      ],
+      "sha256": "5ecf5f69bf04038e344a48cd2eb70c562c2c963363748134f8b574f823e70729",
+      "url": "https://github.com/Alexx-crearor/sequential-recommendation-benchmark/releases/download/phase5c-checkpoints-v1/seqrec-phase5c-selected-checkpoints-v1.zip"
+    }
+  },
+  "excluded": [
+    "dataset",
+    "per-user predictions",
+    "raw histories",
+    "training logs",
+    "credentials"
+  ],
+  "files": [
+    {
+      "bytes": 634,
+      "kind": "selection",
+      "model": "bert4rec",
+      "path": "checkpoints/phase5c/beauty/bert4rec/selected_config.yaml",
+      "sha256": "fcfeb6b31d8dabaafd79b8c65b28570d39bcf705dadc73d8bcc83bc3fa5764cb",
+      "source_member": "results/tuning/beauty/bert4rec/64deb2a43fbe3f72d7e1d7b9b9613a4ec9f5e67a8161511ac3c1c2ddae909a32/selected_config.yaml",
+      "trial": 1
+    },
+    {
+      "bytes": 3593769,
+      "kind": "best",
+      "model": "bert4rec",
+      "path": "checkpoints/phase5c/beauty/bert4rec/trials/0/checkpoint.pt",
+      "sha256": "d8f476cf7da1a7b70d040a182b643d5f936f478a98d2455581c2504b365640a5",
+      "source_member": "results/tuning/beauty/bert4rec/64deb2a43fbe3f72d7e1d7b9b9613a4ec9f5e67a8161511ac3c1c2ddae909a32/runs/TUNING/beauty/bert4rec/f35436745c160773ce43b9be54f69c2e47bff307c241614896afc2a181736aec/7/checkpoint.pt",
+      "trial": 0
+    },
+    {
+      "bytes": 1356,
+      "kind": "config",
+      "model": "bert4rec",
+      "path": "checkpoints/phase5c/beauty/bert4rec/trials/0/config.yaml",
+      "sha256": "6fbf1e0161d304afcb9d9f545a16bb839ffeda8537110c3ed8194be4d4041a04",
+      "source_member": "results/tuning/beauty/bert4rec/64deb2a43fbe3f72d7e1d7b9b9613a4ec9f5e67a8161511ac3c1c2ddae909a32/runs/TUNING/beauty/bert4rec/f35436745c160773ce43b9be54f69c2e47bff307c241614896afc2a181736aec/7/config.yaml",
+      "trial": 0
+    },
+    {
+      "bytes": 14411002,
+      "kind": "latest",
+      "model": "bert4rec",
+      "path": "checkpoints/phase5c/beauty/bert4rec/trials/0/latest.pt",
+      "sha256": "06e6474a4531feddac0023b3c4bd8a33718ea3d6c6712db28519fdc7bbb6c0d4",
+      "source_member": "results/tuning/beauty/bert4rec/64deb2a43fbe3f72d7e1d7b9b9613a4ec9f5e67a8161511ac3c1c2ddae909a32/runs/TUNING/beauty/bert4rec/f35436745c160773ce43b9be54f69c2e47bff307c241614896afc2a181736aec/7/latest.pt",
+      "trial": 0
+    },
+    {
+      "bytes": 3593769,
+      "kind": "best",
+      "model": "bert4rec",
+      "path": "checkpoints/phase5c/beauty/bert4rec/trials/1/checkpoint.pt",
+      "sha256": "219035e04206671cb62e883823b178abd1a9427a2674339eaf2bd076ecd2df97",
+      "source_member": "results/tuning/beauty/bert4rec/64deb2a43fbe3f72d7e1d7b9b9613a4ec9f5e67a8161511ac3c1c2ddae909a32/runs/TUNING/beauty/bert4rec/cfb5081cbc646d73de9b5b539382e5596ad9ba8e5704f25101b8681e6fe384cb/7/checkpoint.pt",
+      "trial": 1
+    },
+    {
+      "bytes": 1357,
+      "kind": "config",
+      "model": "bert4rec",
+      "path": "checkpoints/phase5c/beauty/bert4rec/trials/1/config.yaml",
+      "sha256": "f380e73876aab417c8893dd42b2bc89eeeabdaf5dd02dabfd2bf3291bc27628c",
+      "source_member": "results/tuning/beauty/bert4rec/64deb2a43fbe3f72d7e1d7b9b9613a4ec9f5e67a8161511ac3c1c2ddae909a32/runs/TUNING/beauty/bert4rec/cfb5081cbc646d73de9b5b539382e5596ad9ba8e5704f25101b8681e6fe384cb/7/config.yaml",
+      "trial": 1
+    },
+    {
+      "bytes": 14410490,
+      "kind": "latest",
+      "model": "bert4rec",
+      "path": "checkpoints/phase5c/beauty/bert4rec/trials/1/latest.pt",
+      "sha256": "3f8a7c2e8079bb281167a8332ae1c6d36ea1bbc942c2343c26c000fe21ae0c3c",
+      "source_member": "results/tuning/beauty/bert4rec/64deb2a43fbe3f72d7e1d7b9b9613a4ec9f5e67a8161511ac3c1c2ddae909a32/runs/TUNING/beauty/bert4rec/cfb5081cbc646d73de9b5b539382e5596ad9ba8e5704f25101b8681e6fe384cb/7/latest.pt",
+      "trial": 1
+    },
+    {
+      "bytes": 3593769,
+      "kind": "best",
+      "model": "bert4rec",
+      "path": "checkpoints/phase5c/beauty/bert4rec/trials/2/checkpoint.pt",
+      "sha256": "73d9bc48fcf73f0ce04114d0da13637d0fe31a2d7dba812054645187ac569119",
+      "source_member": "results/tuning/beauty/bert4rec/64deb2a43fbe3f72d7e1d7b9b9613a4ec9f5e67a8161511ac3c1c2ddae909a32/runs/TUNING/beauty/bert4rec/b272809793dd74fc184b30f6d6ec635064d1b545f20f620627ed0692e0f8c0aa/7/checkpoint.pt",
+      "trial": 2
+    },
+    {
+      "bytes": 1356,
+      "kind": "config",
+      "model": "bert4rec",
+      "path": "checkpoints/phase5c/beauty/bert4rec/trials/2/config.yaml",
+      "sha256": "c8a66ce0f2dc070eb4ca0154205b48f420b58698822c07c4c359e344086f8689",
+      "source_member": "results/tuning/beauty/bert4rec/64deb2a43fbe3f72d7e1d7b9b9613a4ec9f5e67a8161511ac3c1c2ddae909a32/runs/TUNING/beauty/bert4rec/b272809793dd74fc184b30f6d6ec635064d1b545f20f620627ed0692e0f8c0aa/7/config.yaml",
+      "trial": 2
+    },
+    {
+      "bytes": 14410106,
+      "kind": "latest",
+      "model": "bert4rec",
+      "path": "checkpoints/phase5c/beauty/bert4rec/trials/2/latest.pt",
+      "sha256": "9ffb12249cb5d6f64f30472400f6da287ce96ee0f7f17fc4548b7bb7377c6bce",
+      "source_member": "results/tuning/beauty/bert4rec/64deb2a43fbe3f72d7e1d7b9b9613a4ec9f5e67a8161511ac3c1c2ddae909a32/runs/TUNING/beauty/bert4rec/b272809793dd74fc184b30f6d6ec635064d1b545f20f620627ed0692e0f8c0aa/7/latest.pt",
+      "trial": 2
+    },
+    {
+      "bytes": 664,
+      "kind": "selection",
+      "model": "fenrec",
+      "path": "checkpoints/phase5c/beauty/fenrec/selected_config.yaml",
+      "sha256": "7420dee53f9a7905a6bf803c8c2ee2547b7b1bae1034e9065a3157cd5a91bd09",
+      "source_member": "results/tuning/beauty/fenrec/c9159528b5e2dbf9ccf6d6dee07b4e31c931bbcba9fc6038168e895708164620/selected_config.yaml",
+      "trial": 2
+    },
+    {
+      "bytes": 3527322,
+      "kind": "best",
+      "model": "fenrec",
+      "path": "checkpoints/phase5c/beauty/fenrec/trials/0/checkpoint.pt",
+      "sha256": "be188426b59a254e0338360d47fb668f261f1e39d210b8fe00d1027968004d7c",
+      "source_member": "results/tuning/beauty/fenrec/c9159528b5e2dbf9ccf6d6dee07b4e31c931bbcba9fc6038168e895708164620/runs/TUNING/beauty/fenrec/d78d1cc6d25377fd7c41bae83394c011680fee2e24168c8dd6f496ec6b62dc3c/7/checkpoint.pt",
+      "trial": 0
+    },
+    {
+      "bytes": 1794,
+      "kind": "config",
+      "model": "fenrec",
+      "path": "checkpoints/phase5c/beauty/fenrec/trials/0/config.yaml",
+      "sha256": "64592e02addb965ed06723732d232fe22565145e99fca3a7253728320bfcb05b",
+      "source_member": "results/tuning/beauty/fenrec/c9159528b5e2dbf9ccf6d6dee07b4e31c931bbcba9fc6038168e895708164620/runs/TUNING/beauty/fenrec/d78d1cc6d25377fd7c41bae83394c011680fee2e24168c8dd6f496ec6b62dc3c/7/config.yaml",
+      "trial": 0
+    },
+    {
+      "bytes": 14138490,
+      "kind": "latest",
+      "model": "fenrec",
+      "path": "checkpoints/phase5c/beauty/fenrec/trials/0/latest.pt",
+      "sha256": "a99dbdcc761bcb496cd8681cb64fdf070bccc5d977fe208708ff6a52649ba979",
+      "source_member": "results/tuning/beauty/fenrec/c9159528b5e2dbf9ccf6d6dee07b4e31c931bbcba9fc6038168e895708164620/runs/TUNING/beauty/fenrec/d78d1cc6d25377fd7c41bae83394c011680fee2e24168c8dd6f496ec6b62dc3c/7/latest.pt",
+      "trial": 0
+    },
+    {
+      "bytes": 3527322,
+      "kind": "best",
+      "model": "fenrec",
+      "path": "checkpoints/phase5c/beauty/fenrec/trials/1/checkpoint.pt",
+      "sha256": "5975f91aeb7e05a1e60cea64616de0e2dfe62bdd9d4a763ab89de46a7b008b11",
+      "source_member": "results/tuning/beauty/fenrec/c9159528b5e2dbf9ccf6d6dee07b4e31c931bbcba9fc6038168e895708164620/runs/TUNING/beauty/fenrec/6fa4b095fcd28e457e4c910e03ce3bd9d7a1b7cf7cd7d45a8053e76b3c9f2adf/7/checkpoint.pt",
+      "trial": 1
+    },
+    {
+      "bytes": 1795,
+      "kind": "config",
+      "model": "fenrec",
+      "path": "checkpoints/phase5c/beauty/fenrec/trials/1/config.yaml",
+      "sha256": "ff96654a062fb03b6ac7c7d321c83a3028ea963bcdca8edc76a8017434f9c4fd",
+      "source_member": "results/tuning/beauty/fenrec/c9159528b5e2dbf9ccf6d6dee07b4e31c931bbcba9fc6038168e895708164620/runs/TUNING/beauty/fenrec/6fa4b095fcd28e457e4c910e03ce3bd9d7a1b7cf7cd7d45a8053e76b3c9f2adf/7/config.yaml",
+      "trial": 1
+    },
+    {
+      "bytes": 14138490,
+      "kind": "latest",
+      "model": "fenrec",
+      "path": "checkpoints/phase5c/beauty/fenrec/trials/1/latest.pt",
+      "sha256": "56d4ff6ef395606ba62c3c1b901c20ff1b57f3363f7a399da7fca0d592303699",
+      "source_member": "results/tuning/beauty/fenrec/c9159528b5e2dbf9ccf6d6dee07b4e31c931bbcba9fc6038168e895708164620/runs/TUNING/beauty/fenrec/6fa4b095fcd28e457e4c910e03ce3bd9d7a1b7cf7cd7d45a8053e76b3c9f2adf/7/latest.pt",
+      "trial": 1
+    },
+    {
+      "bytes": 3527322,
+      "kind": "best",
+      "model": "fenrec",
+      "path": "checkpoints/phase5c/beauty/fenrec/trials/2/checkpoint.pt",
+      "sha256": "85e2ffa8409091242372a565248bf51c694caace549da30528248186a4713295",
+      "source_member": "results/tuning/beauty/fenrec/c9159528b5e2dbf9ccf6d6dee07b4e31c931bbcba9fc6038168e895708164620/runs/TUNING/beauty/fenrec/856e48781df16db5047080f9853993c3bf7564a9d89a9cafc21409ab01a003d5/7/checkpoint.pt",
+      "trial": 2
+    },
+    {
+      "bytes": 1795,
+      "kind": "config",
+      "model": "fenrec",
+      "path": "checkpoints/phase5c/beauty/fenrec/trials/2/config.yaml",
+      "sha256": "031dd11bc2f8fcc49dd5ffa55652cc0fa7a761378f44d5edbb361a1343a3fc6b",
+      "source_member": "results/tuning/beauty/fenrec/c9159528b5e2dbf9ccf6d6dee07b4e31c931bbcba9fc6038168e895708164620/runs/TUNING/beauty/fenrec/856e48781df16db5047080f9853993c3bf7564a9d89a9cafc21409ab01a003d5/7/config.yaml",
+      "trial": 2
+    },
+    {
+      "bytes": 14138490,
+      "kind": "latest",
+      "model": "fenrec",
+      "path": "checkpoints/phase5c/beauty/fenrec/trials/2/latest.pt",
+      "sha256": "338bea4a1c2babb4a92cc75adf874b73243e3febab2e8439f1d761f153561ba3",
+      "source_member": "results/tuning/beauty/fenrec/c9159528b5e2dbf9ccf6d6dee07b4e31c931bbcba9fc6038168e895708164620/runs/TUNING/beauty/fenrec/856e48781df16db5047080f9853993c3bf7564a9d89a9cafc21409ab01a003d5/7/latest.pt",
+      "trial": 2
+    },
+    {
+      "bytes": 621,
+      "kind": "selection",
+      "model": "gru4rec_ce",
+      "path": "checkpoints/phase5c/beauty/gru4rec_ce/selected_config.yaml",
+      "sha256": "69a293012d0728fe98be4f923b71efa2a00a4b6a0c15478841512eb03acdd978",
+      "source_member": "results/tuning/beauty/gru4rec_ce/23862d52e78d5061b2ba24e410c0c902739d7ee67ad3c560f856af1910094c0b/selected_config.yaml",
+      "trial": 1
+    },
+    {
+      "bytes": 3302012,
+      "kind": "best",
+      "model": "gru4rec_ce",
+      "path": "checkpoints/phase5c/beauty/gru4rec_ce/trials/0/checkpoint.pt",
+      "sha256": "b1b1f65872095d700e51faa314053c23669a0c09e0ebd4b624b65a55be036479",
+      "source_member": "results/tuning/beauty/gru4rec_ce/23862d52e78d5061b2ba24e410c0c902739d7ee67ad3c560f856af1910094c0b/runs/TUNING/beauty/gru4rec_ce/95474424de725fec619e4595f9e053ce3144647860c40773d24abc60902c00cf/7/checkpoint.pt",
+      "trial": 0
+    },
+    {
+      "bytes": 1343,
+      "kind": "config",
+      "model": "gru4rec_ce",
+      "path": "checkpoints/phase5c/beauty/gru4rec_ce/trials/0/config.yaml",
+      "sha256": "d5f506d487ee1976e7906982c17ff25ba6fc5c65bcc959e9fd75b5be012b379b",
+      "source_member": "results/tuning/beauty/gru4rec_ce/23862d52e78d5061b2ba24e410c0c902739d7ee67ad3c560f856af1910094c0b/runs/TUNING/beauty/gru4rec_ce/95474424de725fec619e4595f9e053ce3144647860c40773d24abc60902c00cf/7/config.yaml",
+      "trial": 0
+    },
+    {
+      "bytes": 13242619,
+      "kind": "latest",
+      "model": "gru4rec_ce",
+      "path": "checkpoints/phase5c/beauty/gru4rec_ce/trials/0/latest.pt",
+      "sha256": "842603ae45dcd4a1537292413ec5658a7e036d4572b885b1dbab60a76f6df89a",
+      "source_member": "results/tuning/beauty/gru4rec_ce/23862d52e78d5061b2ba24e410c0c902739d7ee67ad3c560f856af1910094c0b/runs/TUNING/beauty/gru4rec_ce/95474424de725fec619e4595f9e053ce3144647860c40773d24abc60902c00cf/7/latest.pt",
+      "trial": 0
+    },
+    {
+      "bytes": 3302012,
+      "kind": "best",
+      "model": "gru4rec_ce",
+      "path": "checkpoints/phase5c/beauty/gru4rec_ce/trials/1/checkpoint.pt",
+      "sha256": "a1fec32d6740f20497c1788231356d6faa8d726e89a5fec3975033f3c2a9e82c",
+      "source_member": "results/tuning/beauty/gru4rec_ce/23862d52e78d5061b2ba24e410c0c902739d7ee67ad3c560f856af1910094c0b/runs/TUNING/beauty/gru4rec_ce/95771187042f1ae24064f32f4ceee4c79ed1c7e72c02bbb23467cfcd5b833ca5/7/checkpoint.pt",
+      "trial": 1
+    },
+    {
+      "bytes": 1343,
+      "kind": "config",
+      "model": "gru4rec_ce",
+      "path": "checkpoints/phase5c/beauty/gru4rec_ce/trials/1/config.yaml",
+      "sha256": "7532a2452cb888dfd67535d8c8a03bf96805f2c7f83ac62b2f44ac98ba72086e",
+      "source_member": "results/tuning/beauty/gru4rec_ce/23862d52e78d5061b2ba24e410c0c902739d7ee67ad3c560f856af1910094c0b/runs/TUNING/beauty/gru4rec_ce/95771187042f1ae24064f32f4ceee4c79ed1c7e72c02bbb23467cfcd5b833ca5/7/config.yaml",
+      "trial": 1
+    },
+    {
+      "bytes": 13242619,
+      "kind": "latest",
+      "model": "gru4rec_ce",
+      "path": "checkpoints/phase5c/beauty/gru4rec_ce/trials/1/latest.pt",
+      "sha256": "df31a2ceac7559d44abd5166d6e29307298e4fb10b346dc504d5d09aeef3a1b8",
+      "source_member": "results/tuning/beauty/gru4rec_ce/23862d52e78d5061b2ba24e410c0c902739d7ee67ad3c560f856af1910094c0b/runs/TUNING/beauty/gru4rec_ce/95771187042f1ae24064f32f4ceee4c79ed1c7e72c02bbb23467cfcd5b833ca5/7/latest.pt",
+      "trial": 1
+    },
+    {
+      "bytes": 3302012,
+      "kind": "best",
+      "model": "gru4rec_ce",
+      "path": "checkpoints/phase5c/beauty/gru4rec_ce/trials/2/checkpoint.pt",
+      "sha256": "cbc25a4ee89ace57cba3da1b8195db9d27b1a4d89806de929a6343608ca8681f",
+      "source_member": "results/tuning/beauty/gru4rec_ce/23862d52e78d5061b2ba24e410c0c902739d7ee67ad3c560f856af1910094c0b/runs/TUNING/beauty/gru4rec_ce/93b8fd6ef095ae0e6d177f9d0678a34c3e025dac635541b151f6361112052c43/7/checkpoint.pt",
+      "trial": 2
+    },
+    {
+      "bytes": 1343,
+      "kind": "config",
+      "model": "gru4rec_ce",
+      "path": "checkpoints/phase5c/beauty/gru4rec_ce/trials/2/config.yaml",
+      "sha256": "14b3b6b9f64290177db01a01ac5627a1e1eb3fe8b541362ec47696e43217fc10",
+      "source_member": "results/tuning/beauty/gru4rec_ce/23862d52e78d5061b2ba24e410c0c902739d7ee67ad3c560f856af1910094c0b/runs/TUNING/beauty/gru4rec_ce/93b8fd6ef095ae0e6d177f9d0678a34c3e025dac635541b151f6361112052c43/7/config.yaml",
+      "trial": 2
+    },
+    {
+      "bytes": 13242811,
+      "kind": "latest",
+      "model": "gru4rec_ce",
+      "path": "checkpoints/phase5c/beauty/gru4rec_ce/trials/2/latest.pt",
+      "sha256": "cf34ff2868e1014fbfce48dd14a93e65b853e6c84531e937c1251eafeb37ceac",
+      "source_member": "results/tuning/beauty/gru4rec_ce/23862d52e78d5061b2ba24e410c0c902739d7ee67ad3c560f856af1910094c0b/runs/TUNING/beauty/gru4rec_ce/93b8fd6ef095ae0e6d177f9d0678a34c3e025dac635541b151f6361112052c43/7/latest.pt",
+      "trial": 2
+    },
+    {
+      "bytes": 622,
+      "kind": "selection",
+      "model": "sasrec_bce",
+      "path": "checkpoints/phase5c/beauty/sasrec_bce/selected_config.yaml",
+      "sha256": "e13a061e46ab473f59647c22da9fc6b303b23e5fea13d8c24c391341409bedb5",
+      "source_member": "results/tuning/beauty/sasrec_bce/144bbeae4d5edb7e419de490b0d680c65083738687be24ae8abc32ccadc93473/selected_config.yaml",
+      "trial": 0
+    },
+    {
+      "bytes": 3293838,
+      "kind": "best",
+      "model": "sasrec_bce",
+      "path": "checkpoints/phase5c/beauty/sasrec_bce/trials/0/checkpoint.pt",
+      "sha256": "0b0d26201dff04832b5c79b535461f4c5c4c6256e2f9def822c1b27e68d4bcd5",
+      "source_member": "results/tuning/beauty/sasrec_bce/144bbeae4d5edb7e419de490b0d680c65083738687be24ae8abc32ccadc93473/runs/TUNING/beauty/sasrec_bce/b8a9b2f4b9cd49834102d2a46aac8e29156732c7e0c10bffc3521642e5d9a497/7/checkpoint.pt",
+      "trial": 0
+    },
+    {
+      "bytes": 1331,
+      "kind": "config",
+      "model": "sasrec_bce",
+      "path": "checkpoints/phase5c/beauty/sasrec_bce/trials/0/config.yaml",
+      "sha256": "e297bc9a43ea6363b1ec0e68a2f70107e4287859016dcfd14c7fa2fb62de834c",
+      "source_member": "results/tuning/beauty/sasrec_bce/144bbeae4d5edb7e419de490b0d680c65083738687be24ae8abc32ccadc93473/runs/TUNING/beauty/sasrec_bce/b8a9b2f4b9cd49834102d2a46aac8e29156732c7e0c10bffc3521642e5d9a497/7/config.yaml",
+      "trial": 0
+    },
+    {
+      "bytes": 13204154,
+      "kind": "latest",
+      "model": "sasrec_bce",
+      "path": "checkpoints/phase5c/beauty/sasrec_bce/trials/0/latest.pt",
+      "sha256": "8cd0758f9410166bece87abd7d26b3c9761b5059f93a894782a45b3b50e03897",
+      "source_member": "results/tuning/beauty/sasrec_bce/144bbeae4d5edb7e419de490b0d680c65083738687be24ae8abc32ccadc93473/runs/TUNING/beauty/sasrec_bce/b8a9b2f4b9cd49834102d2a46aac8e29156732c7e0c10bffc3521642e5d9a497/7/latest.pt",
+      "trial": 0
+    },
+    {
+      "bytes": 3293838,
+      "kind": "best",
+      "model": "sasrec_bce",
+      "path": "checkpoints/phase5c/beauty/sasrec_bce/trials/1/checkpoint.pt",
+      "sha256": "c72c492869375b9f6e6311357453596c7500bf386606c597d767229ac5c7d9d3",
+      "source_member": "results/tuning/beauty/sasrec_bce/144bbeae4d5edb7e419de490b0d680c65083738687be24ae8abc32ccadc93473/runs/TUNING/beauty/sasrec_bce/167b31d4b86448211797b8c84ec24d5788be0d1670da734f5005e1ccaaa451cd/7/checkpoint.pt",
+      "trial": 1
+    },
+    {
+      "bytes": 1331,
+      "kind": "config",
+      "model": "sasrec_bce",
+      "path": "checkpoints/phase5c/beauty/sasrec_bce/trials/1/config.yaml",
+      "sha256": "be58852b831d71848bfb3788849d962cc6fb750b4e1c4363d0ce290ace72c066",
+      "source_member": "results/tuning/beauty/sasrec_bce/144bbeae4d5edb7e419de490b0d680c65083738687be24ae8abc32ccadc93473/runs/TUNING/beauty/sasrec_bce/167b31d4b86448211797b8c84ec24d5788be0d1670da734f5005e1ccaaa451cd/7/config.yaml",
+      "trial": 1
+    },
+    {
+      "bytes": 13202938,
+      "kind": "latest",
+      "model": "sasrec_bce",
+      "path": "checkpoints/phase5c/beauty/sasrec_bce/trials/1/latest.pt",
+      "sha256": "649ccd88a49008b449be61c0347b23990ce49e1951f259f8d638cfdb98443a1a",
+      "source_member": "results/tuning/beauty/sasrec_bce/144bbeae4d5edb7e419de490b0d680c65083738687be24ae8abc32ccadc93473/runs/TUNING/beauty/sasrec_bce/167b31d4b86448211797b8c84ec24d5788be0d1670da734f5005e1ccaaa451cd/7/latest.pt",
+      "trial": 1
+    },
+    {
+      "bytes": 3293838,
+      "kind": "best",
+      "model": "sasrec_bce",
+      "path": "checkpoints/phase5c/beauty/sasrec_bce/trials/2/checkpoint.pt",
+      "sha256": "23dc2136549407ba4613a51ed59e29bf8837cc8eb009b3cd18cc386993ecbb92",
+      "source_member": "results/tuning/beauty/sasrec_bce/144bbeae4d5edb7e419de490b0d680c65083738687be24ae8abc32ccadc93473/runs/TUNING/beauty/sasrec_bce/74869e8a035bd27f7669433d882b42e77a1d5539c1ea54106baa77ab5ea58378/7/checkpoint.pt",
+      "trial": 2
+    },
+    {
+      "bytes": 1331,
+      "kind": "config",
+      "model": "sasrec_bce",
+      "path": "checkpoints/phase5c/beauty/sasrec_bce/trials/2/config.yaml",
+      "sha256": "0c4469b3bda1096fed51a7ac8c4d1971fad6e7c50f6a099e736d354fc0b532ea",
+      "source_member": "results/tuning/beauty/sasrec_bce/144bbeae4d5edb7e419de490b0d680c65083738687be24ae8abc32ccadc93473/runs/TUNING/beauty/sasrec_bce/74869e8a035bd27f7669433d882b42e77a1d5539c1ea54106baa77ab5ea58378/7/config.yaml",
+      "trial": 2
+    },
+    {
+      "bytes": 13204282,
+      "kind": "latest",
+      "model": "sasrec_bce",
+      "path": "checkpoints/phase5c/beauty/sasrec_bce/trials/2/latest.pt",
+      "sha256": "3bd4482303eca7867d8f6560265ae411f3768c86149dcfbe2d50c3ffa713774f",
+      "source_member": "results/tuning/beauty/sasrec_bce/144bbeae4d5edb7e419de490b0d680c65083738687be24ae8abc32ccadc93473/runs/TUNING/beauty/sasrec_bce/74869e8a035bd27f7669433d882b42e77a1d5539c1ea54106baa77ab5ea58378/7/latest.pt",
+      "trial": 2
+    },
+    {
+      "bytes": 618,
+      "kind": "selection",
+      "model": "sasrec_ce",
+      "path": "checkpoints/phase5c/beauty/sasrec_ce/selected_config.yaml",
+      "sha256": "0e8b7b581a86e431dad395a1ad57627bbda632b74da1b87447e6ec6d0a2e43f2",
+      "source_member": "results/tuning/beauty/sasrec_ce/eae16ca6c94613f2dacbdf98a7b851bd6676a474acb9bc3a68d806704d631999/selected_config.yaml",
+      "trial": 2
+    },
+    {
+      "bytes": 3293838,
+      "kind": "best",
+      "model": "sasrec_ce",
+      "path": "checkpoints/phase5c/beauty/sasrec_ce/trials/0/checkpoint.pt",
+      "sha256": "9b4c401fa6ff0858a04ef390571014b8dd0e425aef4c33a0f46de26320718173",
+      "source_member": "results/tuning/beauty/sasrec_ce/eae16ca6c94613f2dacbdf98a7b851bd6676a474acb9bc3a68d806704d631999/runs/TUNING/beauty/sasrec_ce/106932f3014db566fa6d579b8c28788e1e0998de028b332a5b80d617b5fec6dd/7/checkpoint.pt",
+      "trial": 0
+    },
+    {
+      "bytes": 1343,
+      "kind": "config",
+      "model": "sasrec_ce",
+      "path": "checkpoints/phase5c/beauty/sasrec_ce/trials/0/config.yaml",
+      "sha256": "ce4e4fb4d9ad3ead03ad720b837e3ad881f761e1131db456cd4e0288b63d18e4",
+      "source_member": "results/tuning/beauty/sasrec_ce/eae16ca6c94613f2dacbdf98a7b851bd6676a474acb9bc3a68d806704d631999/runs/TUNING/beauty/sasrec_ce/106932f3014db566fa6d579b8c28788e1e0998de028b332a5b80d617b5fec6dd/7/config.yaml",
+      "trial": 0
+    },
+    {
+      "bytes": 13196666,
+      "kind": "latest",
+      "model": "sasrec_ce",
+      "path": "checkpoints/phase5c/beauty/sasrec_ce/trials/0/latest.pt",
+      "sha256": "8253260daa784daec5b682b790227c0c2cd3e0258628bb56a35855ab1c88b837",
+      "source_member": "results/tuning/beauty/sasrec_ce/eae16ca6c94613f2dacbdf98a7b851bd6676a474acb9bc3a68d806704d631999/runs/TUNING/beauty/sasrec_ce/106932f3014db566fa6d579b8c28788e1e0998de028b332a5b80d617b5fec6dd/7/latest.pt",
+      "trial": 0
+    },
+    {
+      "bytes": 3293838,
+      "kind": "best",
+      "model": "sasrec_ce",
+      "path": "checkpoints/phase5c/beauty/sasrec_ce/trials/1/checkpoint.pt",
+      "sha256": "688e3a62578f4e61abec081c18895abae071ce9da90e7ded236885bb87eee17f",
+      "source_member": "results/tuning/beauty/sasrec_ce/eae16ca6c94613f2dacbdf98a7b851bd6676a474acb9bc3a68d806704d631999/runs/TUNING/beauty/sasrec_ce/d39af335db596a0e32a2fc66baee0a2bf1ce2ba032d13e9d73d3b9a248de6328/7/checkpoint.pt",
+      "trial": 1
+    },
+    {
+      "bytes": 1343,
+      "kind": "config",
+      "model": "sasrec_ce",
+      "path": "checkpoints/phase5c/beauty/sasrec_ce/trials/1/config.yaml",
+      "sha256": "5b749c9935d6725ac58aea126fa37240d2c91e50a1961fee5bbb13f5e4cd9ab3",
+      "source_member": "results/tuning/beauty/sasrec_ce/eae16ca6c94613f2dacbdf98a7b851bd6676a474acb9bc3a68d806704d631999/runs/TUNING/beauty/sasrec_ce/d39af335db596a0e32a2fc66baee0a2bf1ce2ba032d13e9d73d3b9a248de6328/7/config.yaml",
+      "trial": 1
+    },
+    {
+      "bytes": 13198970,
+      "kind": "latest",
+      "model": "sasrec_ce",
+      "path": "checkpoints/phase5c/beauty/sasrec_ce/trials/1/latest.pt",
+      "sha256": "16ebf033f43d45dc4f2ae0e822f4fa23eb7a4e0c6e30fd8dd5c6a8775ed22de9",
+      "source_member": "results/tuning/beauty/sasrec_ce/eae16ca6c94613f2dacbdf98a7b851bd6676a474acb9bc3a68d806704d631999/runs/TUNING/beauty/sasrec_ce/d39af335db596a0e32a2fc66baee0a2bf1ce2ba032d13e9d73d3b9a248de6328/7/latest.pt",
+      "trial": 1
+    },
+    {
+      "bytes": 3293838,
+      "kind": "best",
+      "model": "sasrec_ce",
+      "path": "checkpoints/phase5c/beauty/sasrec_ce/trials/2/checkpoint.pt",
+      "sha256": "e4127e41468bfe198809cedc19238084d15fd334ee32f229ab3e6f707eaf8711",
+      "source_member": "results/tuning/beauty/sasrec_ce/eae16ca6c94613f2dacbdf98a7b851bd6676a474acb9bc3a68d806704d631999/runs/TUNING/beauty/sasrec_ce/04028a3903b290e460e3bcd4889fdfa609a392d958007d44ff8684c9ddbda535/7/checkpoint.pt",
+      "trial": 2
+    },
+    {
+      "bytes": 1343,
+      "kind": "config",
+      "model": "sasrec_ce",
+      "path": "checkpoints/phase5c/beauty/sasrec_ce/trials/2/config.yaml",
+      "sha256": "73390bb6b06ebd50c5dd737e8a65d6bd0df1999b2f7f6fcbbffef568c66fbc26",
+      "source_member": "results/tuning/beauty/sasrec_ce/eae16ca6c94613f2dacbdf98a7b851bd6676a474acb9bc3a68d806704d631999/runs/TUNING/beauty/sasrec_ce/04028a3903b290e460e3bcd4889fdfa609a392d958007d44ff8684c9ddbda535/7/config.yaml",
+      "trial": 2
+    },
+    {
+      "bytes": 13201978,
+      "kind": "latest",
+      "model": "sasrec_ce",
+      "path": "checkpoints/phase5c/beauty/sasrec_ce/trials/2/latest.pt",
+      "sha256": "eb91fb950e5fff0f160aeb165799ae55b8c211e097be0720ef92584b90e43942",
+      "source_member": "results/tuning/beauty/sasrec_ce/eae16ca6c94613f2dacbdf98a7b851bd6676a474acb9bc3a68d806704d631999/runs/TUNING/beauty/sasrec_ce/04028a3903b290e460e3bcd4889fdfa609a392d958007d44ff8684c9ddbda535/7/latest.pt",
+      "trial": 2
+    }
+  ],
+  "models": {
+    "bert4rec": {
+      "checkpoint": "checkpoints/phase5c/beauty/bert4rec/trials/1/checkpoint.pt",
+      "selected_trial": 1,
+      "validation_ndcg@10": 0.04337865654342287
+    },
+    "fenrec": {
+      "checkpoint": "checkpoints/phase5c/beauty/fenrec/trials/2/checkpoint.pt",
+      "selected_trial": 2,
+      "validation_ndcg@10": 0.07225373494036555
+    },
+    "gru4rec_ce": {
+      "checkpoint": "checkpoints/phase5c/beauty/gru4rec_ce/trials/1/checkpoint.pt",
+      "selected_trial": 1,
+      "validation_ndcg@10": 0.04738689473701778
+    },
+    "sasrec_bce": {
+      "checkpoint": "checkpoints/phase5c/beauty/sasrec_bce/trials/0/checkpoint.pt",
+      "selected_trial": 0,
+      "validation_ndcg@10": 0.034361368625040876
+    },
+    "sasrec_ce": {
+      "checkpoint": "checkpoints/phase5c/beauty/sasrec_ce/trials/2/checkpoint.pt",
+      "selected_trial": 2,
+      "validation_ndcg@10": 0.07001076534593724
+    }
+  },
+  "purpose": "Validation-selected Phase 5C tuning checkpoints, not final test models",
+  "release_tag": "phase5c-checkpoints-v1",
+  "schema": 1,
+  "source_archive_sha256": "7861c626561fc1d7914abb8ee5a7eb4d552a932aca5dfbc54419648efb0176fa"
+}

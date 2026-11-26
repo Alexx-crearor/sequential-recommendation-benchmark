@@ -6,6 +6,16 @@ Phase 5A adds an optimized pipeline and Kaggle execution package. Start with [KA
 
 ## Phase 5C — verified Kaggle tuning
 
+**Download usable checkpoints after cloning:**
+
+```bash
+python scripts/fetch_phase5c_checkpoints.py
+# Optional: all 30 best/latest checkpoints from the 15 trials:
+python scripts/fetch_phase5c_checkpoints.py --all-trials
+```
+
+The [GitHub checkpoint Release](https://github.com/Alexx-crearor/sequential-recommendation-benchmark/releases/tag/phase5c-checkpoints-v1) provides [five selected best checkpoints](https://github.com/Alexx-crearor/sequential-recommendation-benchmark/releases/download/phase5c-checkpoints-v1/seqrec-phase5c-selected-checkpoints-v1.zip) and [all trials' checkpoints](https://github.com/Alexx-crearor/sequential-recommendation-benchmark/releases/download/phase5c-checkpoints-v1/seqrec-phase5c-all-checkpoints-v1.zip). SHA256-locked downloads install under `checkpoints/phase5c/beauty/`, using portable repository paths. See [checkpoint layout and model loading](checkpoints/README.md). Git clone retrieves source and manifests; the one command above retrieves the weights. Raw predictions and the private original ZIP are not released.
+
 The original `seqrec-phase5c-final-20261126_132556_321898.zip` is the sole experimental source for this phase (SHA256 `7861c626561fc1d7914abb8ee5a7eb4d552a932aca5dfbc54419648efb0176fa`). All **15 validation-only trials** are verified: three each for SASRec-CE/BCE, GRU4Rec-CE, BERT4Rec and FENRec, Beauty seed 7. All 30 best/latest checkpoints and 150 status-hashed artifacts pass integrity checks. Selected configurations are available in [configs/selected/phase5c/beauty](configs/selected/phase5c/beauty).
 
 Read the [Vietnamese analysis and verification limits](docs/PHASE5C_ANALYSIS_VI.md), [all-trial summary](results/tables/phase5c/tuning_trials.csv), [selected hyperparameters](results/tables/phase5c/selected_hyperparameters.csv), [audit](results/tables/phase5c/artifact_audit.json) and [analysis notebook](notebooks/Phase5C_Analysis.ipynb). Figures are saved as 300 DPI PNG and vector PDF under `results/figures/phase5c/`. Nine trials exhausted their epoch budgets; six stopped by patience. This completes the exported bounded tuning batch, not final test evaluation or a claim of convergence for capped runs.
@@ -14,10 +24,10 @@ Reproduce analysis **on a personal machine**, with the original private ZIP avai
 
 ```powershell
 python -m pip install -r requirements-analysis.txt
-python scripts/analyze_phase5c.py --archive "$env:USERPROFILE/Downloads/seqrec-phase5c-final-20261126_132556_321898.zip"
+python scripts/analyze_phase5c.py
 ```
 
-The notebook also accepts `SEQREC_PHASE5C_ARCHIVE`. Raw extraction is immutable under ignored `results/raw/phase5c/<sha>/`; private derived provenance is ignored under `results/derived/phase5c/<sha>/`. Only aggregate tables, figures, selection YAMLs and analysis source are versioned. Missing original ZIP prevents full re-audit; figures can still be regenerated from committed aggregate CSVs. The archive's dataset audit and split IDs are consistent, but dataset bytes and a training-source attestation are absent from the ZIP. Final E1 multi-seed runs, E2–E5, final-checkpoint E7/E8 and TIGER/E6 remain pending. Kaggle is reserved for training/testing/evaluation/GPU measurement; analysis and repository publication run locally.
+Place the original ZIP under `artifacts/phase5c/` first; this project-relative path is the default in both CLI and notebook. The owner's local copy is already present there. Explicit `--archive` or `SEQREC_PHASE5C_ARCHIVE` overrides are supported; no Downloads path is assumed. Raw extraction is immutable under ignored `results/raw/phase5c/<sha>/`; private derived provenance is ignored under `results/derived/phase5c/<sha>/`. Aggregate tables, figures, selection YAMLs, artifact manifests and analysis source are versioned; checkpoint binaries are separately available as Release assets. Missing the original private ZIP prevents full per-user re-audit, but does not prevent downloading/loading the published checkpoints. The archive's dataset audit and split IDs are consistent, but dataset bytes and a training-source attestation are absent from the ZIP. Final E1 multi-seed runs, E2–E5, final-checkpoint E7/E8 and TIGER/E6 remain pending. Kaggle is reserved for training/testing/evaluation/GPU measurement; analysis and repository publication run locally.
 
 ## Reconstruct from Git
 

@@ -2,6 +2,8 @@
 
 ## Phase 5C update — 2026-11-26
 
+Checkpoint distribution follow-up: the original private ZIP is now copied inside `artifacts/phase5c/`, and all 30 original checkpoints are materialized under `checkpoints/phase5c/beauty/<model>/trials/<trial>/`. CLI/notebook defaults are repository-relative, with explicit overrides. Public prediction-free checkpoint bundles are distributed via GitHub Release `phase5c-checkpoints-v1`; `scripts/fetch_phase5c_checkpoints.py` downloads selected/all weights with ZIP/member SHA256 verification. Large binaries remain outside Git history; no new training or numerical research result is introduced.
+
 **Completed: the exported bounded hyperparameter tuning batch, 15/15 trials (3/model), Beauty seed 7.** The sole Phase 5C evidence source is `seqrec-phase5c-final-20261126_132556_321898.zip`, SHA256 `7861c626561fc1d7914abb8ee5a7eb4d552a932aca5dfbc54419648efb0176fa`. Verified ZIP CRC/member hashes, 150 status-hashed artifacts, 30 best/latest checkpoints, plan/config hashes, full validation contributions/top-K coverage, shared split/population and validation-only winner selection. Original ZIP, prior pilots and raw artifact bytes are preserved. No tuning or real-model training is launched locally.
 
 Selections for SASRec-CE/BCE, GRU4Rec-CE, BERT4Rec and FENRec are frozen under `configs/selected/phase5c/beauty/`. The reproducible CPU analysis, all-trial/epoch tables, academic PNG/PDF figures and Vietnamese interpretation are linked in `docs/PHASE5C_ANALYSIS_VI.md` and `notebooks/Phase5C_Analysis.ipynb`. Nine trials hit epoch caps, six stop by patience; capped trials are not labeled converged. Three trials/model are a completed bounded batch, not an exhaustive search.

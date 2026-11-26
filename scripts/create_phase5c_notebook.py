@@ -16,7 +16,7 @@ def create(root):
 
 Chạy tại máy cá nhân. ZIP gốc là nguồn thực nghiệm duy nhất; notebook chỉ kiểm tra và phân tích CPU, không chạy tuning, training hoặc evaluation mô hình. Các điểm số dưới đây là **validation**, không phải final test.
 
-Cài trước: `python -m pip install -r requirements-analysis.txt`. ZIP riêng tư không có trên GitHub. Đặt `SEQREC_PHASE5C_ARCHIVE` nếu ZIP không nằm trong Downloads. Notebook đã thực thi được lưu riêng dưới `results/derived/`, không commit per-user artifacts.
+Cài trước: `python -m pip install -r requirements-analysis.txt`. Đặt ZIP gốc tại `artifacts/phase5c/` trong repository, hoặc override `SEQREC_PHASE5C_ARCHIVE`. Không có đường dẫn Downloads hard-code. Checkpoint công khai được tải riêng bằng `python scripts/fetch_phase5c_checkpoints.py`; gói checkpoint không thay thế ZIP gốc khi audit toàn bộ 15 trials. Notebook đã thực thi được lưu riêng dưới `results/derived/`.
 """), cell("code", '''import os, sys
 from pathlib import Path
 ROOT = Path.cwd().resolve()
@@ -25,9 +25,9 @@ if not (ROOT / "src").is_dir():
 assert (ROOT / "src/analysis/phase5c.py").is_file(), "Open from repository root or notebooks/"
 sys.path.insert(0, str(ROOT))
 sys.path.insert(0, str(ROOT / "scripts"))
-from src.analysis.phase5c import analyze_archive, ARCHIVE_NAME, ARCHIVE_SHA256
-ARCHIVE = Path(os.environ.get("SEQREC_PHASE5C_ARCHIVE", str(Path.home() / "Downloads" / ARCHIVE_NAME)))
-assert ARCHIVE.is_file(), f"Original private ZIP required: {ARCHIVE}"
+from src.analysis.phase5c import analyze_archive, ARCHIVE_SHA256, resolve_archive_path
+ARCHIVE = resolve_archive_path(ROOT)
+assert ARCHIVE.is_file(), f"Place original private ZIP here or set SEQREC_PHASE5C_ARCHIVE: {ARCHIVE}"
 print("Expected source SHA256:", ARCHIVE_SHA256)
 '''), cell("markdown", """## 1. Xác minh tính toàn vẹn và provenance
 

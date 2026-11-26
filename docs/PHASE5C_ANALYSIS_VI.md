@@ -75,22 +75,22 @@ configs/selected/phase5c/beauty/               # 5 selection YAML nguyên byte +
 notebooks/Phase5C_Analysis.ipynb                # audit → tables → plots, không training
 ```
 
-ZIP gốc trong Downloads được giữ nguyên. Giải nén không ghi đè: tệp đã có phải có hash giống hệt, khác biệt sẽ báo lỗi trước khi ghi thêm bất kỳ tệp nào. Selected YAML sao chép nguyên byte từ archive; `run_path` vẫn là provenance đường dẫn gốc của Kaggle, không phải đường dẫn checkpoint công khai. Raw extraction giữ nguyên cây `results/tuning/...`; không trộn vào các pilot hoặc run tree hiện có.
+ZIP gốc được sao chép vào `artifacts/phase5c/` trong repository; bản bên ngoài vẫn giữ nguyên. CLI và notebook mặc định dùng đường dẫn tương đối này, không giả định thư mục Downloads của người dùng khác. Giải nén không ghi đè: tệp đã có phải có hash giống hệt, khác biệt sẽ báo lỗi trước khi ghi thêm bất kỳ tệp nào. Selected YAML sao chép nguyên byte từ archive; `run_path` vẫn là provenance đường dẫn gốc của Kaggle. Checkpoint được tổ chức riêng dưới `checkpoints/phase5c/beauty/<model>/trials/<trial>/`; đường dẫn portable của từng winner nằm trong `configs/artifacts/phase5c_checkpoints.json`.
 
 Tái lập đầy đủ, chỉ tại máy cá nhân:
 
 ```powershell
-python scripts/analyze_phase5c.py --archive "$env:USERPROFILE/Downloads/seqrec-phase5c-final-20261126_132556_321898.zip"
+python scripts/analyze_phase5c.py
 ```
 
-Hoặc đặt biến `SEQREC_PHASE5C_ARCHIVE` và chạy notebook theo thứ tự. Chỉ dựng lại hình từ bảng đã xuất:
+Lệnh trên dùng `artifacts/phase5c/seqrec-phase5c-final-20261126_132556_321898.zip`. Có thể override `--archive PATH` hoặc `SEQREC_PHASE5C_ARCHIVE`; notebook dùng cùng resolver. Chỉ dựng lại hình từ bảng đã xuất:
 
 ```bash
 python scripts/gen_fig_phase5c.py
 python scripts/write_phase5c_report.py
 ```
 
-Nguồn đầy đủ chỉ có trong ZIP riêng tư; GitHub chứa inventory/hash và bảng tổng hợp, không chứa ZIP, dataset, checkpoint, per-user histories/predictions, logs hoặc credentials. `artifact_audit.json` mô tả phạm vi xác minh; `archive_inventory.csv` ghi tên, kích thước và SHA256 của cả 182 tệp.
+Git history chứa inventory/hash, bảng tổng hợp, cấu hình và mã; không chứa binary lớn. Theo yêu cầu cung cấp checkpoint, GitHub Release `phase5c-checkpoints-v1` phân phối riêng các checkpoint nguyên byte cùng cấu hình, không có raw predictions, per-user histories, dataset, logs hoặc credentials. Chạy `python scripts/fetch_phase5c_checkpoints.py` để lấy năm best checkpoint đã chọn; thêm `--all-trials` để lấy đủ 30 best/latest checkpoint. Downloader xác minh SHA256 của ZIP và từng tệp rồi đặt vào cây repository. Gói checkpoint không thay thế ZIP gốc riêng tư để audit toàn bộ predictions. `artifact_audit.json` mô tả phạm vi xác minh; `archive_inventory.csv` ghi tên, kích thước và SHA256 của cả 182 tệp.
 
 ## Công việc tiếp theo, chưa thực hiện
 
