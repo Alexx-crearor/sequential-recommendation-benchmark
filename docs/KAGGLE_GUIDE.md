@@ -73,7 +73,7 @@ python scripts/run_tuning.py --profile core_research --bundle data/processed/bea
 
 Candidates include the model defaults first, then deterministic bounded samples of the profile search space. Learning rate, physical batch and dropout are searched; BERT adds mask ratio, FENRec adds decay and CL weights. Seed is fixed to 7. At most twelve trials are permitted. Maximum epochs/patience/cadence are model-specific; FENRec retains its twenty-epoch warm-up and minimum post-warm-up budget.
 
-Trials produce `VALIDATED`, `validation_selection.json`, `validation_predictions.parquet` and a `selected_config.yaml`, never test scores/predictions. Use the selected YAML for final seeds. A pilot-only tuning selection is rejected by research execution. Selection is never based on the old Beauty pilot test scores. A full search has not been run locally; short smoke trials only verify the workflow.
+Trials produce `VALIDATED`, `validation_selection.json`, `validation_predictions.parquet` and a `selected_config.yaml`, never test scores/predictions. Use the selected YAML for final seeds. A pilot-only tuning selection is rejected by research execution. Selection is never based on the old Beauty pilot test scores. The completed Phase 5C Kaggle export contains three trials per model (15 total); its verified selections are now frozen in `configs/selected/phase5c/beauty/`. Do not rerun that batch merely to prepare the next phase. See [the Vietnamese analysis](PHASE5C_ANALYSIS_VI.md) for actual values and stopping-budget limits. This is a bounded batch, not an exhaustive search.
 
 For E2 choose one backbone hyperparameter setting and keep it fixed across A1-A4. For E4 reuse the selected FENRec setting across all variants. Do not tune each ablation on test outcomes.
 
@@ -120,13 +120,20 @@ Parallel Lloyd clustering can differ at floating-point round-off even with the s
 
 ## 8. Verify, analyze and export
 
-Use `Kaggle_Analysis.ipynb` for verified results and E7/E8 sources. E7/E8 never train or choose a configuration by test score:
+Perform training, testing, evaluation and synchronized GPU measurements on Kaggle; export the artifacts and perform statistical analysis, visualization, E8 interpretation and publication on the personal machine. The older `Kaggle_Analysis.ipynb` is retained for compatibility; use its verification/export steps on Kaggle, not its analysis/visualization cells. E7/E8 never train or choose a configuration by test score. GPU measurement E7 may run on Kaggle:
 
 ```bash
 python scripts/run_experiment.py --profile core_research --experiment E7 --dataset beauty --bundle data/processed/beauty/HASH --device cuda:0 --results-root results/core
-python scripts/run_experiment.py --profile core_research --experiment E8 --dataset beauty --bundle data/processed/beauty/HASH --results-root results/core
-python scripts/aggregate_results.py --root results/core --output results/tables/core
 python scripts/export_results.py --root results --output /kaggle/working/seqrec-results-session2.zip
 ```
+
+After restoring exported results and the matching local dataset on the personal machine:
+
+```bash
+python scripts/run_experiment.py --profile core_research --experiment E8 --dataset beauty --bundle data/processed/beauty/HASH --results-root results/core
+python scripts/aggregate_results.py --root results/core --output results/tables/core
+```
+
+Phase 5C analysis is exclusively local: `python scripts/analyze_phase5c.py --archive PATH_TO_ORIGINAL_ZIP`, or `notebooks/Phase5C_Analysis.ipynb`. The source ZIP stays private and raw artifacts are not committed. Next-phase execution can use `--selection configs/selected/phase5c/beauty/MODEL.yaml`; each model must receive its matching selection file and original split.
 
 Use an E1 results root containing only preselected final configurations. E8 rejects multiple configurations for the same model/seed instead of choosing by test scores. Pilot/tuning roots remain separate. Final scientific figures, paired multi-seed analyses and the Vietnamese research report are later deliverables, not inferred from short performance benchmarks.

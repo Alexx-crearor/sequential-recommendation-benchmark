@@ -1,12 +1,22 @@
 # Implementation plan
 
+## Phase 5C update — 2026-11-26
+
+**Completed: the exported bounded hyperparameter tuning batch, 15/15 trials (3/model), Beauty seed 7.** The sole Phase 5C evidence source is `seqrec-phase5c-final-20261126_132556_321898.zip`, SHA256 `7861c626561fc1d7914abb8ee5a7eb4d552a932aca5dfbc54419648efb0176fa`. Verified ZIP CRC/member hashes, 150 status-hashed artifacts, 30 best/latest checkpoints, plan/config hashes, full validation contributions/top-K coverage, shared split/population and validation-only winner selection. Original ZIP, prior pilots and raw artifact bytes are preserved. No tuning or real-model training is launched locally.
+
+Selections for SASRec-CE/BCE, GRU4Rec-CE, BERT4Rec and FENRec are frozen under `configs/selected/phase5c/beauty/`. The reproducible CPU analysis, all-trial/epoch tables, academic PNG/PDF figures and Vietnamese interpretation are linked in `docs/PHASE5C_ANALYSIS_VI.md` and `notebooks/Phase5C_Analysis.ipynb`. Nine trials hit epoch caps, six stop by patience; capped trials are not labeled converged. Three trials/model are a completed bounded batch, not an exhaustive search.
+
+Verification limit: split IDs agree with the archived PASSED data audit and every config/checkpoint. Dataset bytes and a training source/Git attestation are not included in the ZIP; independent dataset rehashing and proof of unseen execution are outside this archive audit. Validation performance is not final test performance.
+
+Remaining: preselected final E1 at seeds 7/42/2026; E2–E5 controlled experiments; E7/E8 on final artifacts; Sports/Toys measurements; TIGER/E6; final multi-seed statistical analysis and report. Phase 5B execution status is not inferred from this export. Kaggle executes training/testing/evaluation/GPU measurements; all analysis/visualization/publication is local.
+
 ## Phase 5A update - 2026-11-26
 
 Implemented exact GPU-streamed catalogue ranking, vectorized GRU/input assembly, cached training tensors, efficient configurable loaders, independent-objective gradient accumulation, optional CE recomputation/AMP, validation/checkpoint cadence, warm-up-aware patience, validation-only bounded tuning, pilot/core/full profiles and thin Kaggle setup/training/analysis notebooks. E7/E8 have verified E1 artifact reuse CLIs. Aggregation now separates experiments/variants/retention/length/hyperparameter settings instead of pooling incompatible runs.
 
 Actual CPU/CUDA profiling, matched original/optimized short benchmarks, five complete optimized epoch measurements, same-checkpoint ranking audits and a real two-trial validation-only tuning smoke are recorded under `results/phase5a`. Existing Beauty pilots are preserved. See `docs/EXPERIMENT_BUDGET.md` for generated evidence and estimates, and `docs/KAGGLE_GUIDE.md` for source packaging, exact individual commands, restoration and export.
 
-Core initial selection uses seed 7. Final seed expansion 7/42/2026 follows validation selection. Long-run convergence, actual research hyperparameter selection, Kaggle-specific performance/session quotas, Sports/Toys profiling, TIGER and final scientific reporting remain outstanding. No full local experiment grid was launched.
+Historical Phase 5A state: Core initial selection uses seed 7 and final seed expansion 7/42/2026 follows validation selection. Phase 5C above now supplies the actual bounded research selections and Kaggle tuning measurements. Final convergence studies, Kaggle session quotas, Sports/Toys profiling, TIGER and final scientific reporting remain outstanding. No full local experiment grid was launched.
 
 ## Scope and current state
 
@@ -43,4 +53,4 @@ Dry-run planning fingerprints are not executable configuration hashes: actual sp
 
 ## Remaining work
 
-The bounded validation-only tuner is implemented and smoke-tested; a complete research search and training grid have not been run. Final multi-seed statistical comparisons, TIGER and publication figures/report remain outstanding. Phase 3/4 results are historical in `docs/PHASE34_RESULTS.md`; current commands and measured estimates are in `docs/KAGGLE_GUIDE.md` and `docs/EXPERIMENT_BUDGET.md`.
+The bounded validation-only tuner is implemented; the exported Phase 5C batch of fifteen research trials is completed and audited. An exhaustive search and final training grid have not been run. Final multi-seed statistical comparisons, TIGER and final-test publication figures/report remain outstanding. Phase 3/4 results are historical in `docs/PHASE34_RESULTS.md`; Phase 5C analysis is in `docs/PHASE5C_ANALYSIS_VI.md`; execution commands and historical estimates are in `docs/KAGGLE_GUIDE.md` and `docs/EXPERIMENT_BUDGET.md`.

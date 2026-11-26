@@ -1,0 +1,63 @@
+{
+  "date": "2026-11-26",
+  "archive_sha256": "7861c626561fc1d7914abb8ee5a7eb4d552a932aca5dfbc54419648efb0176fa",
+  "raw_extracted_files_reverified": 182,
+  "source_zip_unchanged": true,
+  "unit_and_integration_tests": {
+    "tests": 140,
+    "failures": 0,
+    "errors": 0,
+    "skipped": 0
+  },
+  "notebook_code_cells_executed": 5,
+  "tracked_notebook_has_outputs": false,
+  "figures": [
+    {
+      "name": "selected_trial_resources.png",
+      "dpi": [
+        299.9994,
+        299.9994
+      ],
+      "pixels": [
+        3184,
+        1024
+      ]
+    },
+    {
+      "name": "training_loss.png",
+      "dpi": [
+        299.9994,
+        299.9994
+      ],
+      "pixels": [
+        2794,
+        1774
+      ]
+    },
+    {
+      "name": "trial_validation_comparison.png",
+      "dpi": [
+        299.9994,
+        299.9994
+      ],
+      "pixels": [
+        3094,
+        874
+      ]
+    },
+    {
+      "name": "validation_curves.png",
+      "dpi": [
+        299.9994,
+        299.9994
+      ],
+      "pixels": [
+        2794,
+        1774
+      ]
+    }
+  ],
+  "vector_pdf_files": 4,
+  "experimental_training_or_tuning_launched_locally": false,
+  "tests_use_synthetic_fixtures_only": true
+}

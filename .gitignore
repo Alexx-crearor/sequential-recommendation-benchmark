@@ -1,6 +1,9 @@
 ﻿# Datasets and third-party comparison checkouts stay local.
 /data/
 /references/
+# Immutable imported archives and derived private provenance remain local.
+/results/raw/
+/results/derived/
 # Generated runs: whitelist lightweight evidence only.
 /results/*
 !/results/tables/

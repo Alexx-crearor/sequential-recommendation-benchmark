@@ -1,0 +1,19 @@
+dataset: beauty
+hyperparameters:
+  batch_size: 128
+  beta_0: 0.05
+  dropout: 0.2
+  lambda_0: 0.3
+  learning_rate: 0.002
+  soft_label_gamma: 0.2
+model: fenrec
+pilot_only: false
+profile: core_research
+run_path: results/tuning/beauty/fenrec/c9159528b5e2dbf9ccf6d6dee07b4e31c931bbcba9fc6038168e895708164620/runs/TUNING/beauty/fenrec/856e48781df16db5047080f9853993c3bf7564a9d89a9cafc21409ab01a003d5/7
+seed: 7
+selection_split: validation
+split_version: 2228499f23f01d419863d0f09b3671f098672471887c4fb37b85bae26d42f91e
+trial: 2
+trials_completed: 3
+tuning_plan_hash: c9159528b5e2dbf9ccf6d6dee07b4e31c931bbcba9fc6038168e895708164620
+validation_ndcg@10: 0.07225373494036555

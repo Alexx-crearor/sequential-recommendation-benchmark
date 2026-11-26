@@ -1,0 +1,67 @@
+{
+  "archive_files": 182,
+  "archive_sha256": "7861c626561fc1d7914abb8ee5a7eb4d552a932aca5dfbc54419648efb0176fa",
+  "archive_uncompressed_bytes": 277747136,
+  "catalogue_items": 12101,
+  "checkpoint_files_verified": 30,
+  "convergence_scope": "Patience is a stopping criterion, not proof of global convergence. Epoch-capped trials are budget-limited.",
+  "dataset_verification_scope": "Archived PASSED data-audit report and matching split IDs across all plans/configs/checkpoints; dataset bytes are not in this ZIP and were not independently rehashed in this analysis.",
+  "execution_provenance_limit": "ZIP has no training source snapshot or Git commit attestation; hash/selection consistency verifies supplied artifacts, not unseen execution history.",
+  "experimental_training_runs_launched_locally": 0,
+  "hashed_run_artifacts_verified": 150,
+  "limit_reached_trials": 9,
+  "models": [
+    "sasrec_ce",
+    "sasrec_bce",
+    "gru4rec_ce",
+    "bert4rec",
+    "fenrec"
+  ],
+  "patience_stopped_trials": 6,
+  "phase": "5C",
+  "seed": 7,
+  "selection_manifest": {
+    "bert4rec": {
+      "selected_trial": 1,
+      "sha256": "fcfeb6b31d8dabaafd79b8c65b28570d39bcf705dadc73d8bcc83bc3fa5764cb",
+      "source_member": "results/tuning/beauty/bert4rec/64deb2a43fbe3f72d7e1d7b9b9613a4ec9f5e67a8161511ac3c1c2ddae909a32/selected_config.yaml",
+      "tuning_plan_hash": "64deb2a43fbe3f72d7e1d7b9b9613a4ec9f5e67a8161511ac3c1c2ddae909a32"
+    },
+    "fenrec": {
+      "selected_trial": 2,
+      "sha256": "7420dee53f9a7905a6bf803c8c2ee2547b7b1bae1034e9065a3157cd5a91bd09",
+      "source_member": "results/tuning/beauty/fenrec/c9159528b5e2dbf9ccf6d6dee07b4e31c931bbcba9fc6038168e895708164620/selected_config.yaml",
+      "tuning_plan_hash": "c9159528b5e2dbf9ccf6d6dee07b4e31c931bbcba9fc6038168e895708164620"
+    },
+    "gru4rec_ce": {
+      "selected_trial": 1,
+      "sha256": "69a293012d0728fe98be4f923b71efa2a00a4b6a0c15478841512eb03acdd978",
+      "source_member": "results/tuning/beauty/gru4rec_ce/23862d52e78d5061b2ba24e410c0c902739d7ee67ad3c560f856af1910094c0b/selected_config.yaml",
+      "tuning_plan_hash": "23862d52e78d5061b2ba24e410c0c902739d7ee67ad3c560f856af1910094c0b"
+    },
+    "sasrec_bce": {
+      "selected_trial": 0,
+      "sha256": "e13a061e46ab473f59647c22da9fc6b303b23e5fea13d8c24c391341409bedb5",
+      "source_member": "results/tuning/beauty/sasrec_bce/144bbeae4d5edb7e419de490b0d680c65083738687be24ae8abc32ccadc93473/selected_config.yaml",
+      "tuning_plan_hash": "144bbeae4d5edb7e419de490b0d680c65083738687be24ae8abc32ccadc93473"
+    },
+    "sasrec_ce": {
+      "selected_trial": 2,
+      "sha256": "0e8b7b581a86e431dad395a1ad57627bbda632b74da1b87447e6ec6d0a2e43f2",
+      "source_member": "results/tuning/beauty/sasrec_ce/eae16ca6c94613f2dacbdf98a7b851bd6676a474acb9bc3a68d806704d631999/selected_config.yaml",
+      "tuning_plan_hash": "eae16ca6c94613f2dacbdf98a7b851bd6676a474acb9bc3a68d806704d631999"
+    }
+  },
+  "selection_split": "validation",
+  "source_archive": "seqrec-phase5c-final-20261126_132556_321898.zip",
+  "split_version": "2228499f23f01d419863d0f09b3671f098672471887c4fb37b85bae26d42f91e",
+  "state": "VERIFIED",
+  "test_result_artifacts": 0,
+  "timing_scope": "Logged epoch training includes FENRec clustering; validation excludes final selected-checkpoint validation; preparation/session wall time is not recorded.",
+  "total_training_seconds": 26172.815248876985,
+  "total_validation_seconds": 1180.2180933059976,
+  "trials": 15,
+  "trials_per_model": 3,
+  "validation_population_signature": "791158c83abf2c5ef75a7a85578bfde049de5cc055101b78ff96282df8ced042",
+  "validation_users_per_trial": 22363
+}

@@ -4,6 +4,21 @@ A reproducible PyTorch benchmark for chronological next-item recommendation, com
 
 Phase 5A adds an optimized pipeline and Kaggle execution package. Start with [KAGGLE_GUIDE.md](docs/KAGGLE_GUIDE.md), [measured benchmarks and budgets](docs/EXPERIMENT_BUDGET.md), and [the implementation audit](docs/PHASE5A_AUDIT.md). The three Kaggle notebooks call repository scripts rather than duplicating models.
 
+## Phase 5C — verified Kaggle tuning
+
+The original `seqrec-phase5c-final-20261126_132556_321898.zip` is the sole experimental source for this phase (SHA256 `7861c626561fc1d7914abb8ee5a7eb4d552a932aca5dfbc54419648efb0176fa`). All **15 validation-only trials** are verified: three each for SASRec-CE/BCE, GRU4Rec-CE, BERT4Rec and FENRec, Beauty seed 7. All 30 best/latest checkpoints and 150 status-hashed artifacts pass integrity checks. Selected configurations are available in [configs/selected/phase5c/beauty](configs/selected/phase5c/beauty).
+
+Read the [Vietnamese analysis and verification limits](docs/PHASE5C_ANALYSIS_VI.md), [all-trial summary](results/tables/phase5c/tuning_trials.csv), [selected hyperparameters](results/tables/phase5c/selected_hyperparameters.csv), [audit](results/tables/phase5c/artifact_audit.json) and [analysis notebook](notebooks/Phase5C_Analysis.ipynb). Figures are saved as 300 DPI PNG and vector PDF under `results/figures/phase5c/`. Nine trials exhausted their epoch budgets; six stopped by patience. This completes the exported bounded tuning batch, not final test evaluation or a claim of convergence for capped runs.
+
+Reproduce analysis **on a personal machine**, with the original private ZIP available:
+
+```powershell
+python -m pip install -r requirements-analysis.txt
+python scripts/analyze_phase5c.py --archive "$env:USERPROFILE/Downloads/seqrec-phase5c-final-20261126_132556_321898.zip"
+```
+
+The notebook also accepts `SEQREC_PHASE5C_ARCHIVE`. Raw extraction is immutable under ignored `results/raw/phase5c/<sha>/`; private derived provenance is ignored under `results/derived/phase5c/<sha>/`. Only aggregate tables, figures, selection YAMLs and analysis source are versioned. Missing original ZIP prevents full re-audit; figures can still be regenerated from committed aggregate CSVs. The archive's dataset audit and split IDs are consistent, but dataset bytes and a training-source attestation are absent from the ZIP. Final E1 multi-seed runs, E2–E5, final-checkpoint E7/E8 and TIGER/E6 remain pending. Kaggle is reserved for training/testing/evaluation/GPU measurement; analysis and repository publication run locally.
+
 ## Reconstruct from Git
 
 After cloning the confirmed GitHub URL, enter the repository and use Python 3.10 or 3.11:

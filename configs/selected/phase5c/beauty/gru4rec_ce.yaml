@@ -1,0 +1,16 @@
+dataset: beauty
+hyperparameters:
+  batch_size: 128
+  dropout: 0.5
+  learning_rate: 0.002
+model: gru4rec_ce
+pilot_only: false
+profile: core_research
+run_path: results/tuning/beauty/gru4rec_ce/23862d52e78d5061b2ba24e410c0c902739d7ee67ad3c560f856af1910094c0b/runs/TUNING/beauty/gru4rec_ce/95771187042f1ae24064f32f4ceee4c79ed1c7e72c02bbb23467cfcd5b833ca5/7
+seed: 7
+selection_split: validation
+split_version: 2228499f23f01d419863d0f09b3671f098672471887c4fb37b85bae26d42f91e
+trial: 1
+trials_completed: 3
+tuning_plan_hash: 23862d52e78d5061b2ba24e410c0c902739d7ee67ad3c560f856af1910094c0b
+validation_ndcg@10: 0.04738689473701778

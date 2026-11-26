@@ -1,0 +1,16 @@
+dataset: beauty
+hyperparameters:
+  batch_size: 128
+  dropout: 0.2
+  learning_rate: 0.001
+model: sasrec_bce
+pilot_only: false
+profile: core_research
+run_path: results/tuning/beauty/sasrec_bce/144bbeae4d5edb7e419de490b0d680c65083738687be24ae8abc32ccadc93473/runs/TUNING/beauty/sasrec_bce/b8a9b2f4b9cd49834102d2a46aac8e29156732c7e0c10bffc3521642e5d9a497/7
+seed: 7
+selection_split: validation
+split_version: 2228499f23f01d419863d0f09b3671f098672471887c4fb37b85bae26d42f91e
+trial: 0
+trials_completed: 3
+tuning_plan_hash: 144bbeae4d5edb7e419de490b0d680c65083738687be24ae8abc32ccadc93473
+validation_ndcg@10: 0.034361368625040876

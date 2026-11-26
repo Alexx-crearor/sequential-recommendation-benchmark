@@ -1,0 +1,17 @@
+dataset: beauty
+hyperparameters:
+  batch_size: 128
+  dropout: 0.2
+  learning_rate: 0.002
+  mask_ratio: 0.15
+model: bert4rec
+pilot_only: false
+profile: core_research
+run_path: results/tuning/beauty/bert4rec/64deb2a43fbe3f72d7e1d7b9b9613a4ec9f5e67a8161511ac3c1c2ddae909a32/runs/TUNING/beauty/bert4rec/cfb5081cbc646d73de9b5b539382e5596ad9ba8e5704f25101b8681e6fe384cb/7
+seed: 7
+selection_split: validation
+split_version: 2228499f23f01d419863d0f09b3671f098672471887c4fb37b85bae26d42f91e
+trial: 1
+trials_completed: 3
+tuning_plan_hash: 64deb2a43fbe3f72d7e1d7b9b9613a4ec9f5e67a8161511ac3c1c2ddae909a32
+validation_ndcg@10: 0.04337865654342287

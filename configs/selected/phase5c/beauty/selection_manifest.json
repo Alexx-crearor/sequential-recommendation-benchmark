@@ -1,0 +1,36 @@
+{
+  "archive_sha256": "7861c626561fc1d7914abb8ee5a7eb4d552a932aca5dfbc54419648efb0176fa",
+  "models": {
+    "bert4rec": {
+      "selected_trial": 1,
+      "sha256": "fcfeb6b31d8dabaafd79b8c65b28570d39bcf705dadc73d8bcc83bc3fa5764cb",
+      "source_member": "results/tuning/beauty/bert4rec/64deb2a43fbe3f72d7e1d7b9b9613a4ec9f5e67a8161511ac3c1c2ddae909a32/selected_config.yaml",
+      "tuning_plan_hash": "64deb2a43fbe3f72d7e1d7b9b9613a4ec9f5e67a8161511ac3c1c2ddae909a32"
+    },
+    "fenrec": {
+      "selected_trial": 2,
+      "sha256": "7420dee53f9a7905a6bf803c8c2ee2547b7b1bae1034e9065a3157cd5a91bd09",
+      "source_member": "results/tuning/beauty/fenrec/c9159528b5e2dbf9ccf6d6dee07b4e31c931bbcba9fc6038168e895708164620/selected_config.yaml",
+      "tuning_plan_hash": "c9159528b5e2dbf9ccf6d6dee07b4e31c931bbcba9fc6038168e895708164620"
+    },
+    "gru4rec_ce": {
+      "selected_trial": 1,
+      "sha256": "69a293012d0728fe98be4f923b71efa2a00a4b6a0c15478841512eb03acdd978",
+      "source_member": "results/tuning/beauty/gru4rec_ce/23862d52e78d5061b2ba24e410c0c902739d7ee67ad3c560f856af1910094c0b/selected_config.yaml",
+      "tuning_plan_hash": "23862d52e78d5061b2ba24e410c0c902739d7ee67ad3c560f856af1910094c0b"
+    },
+    "sasrec_bce": {
+      "selected_trial": 0,
+      "sha256": "e13a061e46ab473f59647c22da9fc6b303b23e5fea13d8c24c391341409bedb5",
+      "source_member": "results/tuning/beauty/sasrec_bce/144bbeae4d5edb7e419de490b0d680c65083738687be24ae8abc32ccadc93473/selected_config.yaml",
+      "tuning_plan_hash": "144bbeae4d5edb7e419de490b0d680c65083738687be24ae8abc32ccadc93473"
+    },
+    "sasrec_ce": {
+      "selected_trial": 2,
+      "sha256": "0e8b7b581a86e431dad395a1ad57627bbda632b74da1b87447e6ec6d0a2e43f2",
+      "source_member": "results/tuning/beauty/sasrec_ce/eae16ca6c94613f2dacbdf98a7b851bd6676a474acb9bc3a68d806704d631999/selected_config.yaml",
+      "tuning_plan_hash": "eae16ca6c94613f2dacbdf98a7b851bd6676a474acb9bc3a68d806704d631999"
+    }
+  },
+  "selection_split": "validation"
+}
