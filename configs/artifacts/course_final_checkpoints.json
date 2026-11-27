@@ -1,0 +1,851 @@
+{
+  "best_checkpoints": 28,
+  "distribution": "composite manifests; no repackaging or re-upload of previous weights",
+  "files": [
+    {
+      "bytes": 3593641,
+      "kind": "best",
+      "path": "checkpoints/master_session1/E1/bert4rec/default/2026/checkpoint.pt",
+      "sha256": "a130c8fb265e44873034a40ca550ea92d2d465a3cc59bb15e228c7a3487938a5",
+      "source_member": "results/core/E1/beauty/bert4rec/385ff5753008bed9279e3373838e228142afc051ed3ffbe9eb52363ce558b5cb/2026/checkpoint.pt"
+    },
+    {
+      "bytes": 1261,
+      "kind": "config",
+      "path": "checkpoints/master_session1/E1/bert4rec/default/2026/config.yaml",
+      "sha256": "e94163cb8bab8430f9ea9b38e0f1e3422869ffd6eb87d287ca21acef3d5ae92b",
+      "source_member": "results/core/E1/beauty/bert4rec/385ff5753008bed9279e3373838e228142afc051ed3ffbe9eb52363ce558b5cb/2026/config.yaml"
+    },
+    {
+      "bytes": 14408058,
+      "kind": "latest",
+      "path": "checkpoints/master_session1/E1/bert4rec/default/2026/latest.pt",
+      "sha256": "820e6505b2b8c1c1a1322b7e5c16d6573b2d9a649dcebd9b60fefe464897bae7",
+      "source_member": "results/core/E1/beauty/bert4rec/385ff5753008bed9279e3373838e228142afc051ed3ffbe9eb52363ce558b5cb/2026/latest.pt"
+    },
+    {
+      "bytes": 3593641,
+      "kind": "best",
+      "path": "checkpoints/master_session1/E1/bert4rec/default/42/checkpoint.pt",
+      "sha256": "0800ee0bd7ee8f973f4366e73c259f957c1d3356ce379a6ba1ae09dae4eea6bf",
+      "source_member": "results/core/E1/beauty/bert4rec/be46846e295aed6d4ad0385cc414f7849db12f6e6917ec0dbe8cb2e5a4b7bf3a/42/checkpoint.pt"
+    },
+    {
+      "bytes": 1259,
+      "kind": "config",
+      "path": "checkpoints/master_session1/E1/bert4rec/default/42/config.yaml",
+      "sha256": "e2165657f0bb91015352d832bf257bd3dada37c6d847bdf16faedc6dc8765d35",
+      "source_member": "results/core/E1/beauty/bert4rec/be46846e295aed6d4ad0385cc414f7849db12f6e6917ec0dbe8cb2e5a4b7bf3a/42/config.yaml"
+    },
+    {
+      "bytes": 14410362,
+      "kind": "latest",
+      "path": "checkpoints/master_session1/E1/bert4rec/default/42/latest.pt",
+      "sha256": "c81df46b90c82540d3a650000e6041a1be811e81eb813257ec9b1b734758cd71",
+      "source_member": "results/core/E1/beauty/bert4rec/be46846e295aed6d4ad0385cc414f7849db12f6e6917ec0dbe8cb2e5a4b7bf3a/42/latest.pt"
+    },
+    {
+      "bytes": 3593641,
+      "kind": "best",
+      "path": "checkpoints/master_session1/E1/bert4rec/default/7/checkpoint.pt",
+      "sha256": "60210d39db75378cb5c0b19c906810f87c1eaac40f3e8312642c1db65599af2c",
+      "source_member": "results/core/E1/beauty/bert4rec/71f63dd5124e097509a331db6b242b326a93806fc6b8c33c7d37313168abdcab/7/checkpoint.pt"
+    },
+    {
+      "bytes": 1258,
+      "kind": "config",
+      "path": "checkpoints/master_session1/E1/bert4rec/default/7/config.yaml",
+      "sha256": "a9505990d2921b24e10a2273ee695740a7e4ff483256404e000c235b113af04c",
+      "source_member": "results/core/E1/beauty/bert4rec/71f63dd5124e097509a331db6b242b326a93806fc6b8c33c7d37313168abdcab/7/config.yaml"
+    },
+    {
+      "bytes": 14410362,
+      "kind": "latest",
+      "path": "checkpoints/master_session1/E1/bert4rec/default/7/latest.pt",
+      "sha256": "9644e163f25e9bc739a7494487af7f27266e7c4b9d24234eba1bb8c3eba9c6ab",
+      "source_member": "results/core/E1/beauty/bert4rec/71f63dd5124e097509a331db6b242b326a93806fc6b8c33c7d37313168abdcab/7/latest.pt"
+    },
+    {
+      "bytes": 3527194,
+      "kind": "best",
+      "path": "checkpoints/master_session1/E1/fenrec/default/2026/checkpoint.pt",
+      "sha256": "fcb28f2be02d02d4c4e35c19c3d83978e3ac9d50ba69ee4123f2a31cbbf041dc",
+      "source_member": "results/core/E1/beauty/fenrec/d17ade693033408640c57fab50e85ce6935b74782fd8a37814265e115a826f24/2026/checkpoint.pt"
+    },
+    {
+      "bytes": 1699,
+      "kind": "config",
+      "path": "checkpoints/master_session1/E1/fenrec/default/2026/config.yaml",
+      "sha256": "7752d6daa8555d853e8e50dd07ce9c74ba14bb6c185c1f01a8969d25b8707b39",
+      "source_member": "results/core/E1/beauty/fenrec/d17ade693033408640c57fab50e85ce6935b74782fd8a37814265e115a826f24/2026/config.yaml"
+    },
+    {
+      "bytes": 14137786,
+      "kind": "latest",
+      "path": "checkpoints/master_session1/E1/fenrec/default/2026/latest.pt",
+      "sha256": "dd84094541d2aee75ccc4a3ded3cc00766f2aa551de4c9e82704a2d580930f8f",
+      "source_member": "results/core/E1/beauty/fenrec/d17ade693033408640c57fab50e85ce6935b74782fd8a37814265e115a826f24/2026/latest.pt"
+    },
+    {
+      "bytes": 3527194,
+      "kind": "best",
+      "path": "checkpoints/master_session1/E1/fenrec/default/42/checkpoint.pt",
+      "sha256": "51c5a80d9acecb8864cae04e7dad4f5a915483cbea7d4047168115166d68ed59",
+      "source_member": "results/core/E1/beauty/fenrec/60b953e123629155c9b36ab24e2551f601bf98a041ea9585eaff442b87eb2e04/42/checkpoint.pt"
+    },
+    {
+      "bytes": 1697,
+      "kind": "config",
+      "path": "checkpoints/master_session1/E1/fenrec/default/42/config.yaml",
+      "sha256": "c3f9b4806b4939bd63d82e07c9421904eabc1723f8ece8389af62fcd7d957dd6",
+      "source_member": "results/core/E1/beauty/fenrec/60b953e123629155c9b36ab24e2551f601bf98a041ea9585eaff442b87eb2e04/42/config.yaml"
+    },
+    {
+      "bytes": 14137786,
+      "kind": "latest",
+      "path": "checkpoints/master_session1/E1/fenrec/default/42/latest.pt",
+      "sha256": "733e0069f79173cb52b344311d971d7a40b6e0a53b738338040c1cce635edb89",
+      "source_member": "results/core/E1/beauty/fenrec/60b953e123629155c9b36ab24e2551f601bf98a041ea9585eaff442b87eb2e04/42/latest.pt"
+    },
+    {
+      "bytes": 3527194,
+      "kind": "best",
+      "path": "checkpoints/master_session1/E1/fenrec/default/7/checkpoint.pt",
+      "sha256": "bde20ea203529305be6d353f19fd96ffdb00b1b2b8d653bc3ea47da6abc6db27",
+      "source_member": "results/core/E1/beauty/fenrec/d1cf1966a06d8bff795704ca8728798c4594519d5aac50ce1c738a3f04dc7945/7/checkpoint.pt"
+    },
+    {
+      "bytes": 1696,
+      "kind": "config",
+      "path": "checkpoints/master_session1/E1/fenrec/default/7/config.yaml",
+      "sha256": "94b5327fa62a067bf3b3f6fd1785bb264c36a07a62da81d3188842323c6f3019",
+      "source_member": "results/core/E1/beauty/fenrec/d1cf1966a06d8bff795704ca8728798c4594519d5aac50ce1c738a3f04dc7945/7/config.yaml"
+    },
+    {
+      "bytes": 14140986,
+      "kind": "latest",
+      "path": "checkpoints/master_session1/E1/fenrec/default/7/latest.pt",
+      "sha256": "a2537e35b7d0eca20ed6e2dcf29262ea8f0fd8dab7775026574f5a3990d919fe",
+      "source_member": "results/core/E1/beauty/fenrec/d1cf1966a06d8bff795704ca8728798c4594519d5aac50ce1c738a3f04dc7945/7/latest.pt"
+    },
+    {
+      "bytes": 3301884,
+      "kind": "best",
+      "path": "checkpoints/master_session1/E1/gru4rec_ce/default/2026/checkpoint.pt",
+      "sha256": "cbe9f296b95183d1c6e66d92137cf83cc7603012e5e5bed1bd88371ae92a6d3b",
+      "source_member": "results/core/E1/beauty/gru4rec_ce/20e4cabfe4e25112f7b5a4e72822b2242809f49d4188a6856e59c7ccc975f94e/2026/checkpoint.pt"
+    },
+    {
+      "bytes": 1247,
+      "kind": "config",
+      "path": "checkpoints/master_session1/E1/gru4rec_ce/default/2026/config.yaml",
+      "sha256": "842785c46a56ec00b072d89f85a0a47f69edb3470ba6bbaf2c5ff97e9155f9d0",
+      "source_member": "results/core/E1/beauty/gru4rec_ce/20e4cabfe4e25112f7b5a4e72822b2242809f49d4188a6856e59c7ccc975f94e/2026/config.yaml"
+    },
+    {
+      "bytes": 13246523,
+      "kind": "latest",
+      "path": "checkpoints/master_session1/E1/gru4rec_ce/default/2026/latest.pt",
+      "sha256": "673173c45ebec366292b5c14828f185e1dcd67513d4a8b8fd84657099ee0ffff",
+      "source_member": "results/core/E1/beauty/gru4rec_ce/20e4cabfe4e25112f7b5a4e72822b2242809f49d4188a6856e59c7ccc975f94e/2026/latest.pt"
+    },
+    {
+      "bytes": 3301884,
+      "kind": "best",
+      "path": "checkpoints/master_session1/E1/gru4rec_ce/default/42/checkpoint.pt",
+      "sha256": "69aca79da2fddecb931e57b4cc89764c0151b7431a2fc1b72d64f94589debd1f",
+      "source_member": "results/core/E1/beauty/gru4rec_ce/785d9bd492ff638dde8921d0fc5241aec56725a36c107fc753abe8d3c62bc780/42/checkpoint.pt"
+    },
+    {
+      "bytes": 1245,
+      "kind": "config",
+      "path": "checkpoints/master_session1/E1/gru4rec_ce/default/42/config.yaml",
+      "sha256": "51791d30d901bcf3500c5d0a91999b1651391c6a58aaa88188a06eb79456fdf5",
+      "source_member": "results/core/E1/beauty/gru4rec_ce/785d9bd492ff638dde8921d0fc5241aec56725a36c107fc753abe8d3c62bc780/42/config.yaml"
+    },
+    {
+      "bytes": 13248891,
+      "kind": "latest",
+      "path": "checkpoints/master_session1/E1/gru4rec_ce/default/42/latest.pt",
+      "sha256": "3a296caa3ac0409e9b0f11fec95e8d3a3c0027993294e4cfb3b3026181f4dd9a",
+      "source_member": "results/core/E1/beauty/gru4rec_ce/785d9bd492ff638dde8921d0fc5241aec56725a36c107fc753abe8d3c62bc780/42/latest.pt"
+    },
+    {
+      "bytes": 3301884,
+      "kind": "best",
+      "path": "checkpoints/master_session1/E1/gru4rec_ce/default/7/checkpoint.pt",
+      "sha256": "d656dac6cbb29b4124375b644d52f9b09717326fb3a14ba1e8aec565c5b4857c",
+      "source_member": "results/core/E1/beauty/gru4rec_ce/216d0900cbf946b5654c56e5ccc40261ff60b421be52a21fcc669be56acc7f12/7/checkpoint.pt"
+    },
+    {
+      "bytes": 1244,
+      "kind": "config",
+      "path": "checkpoints/master_session1/E1/gru4rec_ce/default/7/config.yaml",
+      "sha256": "30585f482218f8b22cd3f8e8feb9a90079074ad49fa65eb1471ec27589403209",
+      "source_member": "results/core/E1/beauty/gru4rec_ce/216d0900cbf946b5654c56e5ccc40261ff60b421be52a21fcc669be56acc7f12/7/config.yaml"
+    },
+    {
+      "bytes": 13251707,
+      "kind": "latest",
+      "path": "checkpoints/master_session1/E1/gru4rec_ce/default/7/latest.pt",
+      "sha256": "b73db456387be82b61a70236b83aa70b59dc1ffe451217d3561e2eadd2ba748a",
+      "source_member": "results/core/E1/beauty/gru4rec_ce/216d0900cbf946b5654c56e5ccc40261ff60b421be52a21fcc669be56acc7f12/7/latest.pt"
+    },
+    {
+      "bytes": 97082,
+      "kind": "best",
+      "path": "checkpoints/master_session1/E1/mostpopular/default/7/checkpoint.pt",
+      "sha256": "87c2008d55d3a4f573945cf28bbe81d7f7a893f69a42e2e0957985853b0c2ea8",
+      "source_member": "results/core/E1/beauty/mostpopular/ff06c7545bae6eab42405cd2293efd76132be5158fe8883dbaa336a9002b2415/7/checkpoint.pt"
+    },
+    {
+      "bytes": 218,
+      "kind": "config",
+      "path": "checkpoints/master_session1/E1/mostpopular/default/7/config.yaml",
+      "sha256": "a5fd1cae46b9e59e3c918d227b289708e5355842ca6ce4bf0247d4496f359813",
+      "source_member": "results/core/E1/beauty/mostpopular/ff06c7545bae6eab42405cd2293efd76132be5158fe8883dbaa336a9002b2415/7/config.yaml"
+    },
+    {
+      "bytes": 3293710,
+      "kind": "best",
+      "path": "checkpoints/master_session1/E1/sasrec_bce/default/2026/checkpoint.pt",
+      "sha256": "827e46230fd91bb5e0be4a78549658a5edc4a8cc346c2cb7587d19353776ae46",
+      "source_member": "results/core/E1/beauty/sasrec_bce/3944d609fa569d0738d6406e724c17d9bf9ce313dc3f792de1b90696c651fc75/2026/checkpoint.pt"
+    },
+    {
+      "bytes": 1235,
+      "kind": "config",
+      "path": "checkpoints/master_session1/E1/sasrec_bce/default/2026/config.yaml",
+      "sha256": "a4f6d3315586fecca27f35197be2aeb78fb4649999e90d16b6802f7583d9e884",
+      "source_member": "results/core/E1/beauty/sasrec_bce/3944d609fa569d0738d6406e724c17d9bf9ce313dc3f792de1b90696c651fc75/2026/config.yaml"
+    },
+    {
+      "bytes": 13214330,
+      "kind": "latest",
+      "path": "checkpoints/master_session1/E1/sasrec_bce/default/2026/latest.pt",
+      "sha256": "6dea543bfbf6220015f40143c55f67f3e04a5da33bd3d444806bcea2ac34bb08",
+      "source_member": "results/core/E1/beauty/sasrec_bce/3944d609fa569d0738d6406e724c17d9bf9ce313dc3f792de1b90696c651fc75/2026/latest.pt"
+    },
+    {
+      "bytes": 3293710,
+      "kind": "best",
+      "path": "checkpoints/master_session1/E1/sasrec_bce/default/42/checkpoint.pt",
+      "sha256": "8cb757f28214ecd935e3251814874f1d6bfc3682c4a3b9dad4e985492d90b7f4",
+      "source_member": "results/core/E1/beauty/sasrec_bce/dedb1d4a39e142e69b1c50256209e3197ad746da827c4a3c70e53b3981da2860/42/checkpoint.pt"
+    },
+    {
+      "bytes": 1233,
+      "kind": "config",
+      "path": "checkpoints/master_session1/E1/sasrec_bce/default/42/config.yaml",
+      "sha256": "359f4e802b42236e1a9d4e986b81f7a8dc4de231b03792564633c3ebf2a60299",
+      "source_member": "results/core/E1/beauty/sasrec_bce/dedb1d4a39e142e69b1c50256209e3197ad746da827c4a3c70e53b3981da2860/42/config.yaml"
+    },
+    {
+      "bytes": 13217210,
+      "kind": "latest",
+      "path": "checkpoints/master_session1/E1/sasrec_bce/default/42/latest.pt",
+      "sha256": "dc7015201d76c82e12ba8ef2cf6cfffa81a9bc329e0612036053b42c97141412",
+      "source_member": "results/core/E1/beauty/sasrec_bce/dedb1d4a39e142e69b1c50256209e3197ad746da827c4a3c70e53b3981da2860/42/latest.pt"
+    },
+    {
+      "bytes": 3293710,
+      "kind": "best",
+      "path": "checkpoints/master_session1/E1/sasrec_bce/default/7/checkpoint.pt",
+      "sha256": "49085235438e2320b9aaaa393da774d449bb150fc7380a9e069322f3678a6abb",
+      "source_member": "results/core/E1/beauty/sasrec_bce/55e1c593268cc883810a3415738ed0318a0e6f6181488dd2beee7e3e642d4ee0/7/checkpoint.pt"
+    },
+    {
+      "bytes": 1232,
+      "kind": "config",
+      "path": "checkpoints/master_session1/E1/sasrec_bce/default/7/config.yaml",
+      "sha256": "2b67159bb00a3595fa2fb40e5995a435061d8a46847fde6f690254dac821ab2f",
+      "source_member": "results/core/E1/beauty/sasrec_bce/55e1c593268cc883810a3415738ed0318a0e6f6181488dd2beee7e3e642d4ee0/7/config.yaml"
+    },
+    {
+      "bytes": 13208634,
+      "kind": "latest",
+      "path": "checkpoints/master_session1/E1/sasrec_bce/default/7/latest.pt",
+      "sha256": "a0332e0a4d23329528aaacc42e28f73951ee912d460017f1ac7a29767f862a3d",
+      "source_member": "results/core/E1/beauty/sasrec_bce/55e1c593268cc883810a3415738ed0318a0e6f6181488dd2beee7e3e642d4ee0/7/latest.pt"
+    },
+    {
+      "bytes": 3293710,
+      "kind": "best",
+      "path": "checkpoints/master_session1/E1/sasrec_ce/default/2026/checkpoint.pt",
+      "sha256": "cd26b59939e56ad11e4a67230edf603c1e5b258b324cbc0f66a6b5b225102ae3",
+      "source_member": "results/core/E1/beauty/sasrec_ce/228181e90718b145a0c675e612378535a47c08bf0cf6c93b72da7f737a4ba18a/2026/checkpoint.pt"
+    },
+    {
+      "bytes": 1247,
+      "kind": "config",
+      "path": "checkpoints/master_session1/E1/sasrec_ce/default/2026/config.yaml",
+      "sha256": "2932eda89eb56722c9b8dd6e06a9fa19e47037fcfb974eb806f4dd6904f85835",
+      "source_member": "results/core/E1/beauty/sasrec_ce/228181e90718b145a0c675e612378535a47c08bf0cf6c93b72da7f737a4ba18a/2026/config.yaml"
+    },
+    {
+      "bytes": 13205306,
+      "kind": "latest",
+      "path": "checkpoints/master_session1/E1/sasrec_ce/default/2026/latest.pt",
+      "sha256": "7afc6e20c33457edf92320ce696c94407945e27180dde4ede46c909c9823c299",
+      "source_member": "results/core/E1/beauty/sasrec_ce/228181e90718b145a0c675e612378535a47c08bf0cf6c93b72da7f737a4ba18a/2026/latest.pt"
+    },
+    {
+      "bytes": 3293710,
+      "kind": "best",
+      "path": "checkpoints/master_session1/E1/sasrec_ce/default/42/checkpoint.pt",
+      "sha256": "e95765ea133b5259e1e65a8ab5b557e0ca06eaab3e92d2d02a5aefdfacc2c707",
+      "source_member": "results/core/E1/beauty/sasrec_ce/d767bb837e92797add96447cbf7ae5f40d690050eb67f2edafe19547c65fc056/42/checkpoint.pt"
+    },
+    {
+      "bytes": 1245,
+      "kind": "config",
+      "path": "checkpoints/master_session1/E1/sasrec_ce/default/42/config.yaml",
+      "sha256": "84f285e3a88057e79fda40512c9a2e0c35a645acf3a73a96b50b204159d535df",
+      "source_member": "results/core/E1/beauty/sasrec_ce/d767bb837e92797add96447cbf7ae5f40d690050eb67f2edafe19547c65fc056/42/config.yaml"
+    },
+    {
+      "bytes": 13201914,
+      "kind": "latest",
+      "path": "checkpoints/master_session1/E1/sasrec_ce/default/42/latest.pt",
+      "sha256": "bfe75b7e5a1fa5c198dee6fda04f084ae340366836bbdba65f474d3a7c367bdd",
+      "source_member": "results/core/E1/beauty/sasrec_ce/d767bb837e92797add96447cbf7ae5f40d690050eb67f2edafe19547c65fc056/42/latest.pt"
+    },
+    {
+      "bytes": 3293710,
+      "kind": "best",
+      "path": "checkpoints/master_session1/E1/sasrec_ce/default/7/checkpoint.pt",
+      "sha256": "b1a21464a481c51367564506180a92b65725cb2fe21cd558adf2e4003ae42e83",
+      "source_member": "results/core/E1/beauty/sasrec_ce/1caa035a65800bf8677286622a7eb676b41163aacc31aab4a970556f5184cb8c/7/checkpoint.pt"
+    },
+    {
+      "bytes": 1244,
+      "kind": "config",
+      "path": "checkpoints/master_session1/E1/sasrec_ce/default/7/config.yaml",
+      "sha256": "6d41cd7444bcc520a687cbb805cc5665efeccc9f592a5ad80e2382fabeadf518",
+      "source_member": "results/core/E1/beauty/sasrec_ce/1caa035a65800bf8677286622a7eb676b41163aacc31aab4a970556f5184cb8c/7/config.yaml"
+    },
+    {
+      "bytes": 13201850,
+      "kind": "latest",
+      "path": "checkpoints/master_session1/E1/sasrec_ce/default/7/latest.pt",
+      "sha256": "9dc300294accbbad00702f26b7a72c1d40eb7bd62530d02cd895a0497b745522",
+      "source_member": "results/core/E1/beauty/sasrec_ce/1caa035a65800bf8677286622a7eb676b41163aacc31aab4a970556f5184cb8c/7/latest.pt"
+    },
+    {
+      "bytes": 3593641,
+      "kind": "best",
+      "path": "checkpoints/master_session1/E2/attention_ablation/A1/42/checkpoint.pt",
+      "sha256": "f246270c996d9503fcdec84d59ba0318aa9816cb6d5ad3d421bcc5ff71c5f1bf",
+      "source_member": "results/core/E2/beauty/attention_ablation/37db7d9f4412e105f922f67290a54d4a3859884f1bc4343e6b16ecc60e9c575a/42/checkpoint.pt"
+    },
+    {
+      "bytes": 1269,
+      "kind": "config",
+      "path": "checkpoints/master_session1/E2/attention_ablation/A1/42/config.yaml",
+      "sha256": "d7375f4dd0fa8a0e27973b9f93032403dde62177c1f414149666c1dd72358bab",
+      "source_member": "results/core/E2/beauty/attention_ablation/37db7d9f4412e105f922f67290a54d4a3859884f1bc4343e6b16ecc60e9c575a/42/config.yaml"
+    },
+    {
+      "bytes": 14417402,
+      "kind": "latest",
+      "path": "checkpoints/master_session1/E2/attention_ablation/A1/42/latest.pt",
+      "sha256": "6235e4a788c501d6fa399e88058e97926a5117f621c76120647d99a64303f2a3",
+      "source_member": "results/core/E2/beauty/attention_ablation/37db7d9f4412e105f922f67290a54d4a3859884f1bc4343e6b16ecc60e9c575a/42/latest.pt"
+    },
+    {
+      "bytes": 3593641,
+      "kind": "best",
+      "path": "checkpoints/master_session1/E2/attention_ablation/A1/7/checkpoint.pt",
+      "sha256": "2e484118e5bcf47f3250d4f40c7e07b1e7f356b8d17e71a7e740210eb90f08e4",
+      "source_member": "results/core/E2/beauty/attention_ablation/5afd5f7f19925086b39503019cc213212558687c6f54d8fe7c0057cd4bf2d1ef/7/checkpoint.pt"
+    },
+    {
+      "bytes": 1268,
+      "kind": "config",
+      "path": "checkpoints/master_session1/E2/attention_ablation/A1/7/config.yaml",
+      "sha256": "744177d76c83e0e50dffaf16d5d59f2738ad2bceec7f2fa0809ae7f095cafa28",
+      "source_member": "results/core/E2/beauty/attention_ablation/5afd5f7f19925086b39503019cc213212558687c6f54d8fe7c0057cd4bf2d1ef/7/config.yaml"
+    },
+    {
+      "bytes": 14422650,
+      "kind": "latest",
+      "path": "checkpoints/master_session1/E2/attention_ablation/A1/7/latest.pt",
+      "sha256": "a35eec027fbb8a727e358411af4d55c1bfc15ab01fbbcfbf79de5f2167fdc52b",
+      "source_member": "results/core/E2/beauty/attention_ablation/5afd5f7f19925086b39503019cc213212558687c6f54d8fe7c0057cd4bf2d1ef/7/latest.pt"
+    },
+    {
+      "bytes": 3593641,
+      "kind": "best",
+      "path": "checkpoints/master_session1/E2/attention_ablation/A2/42/checkpoint.pt",
+      "sha256": "4d63d0c1365f41cf5fcfcaff664f41888cfc59596f54bb9d82dc2aac5806e7d4",
+      "source_member": "results/core/E2/beauty/attention_ablation/9054d40fc285e06dc2115c6d94eea8f1ad6031457628b6768fad6621ac55a422/42/checkpoint.pt"
+    },
+    {
+      "bytes": 1268,
+      "kind": "config",
+      "path": "checkpoints/master_session1/E2/attention_ablation/A2/42/config.yaml",
+      "sha256": "28c600ec2badee10d2f9f540bb5960dc365b6b76591e425e825703bc8443a233",
+      "source_member": "results/core/E2/beauty/attention_ablation/9054d40fc285e06dc2115c6d94eea8f1ad6031457628b6768fad6621ac55a422/42/config.yaml"
+    },
+    {
+      "bytes": 14403578,
+      "kind": "latest",
+      "path": "checkpoints/master_session1/E2/attention_ablation/A2/42/latest.pt",
+      "sha256": "13e14f3a9b8d6ddc6d45a9cd49c1749a36e7b30a5c066de67e3cdab13ea6ea28",
+      "source_member": "results/core/E2/beauty/attention_ablation/9054d40fc285e06dc2115c6d94eea8f1ad6031457628b6768fad6621ac55a422/42/latest.pt"
+    },
+    {
+      "bytes": 3593641,
+      "kind": "best",
+      "path": "checkpoints/master_session1/E2/attention_ablation/A2/7/checkpoint.pt",
+      "sha256": "79c17bcd8c25ac038f6a85cf03db60d93d323b968c438c9e6da0ac51ab6621c4",
+      "source_member": "results/core/E2/beauty/attention_ablation/e6ff9f3f853fab9f229d33a1e91e0e32421ff123a006a04427982e3a565954a4/7/checkpoint.pt"
+    },
+    {
+      "bytes": 1267,
+      "kind": "config",
+      "path": "checkpoints/master_session1/E2/attention_ablation/A2/7/config.yaml",
+      "sha256": "49d9a570050c3fd119a03f8a1c34d17026d7b6f12ddc5b8170c4caac6106e2d6",
+      "source_member": "results/core/E2/beauty/attention_ablation/e6ff9f3f853fab9f229d33a1e91e0e32421ff123a006a04427982e3a565954a4/7/config.yaml"
+    },
+    {
+      "bytes": 14402426,
+      "kind": "latest",
+      "path": "checkpoints/master_session1/E2/attention_ablation/A2/7/latest.pt",
+      "sha256": "adf5397d0bbe410b91f1d7f9b8c481f0a4df5d29cda2180f2dbfb99343bf73b4",
+      "source_member": "results/core/E2/beauty/attention_ablation/e6ff9f3f853fab9f229d33a1e91e0e32421ff123a006a04427982e3a565954a4/7/latest.pt"
+    },
+    {
+      "bytes": 3593641,
+      "kind": "best",
+      "path": "checkpoints/master_session1/E2/attention_ablation/A3/7/checkpoint.pt",
+      "sha256": "b75fec019cfae8adee7a1697c294b0640aeae2bbfad1b2a69de0176e6e9bfb40",
+      "source_member": "results/core/E2/beauty/attention_ablation/22a26b01fe41f65952af1514f3ee6b3b784c73bccfa22ec57c97ce4866b26bc8/7/checkpoint.pt"
+    },
+    {
+      "bytes": 1269,
+      "kind": "config",
+      "path": "checkpoints/master_session1/E2/attention_ablation/A3/7/config.yaml",
+      "sha256": "6a928cf27424fc45b79d607f4e52797d32168db3bf8a46a83b9bd71880ba67f9",
+      "source_member": "results/core/E2/beauty/attention_ablation/22a26b01fe41f65952af1514f3ee6b3b784c73bccfa22ec57c97ce4866b26bc8/7/config.yaml"
+    },
+    {
+      "bytes": 14415162,
+      "kind": "latest",
+      "path": "checkpoints/master_session1/E2/attention_ablation/A3/7/latest.pt",
+      "sha256": "24a1cea9f07f26bb213fccd7d1eca29e42c82665be69efcc1abe5518b2014bc1",
+      "source_member": "results/core/E2/beauty/attention_ablation/22a26b01fe41f65952af1514f3ee6b3b784c73bccfa22ec57c97ce4866b26bc8/7/latest.pt"
+    },
+    {
+      "bytes": 3593641,
+      "kind": "best",
+      "path": "checkpoints/master_session1/E2/attention_ablation/A4/7/checkpoint.pt",
+      "sha256": "1be27cf3899560a7e49c637746f5f91ff573895d8f225a6cddb45cf59c60be65",
+      "source_member": "results/core/E2/beauty/attention_ablation/9ef731e0aab31e729cc9276cdb937caaa948a22c34bf3bc0a35442aeca47189b/7/checkpoint.pt"
+    },
+    {
+      "bytes": 1276,
+      "kind": "config",
+      "path": "checkpoints/master_session1/E2/attention_ablation/A4/7/config.yaml",
+      "sha256": "61d60811230e43a484cc807033341254df903ea2ee5d3a2b4c4d61b2c5efa7c0",
+      "source_member": "results/core/E2/beauty/attention_ablation/9ef731e0aab31e729cc9276cdb937caaa948a22c34bf3bc0a35442aeca47189b/7/config.yaml"
+    },
+    {
+      "bytes": 14422650,
+      "kind": "latest",
+      "path": "checkpoints/master_session1/E2/attention_ablation/A4/7/latest.pt",
+      "sha256": "112a3ff9d40133eb782a25bd77ad9dbadc92ac1826b5d10d4e4ed28aee094ca3",
+      "source_member": "results/core/E2/beauty/attention_ablation/9ef731e0aab31e729cc9276cdb937caaa948a22c34bf3bc0a35442aeca47189b/7/latest.pt"
+    },
+    {
+      "bytes": 3593641,
+      "kind": "best",
+      "path": "checkpoints/e2_final/E2/attention_ablation/A3/42/checkpoint.pt",
+      "sha256": "3ba360bc26e2a4b958ad26d19cbcc98a5e36471869a3c82b2a0f949b88f4a190",
+      "source_member": "results/core/E2/beauty/attention_ablation/6ea48870e3e5387e3addf342c90265551924503a97325848cbf5c28b2e83a26d/42/checkpoint.pt"
+    },
+    {
+      "bytes": 14417466,
+      "kind": "latest",
+      "path": "checkpoints/e2_final/E2/attention_ablation/A3/42/latest.pt",
+      "sha256": "2cdc70ef1bcff859321a48b365344e8191cd6ec5f5071751c5f183d13a45c2b1",
+      "source_member": "results/core/E2/beauty/attention_ablation/6ea48870e3e5387e3addf342c90265551924503a97325848cbf5c28b2e83a26d/42/latest.pt"
+    },
+    {
+      "bytes": 1270,
+      "kind": "config",
+      "path": "checkpoints/e2_final/E2/attention_ablation/A3/42/config.yaml",
+      "sha256": "f549d2f2a39d08b7e7277ebf50921668f0288d7310d164362557ccaac0887037",
+      "source_member": "results/core/E2/beauty/attention_ablation/6ea48870e3e5387e3addf342c90265551924503a97325848cbf5c28b2e83a26d/42/config.yaml"
+    },
+    {
+      "bytes": 3593641,
+      "kind": "best",
+      "path": "checkpoints/e2_final/E2/attention_ablation/A4/42/checkpoint.pt",
+      "sha256": "036823ca6adeef64e921c2aca0aab5e755da816dce012d7d096cc8d3674775c5",
+      "source_member": "results/core/E2/beauty/attention_ablation/63f6228276d0978e91eeb9bd44122de298a65229a2a2abfef1ab15659badf1f9/42/checkpoint.pt"
+    },
+    {
+      "bytes": 14416314,
+      "kind": "latest",
+      "path": "checkpoints/e2_final/E2/attention_ablation/A4/42/latest.pt",
+      "sha256": "1a6d6328572048ab4359e641641e635e2c845c1e37a0b5f2434bd48d5f5034f9",
+      "source_member": "results/core/E2/beauty/attention_ablation/63f6228276d0978e91eeb9bd44122de298a65229a2a2abfef1ab15659badf1f9/42/latest.pt"
+    },
+    {
+      "bytes": 1277,
+      "kind": "config",
+      "path": "checkpoints/e2_final/E2/attention_ablation/A4/42/config.yaml",
+      "sha256": "9a621dbce1d11816640aef59364c38485d3ee5f3c393bafe6680b52c969928f9",
+      "source_member": "results/core/E2/beauty/attention_ablation/63f6228276d0978e91eeb9bd44122de298a65229a2a2abfef1ab15659badf1f9/42/config.yaml"
+    },
+    {
+      "bytes": 3593641,
+      "kind": "best",
+      "path": "checkpoints/e2_final/E2/attention_ablation/A1/2026/checkpoint.pt",
+      "sha256": "f796e66fa08fd07f142eebbbd7a9232cd36abeb33652e7f00747a65779dbe133",
+      "source_member": "results/core/E2/beauty/attention_ablation/2747bf52e166e54d52d11a79dbd68d2641c874dfdfe3cd4100c3250306ade5e3/2026/checkpoint.pt"
+    },
+    {
+      "bytes": 14422650,
+      "kind": "latest",
+      "path": "checkpoints/e2_final/E2/attention_ablation/A1/2026/latest.pt",
+      "sha256": "71ed9d7cb02ab95e18bbbb958dcc78b1f709c186847ca7c9fedc642cde84e69a",
+      "source_member": "results/core/E2/beauty/attention_ablation/2747bf52e166e54d52d11a79dbd68d2641c874dfdfe3cd4100c3250306ade5e3/2026/latest.pt"
+    },
+    {
+      "bytes": 1271,
+      "kind": "config",
+      "path": "checkpoints/e2_final/E2/attention_ablation/A1/2026/config.yaml",
+      "sha256": "f338d28849b67d54b7f7761f73e0308df149e8cf4b710e4fc78ffeed20cd30cc",
+      "source_member": "results/core/E2/beauty/attention_ablation/2747bf52e166e54d52d11a79dbd68d2641c874dfdfe3cd4100c3250306ade5e3/2026/config.yaml"
+    },
+    {
+      "bytes": 3593641,
+      "kind": "best",
+      "path": "checkpoints/e2_final/E2/attention_ablation/A2/2026/checkpoint.pt",
+      "sha256": "7a07b64ac70b770dc2bfc893f669adbf4e5cb94d32d2d0d06780e2d008593508",
+      "source_member": "results/core/E2/beauty/attention_ablation/e965b33bdd20f0aac7d6addf054fc40f9046845ff0f14f2381d31c098344a2c4/2026/checkpoint.pt"
+    },
+    {
+      "bytes": 14408186,
+      "kind": "latest",
+      "path": "checkpoints/e2_final/E2/attention_ablation/A2/2026/latest.pt",
+      "sha256": "31436085cbc326e39d339f456b9dd55d172b8bc18497b12fbc1353f9e40ea70c",
+      "source_member": "results/core/E2/beauty/attention_ablation/e965b33bdd20f0aac7d6addf054fc40f9046845ff0f14f2381d31c098344a2c4/2026/latest.pt"
+    },
+    {
+      "bytes": 1270,
+      "kind": "config",
+      "path": "checkpoints/e2_final/E2/attention_ablation/A2/2026/config.yaml",
+      "sha256": "ce36db6b5b1b6be1cc9898b6d2542a973e1bec9f5c6976867071ddaa161e39a5",
+      "source_member": "results/core/E2/beauty/attention_ablation/e965b33bdd20f0aac7d6addf054fc40f9046845ff0f14f2381d31c098344a2c4/2026/config.yaml"
+    },
+    {
+      "bytes": 3593641,
+      "kind": "best",
+      "path": "checkpoints/e2_final/E2/attention_ablation/A3/2026/checkpoint.pt",
+      "sha256": "1259dbb6b9e3b045587018df0331408cdb1809a35f89778435822261a9fdf9aa",
+      "source_member": "results/core/E2/beauty/attention_ablation/1f025ce20ea36cc92b47a5f52613bdd0cb59afe96f9721d1d3717ef60122a919/2026/checkpoint.pt"
+    },
+    {
+      "bytes": 14416314,
+      "kind": "latest",
+      "path": "checkpoints/e2_final/E2/attention_ablation/A3/2026/latest.pt",
+      "sha256": "1f665837205fc6e01f04a697aa530e0c7ca170287eb1e9559613ea3680f8dcfb",
+      "source_member": "results/core/E2/beauty/attention_ablation/1f025ce20ea36cc92b47a5f52613bdd0cb59afe96f9721d1d3717ef60122a919/2026/latest.pt"
+    },
+    {
+      "bytes": 1272,
+      "kind": "config",
+      "path": "checkpoints/e2_final/E2/attention_ablation/A3/2026/config.yaml",
+      "sha256": "7f8190fe77fa5d4b59663fb0ff01dde8109f79f356b740db548a79f35b37b2c2",
+      "source_member": "results/core/E2/beauty/attention_ablation/1f025ce20ea36cc92b47a5f52613bdd0cb59afe96f9721d1d3717ef60122a919/2026/config.yaml"
+    },
+    {
+      "bytes": 3593641,
+      "kind": "best",
+      "path": "checkpoints/e2_final/E2/attention_ablation/A4/2026/checkpoint.pt",
+      "sha256": "e95ab6d074e3748ad54a4158fb9e7d38d5b5508efc9f5dabba92f83b1cb9cd8a",
+      "source_member": "results/core/E2/beauty/attention_ablation/0f10f3e7b658bf6e903a336bc9d8eb6ba57e4130a649af5d47efdc6b70b44945/2026/checkpoint.pt"
+    },
+    {
+      "bytes": 14409914,
+      "kind": "latest",
+      "path": "checkpoints/e2_final/E2/attention_ablation/A4/2026/latest.pt",
+      "sha256": "582f2c34c269c3f8e6e3effb9efc3b77bfe5e74b05a4f29ae5b713c5727026e7",
+      "source_member": "results/core/E2/beauty/attention_ablation/0f10f3e7b658bf6e903a336bc9d8eb6ba57e4130a649af5d47efdc6b70b44945/2026/latest.pt"
+    },
+    {
+      "bytes": 1279,
+      "kind": "config",
+      "path": "checkpoints/e2_final/E2/attention_ablation/A4/2026/config.yaml",
+      "sha256": "22a153b81362ad103ef3b6113db52de7e44cc2e87553e4c08a34a0dee8e4032c",
+      "source_member": "results/core/E2/beauty/attention_ablation/0f10f3e7b658bf6e903a336bc9d8eb6ba57e4130a649af5d47efdc6b70b44945/2026/config.yaml"
+    }
+  ],
+  "latest_states": 27,
+  "models": {
+    "E1__bert4rec__default__2026": {
+      "checkpoint": "checkpoints/master_session1/E1/bert4rec/default/2026/checkpoint.pt",
+      "config_hash": "385ff5753008bed9279e3373838e228142afc051ed3ffbe9eb52363ce558b5cb",
+      "experiment": "E1",
+      "format": "pytorch_weights_only",
+      "model": "bert4rec",
+      "seed": 2026,
+      "variant": "default"
+    },
+    "E1__bert4rec__default__42": {
+      "checkpoint": "checkpoints/master_session1/E1/bert4rec/default/42/checkpoint.pt",
+      "config_hash": "be46846e295aed6d4ad0385cc414f7849db12f6e6917ec0dbe8cb2e5a4b7bf3a",
+      "experiment": "E1",
+      "format": "pytorch_weights_only",
+      "model": "bert4rec",
+      "seed": 42,
+      "variant": "default"
+    },
+    "E1__bert4rec__default__7": {
+      "checkpoint": "checkpoints/master_session1/E1/bert4rec/default/7/checkpoint.pt",
+      "config_hash": "71f63dd5124e097509a331db6b242b326a93806fc6b8c33c7d37313168abdcab",
+      "experiment": "E1",
+      "format": "pytorch_weights_only",
+      "model": "bert4rec",
+      "seed": 7,
+      "variant": "default"
+    },
+    "E1__fenrec__default__2026": {
+      "checkpoint": "checkpoints/master_session1/E1/fenrec/default/2026/checkpoint.pt",
+      "config_hash": "d17ade693033408640c57fab50e85ce6935b74782fd8a37814265e115a826f24",
+      "experiment": "E1",
+      "format": "pytorch_weights_only",
+      "model": "fenrec",
+      "seed": 2026,
+      "variant": "default"
+    },
+    "E1__fenrec__default__42": {
+      "checkpoint": "checkpoints/master_session1/E1/fenrec/default/42/checkpoint.pt",
+      "config_hash": "60b953e123629155c9b36ab24e2551f601bf98a041ea9585eaff442b87eb2e04",
+      "experiment": "E1",
+      "format": "pytorch_weights_only",
+      "model": "fenrec",
+      "seed": 42,
+      "variant": "default"
+    },
+    "E1__fenrec__default__7": {
+      "checkpoint": "checkpoints/master_session1/E1/fenrec/default/7/checkpoint.pt",
+      "config_hash": "d1cf1966a06d8bff795704ca8728798c4594519d5aac50ce1c738a3f04dc7945",
+      "experiment": "E1",
+      "format": "pytorch_weights_only",
+      "model": "fenrec",
+      "seed": 7,
+      "variant": "default"
+    },
+    "E1__gru4rec_ce__default__2026": {
+      "checkpoint": "checkpoints/master_session1/E1/gru4rec_ce/default/2026/checkpoint.pt",
+      "config_hash": "20e4cabfe4e25112f7b5a4e72822b2242809f49d4188a6856e59c7ccc975f94e",
+      "experiment": "E1",
+      "format": "pytorch_weights_only",
+      "model": "gru4rec_ce",
+      "seed": 2026,
+      "variant": "default"
+    },
+    "E1__gru4rec_ce__default__42": {
+      "checkpoint": "checkpoints/master_session1/E1/gru4rec_ce/default/42/checkpoint.pt",
+      "config_hash": "785d9bd492ff638dde8921d0fc5241aec56725a36c107fc753abe8d3c62bc780",
+      "experiment": "E1",
+      "format": "pytorch_weights_only",
+      "model": "gru4rec_ce",
+      "seed": 42,
+      "variant": "default"
+    },
+    "E1__gru4rec_ce__default__7": {
+      "checkpoint": "checkpoints/master_session1/E1/gru4rec_ce/default/7/checkpoint.pt",
+      "config_hash": "216d0900cbf946b5654c56e5ccc40261ff60b421be52a21fcc669be56acc7f12",
+      "experiment": "E1",
+      "format": "pytorch_weights_only",
+      "model": "gru4rec_ce",
+      "seed": 7,
+      "variant": "default"
+    },
+    "E1__mostpopular__default__7": {
+      "checkpoint": "checkpoints/master_session1/E1/mostpopular/default/7/checkpoint.pt",
+      "config_hash": "ff06c7545bae6eab42405cd2293efd76132be5158fe8883dbaa336a9002b2415",
+      "experiment": "E1",
+      "format": "numpy_npz",
+      "model": "mostpopular",
+      "seed": 7,
+      "variant": "default"
+    },
+    "E1__sasrec_bce__default__2026": {
+      "checkpoint": "checkpoints/master_session1/E1/sasrec_bce/default/2026/checkpoint.pt",
+      "config_hash": "3944d609fa569d0738d6406e724c17d9bf9ce313dc3f792de1b90696c651fc75",
+      "experiment": "E1",
+      "format": "pytorch_weights_only",
+      "model": "sasrec_bce",
+      "seed": 2026,
+      "variant": "default"
+    },
+    "E1__sasrec_bce__default__42": {
+      "checkpoint": "checkpoints/master_session1/E1/sasrec_bce/default/42/checkpoint.pt",
+      "config_hash": "dedb1d4a39e142e69b1c50256209e3197ad746da827c4a3c70e53b3981da2860",
+      "experiment": "E1",
+      "format": "pytorch_weights_only",
+      "model": "sasrec_bce",
+      "seed": 42,
+      "variant": "default"
+    },
+    "E1__sasrec_bce__default__7": {
+      "checkpoint": "checkpoints/master_session1/E1/sasrec_bce/default/7/checkpoint.pt",
+      "config_hash": "55e1c593268cc883810a3415738ed0318a0e6f6181488dd2beee7e3e642d4ee0",
+      "experiment": "E1",
+      "format": "pytorch_weights_only",
+      "model": "sasrec_bce",
+      "seed": 7,
+      "variant": "default"
+    },
+    "E1__sasrec_ce__default__2026": {
+      "checkpoint": "checkpoints/master_session1/E1/sasrec_ce/default/2026/checkpoint.pt",
+      "config_hash": "228181e90718b145a0c675e612378535a47c08bf0cf6c93b72da7f737a4ba18a",
+      "experiment": "E1",
+      "format": "pytorch_weights_only",
+      "model": "sasrec_ce",
+      "seed": 2026,
+      "variant": "default"
+    },
+    "E1__sasrec_ce__default__42": {
+      "checkpoint": "checkpoints/master_session1/E1/sasrec_ce/default/42/checkpoint.pt",
+      "config_hash": "d767bb837e92797add96447cbf7ae5f40d690050eb67f2edafe19547c65fc056",
+      "experiment": "E1",
+      "format": "pytorch_weights_only",
+      "model": "sasrec_ce",
+      "seed": 42,
+      "variant": "default"
+    },
+    "E1__sasrec_ce__default__7": {
+      "checkpoint": "checkpoints/master_session1/E1/sasrec_ce/default/7/checkpoint.pt",
+      "config_hash": "1caa035a65800bf8677286622a7eb676b41163aacc31aab4a970556f5184cb8c",
+      "experiment": "E1",
+      "format": "pytorch_weights_only",
+      "model": "sasrec_ce",
+      "seed": 7,
+      "variant": "default"
+    },
+    "E2__attention_ablation__A1__2026": {
+      "checkpoint": "checkpoints/e2_final/E2/attention_ablation/A1/2026/checkpoint.pt",
+      "config_hash": "2747bf52e166e54d52d11a79dbd68d2641c874dfdfe3cd4100c3250306ade5e3",
+      "experiment": "E2",
+      "format": "pytorch_weights_only",
+      "model": "attention_ablation",
+      "seed": 2026,
+      "variant": "A1"
+    },
+    "E2__attention_ablation__A1__42": {
+      "checkpoint": "checkpoints/master_session1/E2/attention_ablation/A1/42/checkpoint.pt",
+      "config_hash": "37db7d9f4412e105f922f67290a54d4a3859884f1bc4343e6b16ecc60e9c575a",
+      "experiment": "E2",
+      "format": "pytorch_weights_only",
+      "model": "attention_ablation",
+      "seed": 42,
+      "variant": "A1"
+    },
+    "E2__attention_ablation__A1__7": {
+      "checkpoint": "checkpoints/master_session1/E2/attention_ablation/A1/7/checkpoint.pt",
+      "config_hash": "5afd5f7f19925086b39503019cc213212558687c6f54d8fe7c0057cd4bf2d1ef",
+      "experiment": "E2",
+      "format": "pytorch_weights_only",
+      "model": "attention_ablation",
+      "seed": 7,
+      "variant": "A1"
+    },
+    "E2__attention_ablation__A2__2026": {
+      "checkpoint": "checkpoints/e2_final/E2/attention_ablation/A2/2026/checkpoint.pt",
+      "config_hash": "e965b33bdd20f0aac7d6addf054fc40f9046845ff0f14f2381d31c098344a2c4",
+      "experiment": "E2",
+      "format": "pytorch_weights_only",
+      "model": "attention_ablation",
+      "seed": 2026,
+      "variant": "A2"
+    },
+    "E2__attention_ablation__A2__42": {
+      "checkpoint": "checkpoints/master_session1/E2/attention_ablation/A2/42/checkpoint.pt",
+      "config_hash": "9054d40fc285e06dc2115c6d94eea8f1ad6031457628b6768fad6621ac55a422",
+      "experiment": "E2",
+      "format": "pytorch_weights_only",
+      "model": "attention_ablation",
+      "seed": 42,
+      "variant": "A2"
+    },
+    "E2__attention_ablation__A2__7": {
+      "checkpoint": "checkpoints/master_session1/E2/attention_ablation/A2/7/checkpoint.pt",
+      "config_hash": "e6ff9f3f853fab9f229d33a1e91e0e32421ff123a006a04427982e3a565954a4",
+      "experiment": "E2",
+      "format": "pytorch_weights_only",
+      "model": "attention_ablation",
+      "seed": 7,
+      "variant": "A2"
+    },
+    "E2__attention_ablation__A3__2026": {
+      "checkpoint": "checkpoints/e2_final/E2/attention_ablation/A3/2026/checkpoint.pt",
+      "config_hash": "1f025ce20ea36cc92b47a5f52613bdd0cb59afe96f9721d1d3717ef60122a919",
+      "experiment": "E2",
+      "format": "pytorch_weights_only",
+      "model": "attention_ablation",
+      "seed": 2026,
+      "variant": "A3"
+    },
+    "E2__attention_ablation__A3__42": {
+      "checkpoint": "checkpoints/e2_final/E2/attention_ablation/A3/42/checkpoint.pt",
+      "config_hash": "6ea48870e3e5387e3addf342c90265551924503a97325848cbf5c28b2e83a26d",
+      "experiment": "E2",
+      "format": "pytorch_weights_only",
+      "model": "attention_ablation",
+      "seed": 42,
+      "variant": "A3"
+    },
+    "E2__attention_ablation__A3__7": {
+      "checkpoint": "checkpoints/master_session1/E2/attention_ablation/A3/7/checkpoint.pt",
+      "config_hash": "22a26b01fe41f65952af1514f3ee6b3b784c73bccfa22ec57c97ce4866b26bc8",
+      "experiment": "E2",
+      "format": "pytorch_weights_only",
+      "model": "attention_ablation",
+      "seed": 7,
+      "variant": "A3"
+    },
+    "E2__attention_ablation__A4__2026": {
+      "checkpoint": "checkpoints/e2_final/E2/attention_ablation/A4/2026/checkpoint.pt",
+      "config_hash": "0f10f3e7b658bf6e903a336bc9d8eb6ba57e4130a649af5d47efdc6b70b44945",
+      "experiment": "E2",
+      "format": "pytorch_weights_only",
+      "model": "attention_ablation",
+      "seed": 2026,
+      "variant": "A4"
+    },
+    "E2__attention_ablation__A4__42": {
+      "checkpoint": "checkpoints/e2_final/E2/attention_ablation/A4/42/checkpoint.pt",
+      "config_hash": "63f6228276d0978e91eeb9bd44122de298a65229a2a2abfef1ab15659badf1f9",
+      "experiment": "E2",
+      "format": "pytorch_weights_only",
+      "model": "attention_ablation",
+      "seed": 42,
+      "variant": "A4"
+    },
+    "E2__attention_ablation__A4__7": {
+      "checkpoint": "checkpoints/master_session1/E2/attention_ablation/A4/7/checkpoint.pt",
+      "config_hash": "9ef731e0aab31e729cc9276cdb937caaa948a22c34bf3bc0a35442aeca47189b",
+      "experiment": "E2",
+      "format": "pytorch_weights_only",
+      "model": "attention_ablation",
+      "seed": 7,
+      "variant": "A4"
+    }
+  },
+  "parts": [
+    "configs/artifacts/master_session1_checkpoints.json",
+    "configs/artifacts/e2_final_checkpoints.json"
+  ],
+  "prior_22_runs_byte_unchanged": true,
+  "release_tag": "e2-final-checkpoints-v1",
+  "schema": 2,
+  "source_archive_sha256": "4bc3da79817ad1463f1c4ff16b2e9aa13efbad8e9caad20f9368cfb690acdc39",
+  "training_closed": true
+}

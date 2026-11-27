@@ -1,5 +1,7 @@
 # Experiment budget and Phase 5A performance report
 
+**Final course closure:** E1/E2 are complete; no remaining training/tuning/GPU-profiling budget is requested. The nine-job scenario in the session-one historical report is superseded: six E2 jobs ran, E3 was deferred. This file retains historical resource-planning evidence only. Use `COURSE_FINAL_REPORT_VI.md` for actual final recorded timings; do not launch deferred experiments to fill the original grid.
+
 Current course budget update (2026-11-27): the historical scenarios below are preserved. Actual official-session measurements and the reduced nine-job remaining-work scenario are now in [MASTER_SESSION1_ANALYSIS_VI.md](MASTER_SESSION1_ANALYSIS_VI.md) and `results/tables/master_session1/remaining_budget_scenarios.csv`. E4/E5 are deferred and TIGER/CRAMER are theory-only in the course scope. Do not treat the original Full/Core grid caps below as the current course execution requirement.
 
 Generated 2026-11-26 from measured artifacts. No full research grid was launched. Prior pilot artifacts and the original experiment grid are preserved.

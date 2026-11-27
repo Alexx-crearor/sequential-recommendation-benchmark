@@ -1,5 +1,11 @@
 # Local artifact downloads
 
+## Final closed-course E2 archive
+
+Original private final ZIP: `artifacts/e2_final/seqrec-e2-final-20261127_122610_032968.zip`, SHA256 `4bc3da79817ad1463f1c4ff16b2e9aa13efbad8e9caad20f9368cfb690acdc39`. The final importer compares all 262 files of the earlier 22 runs, reuses identical immutable bytes through same-filesystem hard links and extracts only new content. Original ZIPs and all historical evidence are preserved. Never edit hard-linked raw files in place.
+
+Final public weights: `python scripts/fetch_course_final_checkpoints.py`, optionally `--with-resume`. This uses the existing session-one Release plus [a six-run E2 delta](https://github.com/Alexx-crearor/sequential-recommendation-benchmark/releases/tag/e2-final-checkpoints-v1), avoiding a full repack of old checkpoints. It yields 28 best or 55 total best/latest states; no raw predictions/dataset/logs/credentials are published. The course is closed: no further training or profiling is requested.
+
 ## Official master session 1
 
 Original private ZIP: `artifacts/master_session1/seqrec-master-results-20261126_234725_576013.zip`, SHA256 `9f6b30dd3d29750b21ef64ddd7c8fea88c66d1c3ca52ea44a9809b3cc323cfab`. The repository owner's copy is preserved here, alongside its untouched external original. Run `python scripts/analyze_master_session1.py` locally with the matching Beauty bundle to re-audit and analyze; public-summary notebook mode does not require the private raw ZIP.

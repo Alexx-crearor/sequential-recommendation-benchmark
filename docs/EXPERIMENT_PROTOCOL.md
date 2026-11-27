@@ -1,6 +1,14 @@
-# Experiment protocol v3
+# Experiment protocol v4 — final closed course scope
 
-## Current course amendment — 2026-11-27
+## Final closure after complete E2
+
+The final course scope is closed: tuning COMPLETE, E1 COMPLETE 16/16, E2 COMPLETE 12/12, E3/E4/E5 DEFERRED, TIGER/CRAMER THEORY_ONLY, E7 recorded-efficiency analysis COMPLETE with dedicated GPU profiling DEFERRED, E8 COMPLETE. No further training, tuning or GPU profiling is requested. The full 28/127 research-grid count is not the course completion criterion. Resource/course limits determine the closure, not test rankings.
+
+The final archive SHA256 is `4bc3da79817ad1463f1c4ff16b2e9aa13efbad8e9caad20f9368cfb690acdc39`. All previous 22 runs are unchanged, six additional E2 runs complete the design. All three E2 contrasts (A2−A1, A3−A2, A4−A3) use three fitted seeds and paired-user percentile bootstrap for all metrics, full/warm cohorts. Objectives, architecture factors, full-catalogue ranking, splits, validation selection and stopping budgets are unchanged. A2/A3 changes a supervision package, not only one scalar objective; do not infer universal causal relationships from the ablations.
+
+Current results/methods/limitations are in `COURSE_FINAL_REPORT_VI.md` and `EXPERIMENT_METHODS_REPRODUCIBILITY_VI.md`. The historical amendments below remain evidence of prior plans and partial snapshots, not current execution instructions. Closed scope/jobs are guarded against reopening by old course commands and historical re-analysis.
+
+## Historical course amendment after session 1 — superseded by closure
 
 The resource-limited course scope is frozen in `configs/experiments/course_scope.yaml`, with exact original resolved jobs in `course_jobs.json`. The reason is GPU time and course requirements, independent of test performance. Preserve E1 three seeds and E2 A1-A4 three-seed design; execute E3 only for SASRec-CE/BERT4Rec/FENRec at retention 0.4/1.0 seed 7. Defer E4/E5; TIGER/CRAMER are theory-only. Original Full/Core grids remain historical optional designs, not the current execution obligation.
 

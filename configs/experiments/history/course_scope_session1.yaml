@@ -1,0 +1,36 @@
+name: course_resource_reduced_20261127
+source_archive_sha256: 9f6b30dd3d29750b21ef64ddd7c8fea88c66d1c3ca52ea44a9809b3cc323cfab
+reason: GPU time budget and course-project requirements; scope is not selected using test scores
+dataset: beauty
+E1:
+  seeds: [7, 42, 2026]
+  models: [mostpopular, gru4rec_ce, sasrec_bce, sasrec_ce, bert4rec, fenrec]
+  deterministic_mostpopular_runs: 1
+  status: COMPLETED_16_OF_16
+E2:
+  seeds: [7, 42, 2026]
+  variants: [A1, A2, A3, A4]
+  status: PARTIAL_6_OF_12
+E3:
+  seeds: [7]
+  models: [sasrec_ce, bert4rec, fenrec]
+  retention: [0.4, 1.0]
+  status: PENDING
+  retention_1_0: REUSE_AVAILABLE_FROM_E1_NOT_YET_E3_SUCCESS
+  common_warm_ratios: [0.4, 0.7, 1.0]
+  common_warm_note: Preserve the original archived comparison/configuration protocol; narrowing executed ratios does not silently redefine the common-warm cohort
+E4: DEFERRED
+E5: DEFERRED
+TIGER: THEORY_ONLY
+CRAMER: THEORY_ONLY
+E7:
+  dedicated_gpu_measurements: DEFERRED
+  use_existing_training_and_embedded_inference_logs: true
+E8:
+  location: PERSONAL_MACHINE
+  source: VERIFIED_E1_PREDICTIONS
+execution:
+  training_testing_evaluation_gpu_measurements: KAGGLE_ONLY
+  analysis_figures_publication: PERSONAL_MACHINE_ONLY
+  resume_manifest: configs/experiments/course_jobs.json
+  original_grid_preserved: true

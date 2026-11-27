@@ -1,7 +1,11 @@
-name: course_resource_reduced_20261127
-source_archive_sha256: 9f6b30dd3d29750b21ef64ddd7c8fea88c66d1c3ca52ea44a9809b3cc323cfab
-reason: GPU time budget and course-project requirements; scope is not selected using test scores
+name: data_mining_course_final_closed_20261127
+source_archive_sha256: 4bc3da79817ad1463f1c4ff16b2e9aa13efbad8e9caad20f9368cfb690acdc39
+training_closed: true
+reason: Final course scope closed for GPU-resource limits and course requirements; not selected using test scores
 dataset: beauty
+Hyperparameter_Tuning:
+  status: COMPLETE
+  trials: 15
 E1:
   seeds: [7, 42, 2026]
   models: [mostpopular, gru4rec_ce, sasrec_bce, sasrec_ce, bert4rec, fenrec]
@@ -10,27 +14,25 @@ E1:
 E2:
   seeds: [7, 42, 2026]
   variants: [A1, A2, A3, A4]
-  status: PARTIAL_6_OF_12
-E3:
-  seeds: [7]
-  models: [sasrec_ce, bert4rec, fenrec]
-  retention: [0.4, 1.0]
-  status: PENDING
-  retention_1_0: REUSE_AVAILABLE_FROM_E1_NOT_YET_E3_SUCCESS
-  common_warm_ratios: [0.4, 0.7, 1.0]
-  common_warm_note: Preserve the original archived comparison/configuration protocol; narrowing executed ratios does not silently redefine the common-warm cohort
+  status: COMPLETED_12_OF_12
+E3: DEFERRED
 E4: DEFERRED
 E5: DEFERRED
 TIGER: THEORY_ONLY
 CRAMER: THEORY_ONLY
 E7:
+  recorded_efficiency_analysis: COMPLETE
   dedicated_gpu_measurements: DEFERRED
   use_existing_training_and_embedded_inference_logs: true
 E8:
+  status: COMPLETE
   location: PERSONAL_MACHINE
   source: VERIFIED_E1_PREDICTIONS
 execution:
-  training_testing_evaluation_gpu_measurements: KAGGLE_ONLY
+  no_further_training_tuning_or_gpu_profiling: true
+  requested_remaining_training_runs: 0
+  original_full_grid_reference: 28/127; not requested
   analysis_figures_publication: PERSONAL_MACHINE_ONLY
-  resume_manifest: configs/experiments/course_jobs.json
+  completed_jobs_manifest: configs/experiments/course_jobs.json
+  historical_scope: configs/experiments/history/course_scope_session1.yaml
   original_grid_preserved: true

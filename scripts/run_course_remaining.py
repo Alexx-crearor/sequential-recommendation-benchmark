@@ -17,6 +17,9 @@ def main():
     parser.add_argument("--device", default="cuda:0")
     parser.add_argument("--run", action="store_true", help="Execute selected jobs; permitted only in a Kaggle runtime")
     args = parser.parse_args()
+    current = _bootstrap.ROOT / "configs/experiments/course_jobs.json"
+    if args.run and current.exists() and json.loads(current.read_text(encoding="utf-8")).get("training_closed"):
+        parser.error("The Data Mining course experimental scope is CLOSED: no further training, tuning or GPU profiling is requested")
     jobs = json.loads(args.manifest.read_text(encoding="utf-8"))["jobs"]
     selected = [j for j in jobs if (not args.experiment or j["experiment"] == args.experiment)
                 and (args.archive_job_id is None or j["archive_job_id"] == args.archive_job_id)]
@@ -32,7 +35,7 @@ def main():
             raise ValueError("Frozen job configuration changed")
         relative = Path(job["path"]).relative_to("results/core")
         path = args.results_root / relative
-        state = "PENDING"
+        state = "LOCAL_ARTIFACTS_NOT_RESTORED"
         if (path / "status.json").exists():
             state = json.loads((path / "status.json").read_text())["state"]
             if state == "SUCCESS":

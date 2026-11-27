@@ -1,6 +1,12 @@
 # Kaggle guide: Phase 5A
 
-## Current course continuation after official session 1
+## Final course scope is CLOSED
+
+The last Kaggle session completed E2 12/12 and official E1/E2 total 28 runs. No further training, tuning, evaluation pass or GPU profiling is requested for the course. E3/E4/E5 are DEFERRED, TIGER/CRAMER THEORY_ONLY, recorded E7 analysis COMPLETE but dedicated profiling DEFERRED, E8 COMPLETE. The old continuation commands below are historical only; the course driver rejects --run under the closed scope.
+
+Use personal-machine analysis instead: `python scripts/analyze_course_final.py`, `python scripts/gen_fig_course_final.py`, `python scripts/write_course_final_report.py`, or the three final notebooks. Original ZIPs and dataset are required for full raw audit; public aggregate notebook mode does not require them. Checkpoints: `python scripts/fetch_course_final_checkpoints.py`, with `--with-resume` to include all latest states. This reuses the old 22-run Release and a new six-run delta, not a full weights repack. See `COURSE_FINAL_REPORT_VI.md` for final conclusions and limitations.
+
+## Historical course continuation after session 1 (do not run after closure)
 
 The original master export stopped at BUDGET_STOP, 22/127: E1 16/16 and E2 6/12. Use the frozen resource-limited [course scope](../configs/experiments/course_scope.yaml) and [official-session report](MASTER_SESSION1_ANALYSIS_VI.md), rather than expanding the old full grid below. Remaining new training is six E2 jobs and three E3 retention-0.4 jobs; E3 retention 1.0 reuses E1. E4/E5 are deferred; TIGER/CRAMER theory-only. This decision is resource/course driven, not based on test rankings.
 

@@ -308,7 +308,10 @@ def analyze(archive, root, bundle, resamples=10000):
     outputs["course_manifest"] = pd.DataFrame([{k: v for k, v in j.items() if k != "config"} for j in revised])
     for name, data in outputs.items():
         data.to_csv(tables / f"{name}.csv", index=False)
-    write_json(root / "configs/experiments/course_jobs.json", {"source_archive_sha256": ARCHIVE_SHA256, "reason": "GPU time budget and course-project scope; not test-score-driven", "jobs": revised})
+    current_plan = root / "configs/experiments/course_jobs.json"
+    historical = current_plan.exists() and read_json(current_plan).get("training_closed", False)
+    plan_target = private / "historical_course_jobs.json" if historical else current_plan
+    write_json(plan_target, {"source_archive_sha256": ARCHIVE_SHA256, "reason": "GPU time budget and course-project scope; not test-score-driven", "jobs": revised})
     report = {"state": "VERIFIED", "source_archive": ARCHIVE_NAME, "archive_sha256": ARCHIVE_SHA256, "archive_members": len(inventory),
               "archive_uncompressed_bytes": sum(i["bytes"] for i in inventory), "successful_runs": 22, "E1_success": 16, "E2_success": 6,
               "original_total": 127, "original_session_state": "BUDGET_STOP", "E7_gpu_state": "DEFERRED", "E8_local_state": "COMPLETED",

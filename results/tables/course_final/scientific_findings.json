@@ -1,0 +1,67 @@
+[
+  {
+    "ci_high": 0.0301283779921763,
+    "ci_low": 0.0265545226997106,
+    "contrast": "A2-A1",
+    "difference": 0.0283535611689323,
+    "experiment": "E2",
+    "id": "F1",
+    "inference_scope": "pointwise user-bootstrap conditional on fitted seeds; no multiplicity correction",
+    "limitation_vi": "Loss form, sampled-vs-full negative coverage v\u00e0 gradient normalization kh\u00e1c nhau; kh\u00f4ng ch\u1ec9 m\u1ed9t c\u00f4ng th\u1ee9c scalar",
+    "metric": "test_ndcg@10",
+    "observation_vi": "Next-item CE cao h\u01a1n next-item BCE trong c\u1ea5u h\u00ecnh matched \u0111\u00e3 ch\u1ea1y",
+    "seeds": "7,42,2026"
+  },
+  {
+    "ci_high": -0.0200057544098474,
+    "ci_low": -0.0240933423866021,
+    "contrast": "A3-A2",
+    "difference": -0.0220617324797798,
+    "experiment": "E2",
+    "id": "F2",
+    "inference_scope": "pointwise user-bootstrap conditional on fitted seeds; no multiplicity correction",
+    "limitation_vi": "Objective package \u0111\u1ed5i masking, v\u1ecb tr\u00ed/s\u1ed1 l\u01b0\u1ee3ng targets v\u00e0 m\u1eadt \u0111\u1ed9 supervision; kh\u00f4ng c\u00f4 l\u1eadp ri\u00eang corruption hay target density",
+    "metric": "test_ndcg@10",
+    "observation_vi": "Masked-item CE causal th\u1ea5p h\u01a1n next-item CE causal trong c\u1ea5u h\u00ecnh \u0111\u00e3 ch\u1ea1y",
+    "seeds": "7,42,2026"
+  },
+  {
+    "ci_high": 0.0034546512021761,
+    "ci_low": 0.0014608247555188,
+    "contrast": "A4-A3",
+    "difference": 0.0024601897885384,
+    "experiment": "E2",
+    "id": "F3",
+    "inference_scope": "pointwise user-bootstrap conditional on fitted seeds; no multiplicity correction",
+    "limitation_vi": "Matched attention contrast c\u00f3 \u0111i\u1ec1u ki\u1ec7n tr\u00ean backbone/hyperparameters/budget n\u00e0y; kh\u00f4ng ch\u1ee9ng minh bidirectional lu\u00f4n t\u1ed1t h\u01a1n causal",
+    "metric": "test_ndcg@10",
+    "observation_vi": "Bidirectional masked-item cao h\u01a1n causal masked-item trong c\u1ea5u h\u00ecnh \u0111\u00e3 ch\u1ea1y",
+    "seeds": "7,42,2026"
+  },
+  {
+    "ci_high": 0.0042849645730866,
+    "ci_low": 0.0017733011107771,
+    "contrast": "fenrec-sasrec_ce",
+    "difference": 0.0030166081101601,
+    "experiment": "E1",
+    "id": "F4",
+    "inference_scope": "conditional pointwise interval; no causal component attribution",
+    "limitation_vi": "M\u1ed9t dataset, ba seeds, ki\u1ebfn tr\u00fac/objective kh\u00e1c nhau; kh\u00f4ng quy k\u1ebft ph\u1ea7n t\u0103ng cho m\u1ed9t th\u00e0nh ph\u1ea7n FENRec v\u00ec E4 ch\u01b0a ch\u1ea1y",
+    "metric": "test_ndcg@10",
+    "observation_vi": "FENRec cao h\u01a1n SASRec-CE trong E1 Beauty; k\u1ebft qu\u1ea3 E1 kh\u00f4ng thay \u0111\u1ed5i sau phi\u00ean cu\u1ed1i",
+    "seeds": "7,42,2026"
+  },
+  {
+    "ci_high": null,
+    "ci_low": null,
+    "contrast": "all_six_incorrect",
+    "difference": null,
+    "experiment": "E8",
+    "id": "F5",
+    "inference_scope": "descriptive error analysis from unchanged E1 predictions",
+    "limitation_vi": "Top-K miss kh\u00f4ng t\u01b0\u01a1ng \u0111\u01b0\u01a1ng kh\u00f4ng th\u00edch m\u1ecdi item; c\u00e1c nh\u00f3m errors ch\u1ec9 m\u00f4 t\u1ea3, kh\u00f4ng gi\u1ea3i th\u00edch nh\u00e2n qu\u1ea3",
+    "metric": "fraction_at10",
+    "observation_vi": "Trung b\u00ecnh 83.86% users kh\u00f4ng c\u00f3 hit@10 \u1edf c\u1ea3 s\u00e1u m\u00f4 h\u00ecnh trong t\u1eebng seed",
+    "seeds": "7,42,2026"
+  }
+]

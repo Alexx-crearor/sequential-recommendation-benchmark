@@ -1,8 +1,42 @@
 # Sequential recommendation benchmark
 
-A reproducible PyTorch benchmark for chronological next-item recommendation, comparing recurrent, causal attention, bidirectional masked-item and FENRec models under full-catalogue evaluation. Phase 1-4 implementations and real Amazon Beauty pilot validation are complete. Pilot scores are pipeline checks, not final research results. Official Beauty E1 now has all three neural seeds; the remaining course scope is explicitly resource-limited below.
+A reproducible PyTorch benchmark for chronological next-item recommendation, comparing recurrent, causal attention, bidirectional masked-item and FENRec models under full-catalogue evaluation. The Data Mining course experimental scope is **COMPLETE AND CLOSED**: validation tuning, official Beauty E1 and E2, recorded-efficiency analysis and E8. No further training, tuning or GPU profiling is requested. The original research grid remains a reference, not an unfinished course obligation.
 
-## Official Kaggle session 1 — 2026-11-27 analysis
+## Final Data Mining course results
+
+The final original archive `seqrec-e2-final-20261127_122610_032968.zip` (SHA256 `4bc3da79817ad1463f1c4ff16b2e9aa13efbad8e9caad20f9368cfb690acdc39`) verifies **28 completed runs, 55 checkpoints and 306 status-hashed artifacts**. All 262 files of the earlier 22 runs are unchanged. Full per-user predictions/metrics, configs, checkpoint state and the archived dataset/split are verified. Matching raw bytes are hard-linked when supported; only new E2 data are extracted separately.
+
+| Component | Final course status |
+|---|---|
+| Hyperparameter tuning | COMPLETE: 15 validation-only trials |
+| E1 | COMPLETE 16/16: five neural models × three seeds + deterministic MostPopular once |
+| E2 | COMPLETE 12/12: A1–A4 × seeds 7,42,2026 |
+| E3 / E4 / E5 | DEFERRED for resource/course limits |
+| TIGER / CRAMER | THEORY_ONLY |
+| E7 | Recorded-efficiency analysis COMPLETE; dedicated GPU profiling DEFERRED |
+| E8 | COMPLETE from unchanged E1 predictions |
+
+The full grid count **28/127** is not the requested course scope. Scope closure is resource/course driven, not based on test rankings. The current frozen scope has **0 requested remaining training runs**; `run_course_remaining.py --run` rejects further execution. Historical course plans and partial E2 evidence are retained separately.
+
+[Final Vietnamese experimental report](docs/COURSE_FINAL_REPORT_VI.md) · [Methods, reproducibility and limitations](docs/EXPERIMENT_METHODS_REPRODUCIBILITY_VI.md) · [Report/slide asset catalog](docs/REPORT_ASSET_CATALOG.md) · [Scientific findings](results/tables/course_final/scientific_findings.csv) · [Final machine-readable results](results/tables/course_final/course_results.json).
+
+Read [E2 final analysis](notebooks/E2_Final_Analysis.ipynb), [integrated results](notebooks/Course_Final_Analysis.ipynb) and [reproducibility audit](notebooks/Course_Reproducibility_Audit.ipynb). These clean notebooks run from a public clone in audited-table mode; private ZIPs/dataset are needed only for a fresh raw re-audit. The final collection has 12 PNG 300 DPI/vector PDF pairs, plus four Phase 5C figure pairs in the catalog. CSV/JSON separate validation tuning from official test means/SD and paired-user intervals.
+
+```bash
+# CPU artifact/statistical analysis only, on the personal machine:
+python scripts/analyze_course_final.py
+python scripts/gen_fig_course_final.py
+python scripts/write_course_final_report.py
+# Public original weights, using old Release + six-run delta without repacking:
+python scripts/fetch_course_final_checkpoints.py
+python scripts/fetch_course_final_checkpoints.py --with-resume
+```
+
+Original private ZIPs live under `artifacts/phase5c/`, `artifacts/master_session1/`, `artifacts/e2_final/`; no Downloads path is assumed. Checkpoints are distributed via the [final delta Release](https://github.com/Alexx-crearor/sequential-recommendation-benchmark/releases/tag/e2-final-checkpoints-v1) and [composite hash manifest](configs/artifacts/course_final_checkpoints.json), reusing the immutable prior Release. The original ZIPs, datasets, raw predictions, logs and large checkpoint binaries are excluded from Git history. All earlier valid artifacts are preserved.
+
+**Historical sections below document prior workflow stages. Their pending counts, continuation scenarios and training/tuning examples are superseded by the closed scope above; do not execute more course experiments.**
+
+## Historical Kaggle session 1 — partial snapshot before final E2
 
 Original source: `seqrec-master-results-20261126_234725_576013.zip`, SHA256 `9f6b30dd3d29750b21ef64ddd7c8fea88c66d1c3ca52ea44a9809b3cc323cfab`. All **22 completed runs**, **43 checkpoints**, **240 status-hashed artifacts** and full-user test predictions pass verification. The actual Beauty bundle was rehashed against the archived dataset manifest and chronological splits checked. The session stopped deliberately for its GPU time budget, not because the entire grid finished.
 
@@ -15,7 +49,7 @@ Original source: `seqrec-master-results-20261126_234725_576013.zip`, SHA256 `9f6
 | E7 | GPU measurements deferred | Analyze recorded timings only; dedicated pass remains deferred |
 | E8 | Reuse E1 predictions | Local error analysis completed |
 
-The reduced scope is due to **GPU resources and course requirements, not test scores**. TIGER and CRAMER are theory-only for this course scope. Original grids/results are preserved. E3 retention 1.0 has three matching E1 sources marked `REUSE_AVAILABLE`, not fabricated E3 SUCCESS; only **nine new training jobs** remain (six E2 + three E3 retention 0.4). See [frozen course scope](configs/experiments/course_scope.yaml) and [34 artifact requests](configs/experiments/course_jobs.json).
+This snapshot originally proposed nine remaining training jobs and three reuse operations for resource/course reasons, not test rankings. It is **historical**: the final session completed the six E2 jobs, E3 was subsequently deferred and no training remains requested. See [historical scope](configs/experiments/history/course_scope_session1.yaml), [historical 34 requests](configs/experiments/history/course_jobs_session1.json) and the final scope above. No E3 SUCCESS is fabricated from reuse availability.
 
 [Vietnamese research report](docs/MASTER_SESSION1_ANALYSIS_VI.md) · [all metrics and sample SD](results/tables/master_session1/metric_summary.csv) · [paired bootstrap intervals](results/tables/master_session1/paired_bootstrap.csv) · [integrity audit](results/tables/master_session1/artifact_audit.json). E1 includes Recall/NDCG@5/10/20 and MRR@10, full/warm cohorts, three-seed SD and 10,000-resample paired-user bootstrap. MostPopular SD is undefined (one deterministic run), not a fake zero. E2 results explicitly retain missing seeds.
 

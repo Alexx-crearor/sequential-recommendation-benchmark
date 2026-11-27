@@ -1,0 +1,12 @@
+component,status,completed_runs
+Hyperparameter Tuning,COMPLETE,15.0
+E1,COMPLETE,16.0
+E2,COMPLETE,12.0
+E3,DEFERRED,0.0
+E4,DEFERRED,0.0
+E5,DEFERRED,0.0
+TIGER,THEORY_ONLY,
+CRAMER,THEORY_ONLY,
+E7 recorded analysis,COMPLETE,
+E7 dedicated profiling,DEFERRED,0.0
+E8,COMPLETE,

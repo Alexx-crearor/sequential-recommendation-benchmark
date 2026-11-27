@@ -1,0 +1,239 @@
+{
+  "bundles": {
+    "all": {
+      "bytes": 100029069,
+      "filename": "seqrec-e2-final-resume-delta-v1.zip",
+      "paths": [
+        "checkpoints/e2_final/E2/attention_ablation/A1/2026/checkpoint.pt",
+        "checkpoints/e2_final/E2/attention_ablation/A1/2026/config.yaml",
+        "checkpoints/e2_final/E2/attention_ablation/A1/2026/latest.pt",
+        "checkpoints/e2_final/E2/attention_ablation/A2/2026/checkpoint.pt",
+        "checkpoints/e2_final/E2/attention_ablation/A2/2026/config.yaml",
+        "checkpoints/e2_final/E2/attention_ablation/A2/2026/latest.pt",
+        "checkpoints/e2_final/E2/attention_ablation/A3/2026/checkpoint.pt",
+        "checkpoints/e2_final/E2/attention_ablation/A3/2026/config.yaml",
+        "checkpoints/e2_final/E2/attention_ablation/A3/2026/latest.pt",
+        "checkpoints/e2_final/E2/attention_ablation/A3/42/checkpoint.pt",
+        "checkpoints/e2_final/E2/attention_ablation/A3/42/config.yaml",
+        "checkpoints/e2_final/E2/attention_ablation/A3/42/latest.pt",
+        "checkpoints/e2_final/E2/attention_ablation/A4/2026/checkpoint.pt",
+        "checkpoints/e2_final/E2/attention_ablation/A4/2026/config.yaml",
+        "checkpoints/e2_final/E2/attention_ablation/A4/2026/latest.pt",
+        "checkpoints/e2_final/E2/attention_ablation/A4/42/checkpoint.pt",
+        "checkpoints/e2_final/E2/attention_ablation/A4/42/config.yaml",
+        "checkpoints/e2_final/E2/attention_ablation/A4/42/latest.pt"
+      ],
+      "sha256": "284c7c7193a08d53c15d5cf78e4ec8dfe8bc14a7da805262ab70641f48d627a6",
+      "url": "https://github.com/Alexx-crearor/sequential-recommendation-benchmark/releases/download/e2-final-checkpoints-v1/seqrec-e2-final-resume-delta-v1.zip"
+    },
+    "selected": {
+      "bytes": 19981427,
+      "filename": "seqrec-e2-final-best-delta-v1.zip",
+      "paths": [
+        "checkpoints/e2_final/E2/attention_ablation/A1/2026/checkpoint.pt",
+        "checkpoints/e2_final/E2/attention_ablation/A1/2026/config.yaml",
+        "checkpoints/e2_final/E2/attention_ablation/A2/2026/checkpoint.pt",
+        "checkpoints/e2_final/E2/attention_ablation/A2/2026/config.yaml",
+        "checkpoints/e2_final/E2/attention_ablation/A3/2026/checkpoint.pt",
+        "checkpoints/e2_final/E2/attention_ablation/A3/2026/config.yaml",
+        "checkpoints/e2_final/E2/attention_ablation/A3/42/checkpoint.pt",
+        "checkpoints/e2_final/E2/attention_ablation/A3/42/config.yaml",
+        "checkpoints/e2_final/E2/attention_ablation/A4/2026/checkpoint.pt",
+        "checkpoints/e2_final/E2/attention_ablation/A4/2026/config.yaml",
+        "checkpoints/e2_final/E2/attention_ablation/A4/42/checkpoint.pt",
+        "checkpoints/e2_final/E2/attention_ablation/A4/42/config.yaml"
+      ],
+      "sha256": "2816daedbb4de694ca33296487513590262742b0485012654f02acd51bf57357",
+      "url": "https://github.com/Alexx-crearor/sequential-recommendation-benchmark/releases/download/e2-final-checkpoints-v1/seqrec-e2-final-best-delta-v1.zip"
+    }
+  },
+  "cache_directory": "artifacts/e2_final",
+  "files": [
+    {
+      "bytes": 3593641,
+      "kind": "best",
+      "path": "checkpoints/e2_final/E2/attention_ablation/A3/42/checkpoint.pt",
+      "sha256": "3ba360bc26e2a4b958ad26d19cbcc98a5e36471869a3c82b2a0f949b88f4a190",
+      "source_member": "results/core/E2/beauty/attention_ablation/6ea48870e3e5387e3addf342c90265551924503a97325848cbf5c28b2e83a26d/42/checkpoint.pt"
+    },
+    {
+      "bytes": 14417466,
+      "kind": "latest",
+      "path": "checkpoints/e2_final/E2/attention_ablation/A3/42/latest.pt",
+      "sha256": "2cdc70ef1bcff859321a48b365344e8191cd6ec5f5071751c5f183d13a45c2b1",
+      "source_member": "results/core/E2/beauty/attention_ablation/6ea48870e3e5387e3addf342c90265551924503a97325848cbf5c28b2e83a26d/42/latest.pt"
+    },
+    {
+      "bytes": 1270,
+      "kind": "config",
+      "path": "checkpoints/e2_final/E2/attention_ablation/A3/42/config.yaml",
+      "sha256": "f549d2f2a39d08b7e7277ebf50921668f0288d7310d164362557ccaac0887037",
+      "source_member": "results/core/E2/beauty/attention_ablation/6ea48870e3e5387e3addf342c90265551924503a97325848cbf5c28b2e83a26d/42/config.yaml"
+    },
+    {
+      "bytes": 3593641,
+      "kind": "best",
+      "path": "checkpoints/e2_final/E2/attention_ablation/A4/42/checkpoint.pt",
+      "sha256": "036823ca6adeef64e921c2aca0aab5e755da816dce012d7d096cc8d3674775c5",
+      "source_member": "results/core/E2/beauty/attention_ablation/63f6228276d0978e91eeb9bd44122de298a65229a2a2abfef1ab15659badf1f9/42/checkpoint.pt"
+    },
+    {
+      "bytes": 14416314,
+      "kind": "latest",
+      "path": "checkpoints/e2_final/E2/attention_ablation/A4/42/latest.pt",
+      "sha256": "1a6d6328572048ab4359e641641e635e2c845c1e37a0b5f2434bd48d5f5034f9",
+      "source_member": "results/core/E2/beauty/attention_ablation/63f6228276d0978e91eeb9bd44122de298a65229a2a2abfef1ab15659badf1f9/42/latest.pt"
+    },
+    {
+      "bytes": 1277,
+      "kind": "config",
+      "path": "checkpoints/e2_final/E2/attention_ablation/A4/42/config.yaml",
+      "sha256": "9a621dbce1d11816640aef59364c38485d3ee5f3c393bafe6680b52c969928f9",
+      "source_member": "results/core/E2/beauty/attention_ablation/63f6228276d0978e91eeb9bd44122de298a65229a2a2abfef1ab15659badf1f9/42/config.yaml"
+    },
+    {
+      "bytes": 3593641,
+      "kind": "best",
+      "path": "checkpoints/e2_final/E2/attention_ablation/A1/2026/checkpoint.pt",
+      "sha256": "f796e66fa08fd07f142eebbbd7a9232cd36abeb33652e7f00747a65779dbe133",
+      "source_member": "results/core/E2/beauty/attention_ablation/2747bf52e166e54d52d11a79dbd68d2641c874dfdfe3cd4100c3250306ade5e3/2026/checkpoint.pt"
+    },
+    {
+      "bytes": 14422650,
+      "kind": "latest",
+      "path": "checkpoints/e2_final/E2/attention_ablation/A1/2026/latest.pt",
+      "sha256": "71ed9d7cb02ab95e18bbbb958dcc78b1f709c186847ca7c9fedc642cde84e69a",
+      "source_member": "results/core/E2/beauty/attention_ablation/2747bf52e166e54d52d11a79dbd68d2641c874dfdfe3cd4100c3250306ade5e3/2026/latest.pt"
+    },
+    {
+      "bytes": 1271,
+      "kind": "config",
+      "path": "checkpoints/e2_final/E2/attention_ablation/A1/2026/config.yaml",
+      "sha256": "f338d28849b67d54b7f7761f73e0308df149e8cf4b710e4fc78ffeed20cd30cc",
+      "source_member": "results/core/E2/beauty/attention_ablation/2747bf52e166e54d52d11a79dbd68d2641c874dfdfe3cd4100c3250306ade5e3/2026/config.yaml"
+    },
+    {
+      "bytes": 3593641,
+      "kind": "best",
+      "path": "checkpoints/e2_final/E2/attention_ablation/A2/2026/checkpoint.pt",
+      "sha256": "7a07b64ac70b770dc2bfc893f669adbf4e5cb94d32d2d0d06780e2d008593508",
+      "source_member": "results/core/E2/beauty/attention_ablation/e965b33bdd20f0aac7d6addf054fc40f9046845ff0f14f2381d31c098344a2c4/2026/checkpoint.pt"
+    },
+    {
+      "bytes": 14408186,
+      "kind": "latest",
+      "path": "checkpoints/e2_final/E2/attention_ablation/A2/2026/latest.pt",
+      "sha256": "31436085cbc326e39d339f456b9dd55d172b8bc18497b12fbc1353f9e40ea70c",
+      "source_member": "results/core/E2/beauty/attention_ablation/e965b33bdd20f0aac7d6addf054fc40f9046845ff0f14f2381d31c098344a2c4/2026/latest.pt"
+    },
+    {
+      "bytes": 1270,
+      "kind": "config",
+      "path": "checkpoints/e2_final/E2/attention_ablation/A2/2026/config.yaml",
+      "sha256": "ce36db6b5b1b6be1cc9898b6d2542a973e1bec9f5c6976867071ddaa161e39a5",
+      "source_member": "results/core/E2/beauty/attention_ablation/e965b33bdd20f0aac7d6addf054fc40f9046845ff0f14f2381d31c098344a2c4/2026/config.yaml"
+    },
+    {
+      "bytes": 3593641,
+      "kind": "best",
+      "path": "checkpoints/e2_final/E2/attention_ablation/A3/2026/checkpoint.pt",
+      "sha256": "1259dbb6b9e3b045587018df0331408cdb1809a35f89778435822261a9fdf9aa",
+      "source_member": "results/core/E2/beauty/attention_ablation/1f025ce20ea36cc92b47a5f52613bdd0cb59afe96f9721d1d3717ef60122a919/2026/checkpoint.pt"
+    },
+    {
+      "bytes": 14416314,
+      "kind": "latest",
+      "path": "checkpoints/e2_final/E2/attention_ablation/A3/2026/latest.pt",
+      "sha256": "1f665837205fc6e01f04a697aa530e0c7ca170287eb1e9559613ea3680f8dcfb",
+      "source_member": "results/core/E2/beauty/attention_ablation/1f025ce20ea36cc92b47a5f52613bdd0cb59afe96f9721d1d3717ef60122a919/2026/latest.pt"
+    },
+    {
+      "bytes": 1272,
+      "kind": "config",
+      "path": "checkpoints/e2_final/E2/attention_ablation/A3/2026/config.yaml",
+      "sha256": "7f8190fe77fa5d4b59663fb0ff01dde8109f79f356b740db548a79f35b37b2c2",
+      "source_member": "results/core/E2/beauty/attention_ablation/1f025ce20ea36cc92b47a5f52613bdd0cb59afe96f9721d1d3717ef60122a919/2026/config.yaml"
+    },
+    {
+      "bytes": 3593641,
+      "kind": "best",
+      "path": "checkpoints/e2_final/E2/attention_ablation/A4/2026/checkpoint.pt",
+      "sha256": "e95ab6d074e3748ad54a4158fb9e7d38d5b5508efc9f5dabba92f83b1cb9cd8a",
+      "source_member": "results/core/E2/beauty/attention_ablation/0f10f3e7b658bf6e903a336bc9d8eb6ba57e4130a649af5d47efdc6b70b44945/2026/checkpoint.pt"
+    },
+    {
+      "bytes": 14409914,
+      "kind": "latest",
+      "path": "checkpoints/e2_final/E2/attention_ablation/A4/2026/latest.pt",
+      "sha256": "582f2c34c269c3f8e6e3effb9efc3b77bfe5e74b05a4f29ae5b713c5727026e7",
+      "source_member": "results/core/E2/beauty/attention_ablation/0f10f3e7b658bf6e903a336bc9d8eb6ba57e4130a649af5d47efdc6b70b44945/2026/latest.pt"
+    },
+    {
+      "bytes": 1279,
+      "kind": "config",
+      "path": "checkpoints/e2_final/E2/attention_ablation/A4/2026/config.yaml",
+      "sha256": "22a153b81362ad103ef3b6113db52de7e44cc2e87553e4c08a34a0dee8e4032c",
+      "source_member": "results/core/E2/beauty/attention_ablation/0f10f3e7b658bf6e903a336bc9d8eb6ba57e4130a649af5d47efdc6b70b44945/2026/config.yaml"
+    }
+  ],
+  "models": {
+    "E2__attention_ablation__A1__2026": {
+      "checkpoint": "checkpoints/e2_final/E2/attention_ablation/A1/2026/checkpoint.pt",
+      "config_hash": "2747bf52e166e54d52d11a79dbd68d2641c874dfdfe3cd4100c3250306ade5e3",
+      "experiment": "E2",
+      "format": "pytorch_weights_only",
+      "model": "attention_ablation",
+      "seed": 2026,
+      "variant": "A1"
+    },
+    "E2__attention_ablation__A2__2026": {
+      "checkpoint": "checkpoints/e2_final/E2/attention_ablation/A2/2026/checkpoint.pt",
+      "config_hash": "e965b33bdd20f0aac7d6addf054fc40f9046845ff0f14f2381d31c098344a2c4",
+      "experiment": "E2",
+      "format": "pytorch_weights_only",
+      "model": "attention_ablation",
+      "seed": 2026,
+      "variant": "A2"
+    },
+    "E2__attention_ablation__A3__2026": {
+      "checkpoint": "checkpoints/e2_final/E2/attention_ablation/A3/2026/checkpoint.pt",
+      "config_hash": "1f025ce20ea36cc92b47a5f52613bdd0cb59afe96f9721d1d3717ef60122a919",
+      "experiment": "E2",
+      "format": "pytorch_weights_only",
+      "model": "attention_ablation",
+      "seed": 2026,
+      "variant": "A3"
+    },
+    "E2__attention_ablation__A3__42": {
+      "checkpoint": "checkpoints/e2_final/E2/attention_ablation/A3/42/checkpoint.pt",
+      "config_hash": "6ea48870e3e5387e3addf342c90265551924503a97325848cbf5c28b2e83a26d",
+      "experiment": "E2",
+      "format": "pytorch_weights_only",
+      "model": "attention_ablation",
+      "seed": 42,
+      "variant": "A3"
+    },
+    "E2__attention_ablation__A4__2026": {
+      "checkpoint": "checkpoints/e2_final/E2/attention_ablation/A4/2026/checkpoint.pt",
+      "config_hash": "0f10f3e7b658bf6e903a336bc9d8eb6ba57e4130a649af5d47efdc6b70b44945",
+      "experiment": "E2",
+      "format": "pytorch_weights_only",
+      "model": "attention_ablation",
+      "seed": 2026,
+      "variant": "A4"
+    },
+    "E2__attention_ablation__A4__42": {
+      "checkpoint": "checkpoints/e2_final/E2/attention_ablation/A4/42/checkpoint.pt",
+      "config_hash": "63f6228276d0978e91eeb9bd44122de298a65229a2a2abfef1ab15659badf1f9",
+      "experiment": "E2",
+      "format": "pytorch_weights_only",
+      "model": "attention_ablation",
+      "seed": 42,
+      "variant": "A4"
+    }
+  },
+  "purpose": "Six newly completed E2 runs only; old 22 runs remain in immutable prior Release",
+  "release_tag": "e2-final-checkpoints-v1",
+  "schema": 1,
+  "source_archive_sha256": "4bc3da79817ad1463f1c4ff16b2e9aa13efbad8e9caad20f9368cfb690acdc39"
+}

@@ -12,9 +12,9 @@ from src.analysis.master_session1 import MODELS, LABELS, SEEDS
 COLORS = dict(zip(MODELS, ["#777777", "#56B4E9", "#E69F00", "#0072B2", "#009E73", "#D55E00"]))
 
 
-def generate(root):
+def generate(root, collection="master_session1", e2_complete=False):
     root = Path(root)
-    tables, out = root / "results/tables/master_session1", root / "results/figures/master_session1"
+    tables, out = root / "results/tables" / collection, root / "results/figures" / collection
     out.mkdir(parents=True, exist_ok=True)
     summary = pd.read_csv(tables / "metric_summary.csv")
     runs = pd.read_csv(tables / "runs.csv")
@@ -79,7 +79,8 @@ def generate(root):
         rows = data[data.seed == seed]
         x = rows.variant.map({f"A{i}": i-1 for i in range(1, 5)})
         axes[0].scatter(x+(index-1)*.12, rows.value, marker=["o", "s", "^"][index], label=f"seed {seed}")
-    axes[0].set(xticks=range(4), xticklabels=["A1", "A2", "A3", "A4"], ylabel="Observed test NDCG@10", title="E2 partial: six observed runs only")
+    axes[0].set(xticks=range(4), xticklabels=["A1", "A2", "A3", "A4"], ylabel="Observed test NDCG@10",
+                title="E2 complete: all twelve observed runs" if e2_complete else "E2 partial: six observed runs only")
     axes[0].legend()
     matrix = np.zeros((3, 4))
     for i, seed in enumerate(SEEDS):
@@ -95,7 +96,7 @@ def generate(root):
             axes[1].text(j, i, "SUCCESS" if matrix[i, j] else "PENDING", ha="center", va="center", fontsize=8)
     axes[1].set(xticks=range(4), xticklabels=["A1", "A2", "A3", "A4"], yticks=range(3), yticklabels=list(SEEDS), title="Completion, not estimated performance")
     axes[1].grid(False)
-    save(fig, "e2_partial_results")
+    save(fig, "e2_complete_results" if e2_complete else "e2_partial_results")
 
     fig, axes = plt.subplots(1, 3, figsize=(10.5, 3.4), layout="constrained")
     for ax, metric, label in zip(axes, ("training_seconds", "inference_mean_ms", "peak_gpu_memory_mib"),

@@ -16,7 +16,8 @@ def write_report(root):
     metrics = pd.read_csv(tables / "per_seed_metrics.csv")
     bootstrap = pd.read_csv(tables / "paired_bootstrap.csv")
     validations = pd.read_csv(tables / "validation_curves.csv")
-    jobs = read_json(root / "configs/experiments/course_jobs.json")["jobs"]
+    historical_plan = root / "configs/experiments/history/course_jobs_session1.json"
+    jobs = read_json(historical_plan if historical_plan.exists() else root / "configs/experiments/course_jobs.json")["jobs"]
     e1 = summary[(summary.experiment == "E1") & (summary.group == "full")]
     model_rows, timing_rows = [], []
     for model in MODELS:

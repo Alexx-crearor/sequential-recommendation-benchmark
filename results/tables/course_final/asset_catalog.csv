@@ -1,0 +1,31 @@
+id,type,caption_vi,path,vector_pdf,scope
+FIG01,figure,E1 test mean và sample SD,results/figures/course_final/e1_test_metrics.png,results/figures/course_final/e1_test_metrics.pdf,official test/recorded dynamics; caption distinguishes SD and CI
+FIG02,figure,E1 Recall/NDCG theo K,results/figures/course_final/e1_recall_ndcg_at_k.png,results/figures/course_final/e1_recall_ndcg_at_k.pdf,official test/recorded dynamics; caption distinguishes SD and CI
+FIG03,figure,E1 paired-user intervals,results/figures/course_final/e1_paired_bootstrap.png,results/figures/course_final/e1_paired_bootstrap.pdf,official test/recorded dynamics; caption distinguishes SD and CI
+FIG04,figure,E1 training/validation curves,results/figures/course_final/e1_training_validation.png,results/figures/course_final/e1_training_validation.pdf,official test/recorded dynamics; caption distinguishes SD and CI
+FIG05,figure,E2 đủ 12/12 điểm theo seeds,results/figures/course_final/e2_complete_results.png,results/figures/course_final/e2_complete_results.pdf,official test/recorded dynamics; caption distinguishes SD and CI
+FIG06,figure,E2 mean/SD ba seeds,results/figures/course_final/e2_test_metrics.png,results/figures/course_final/e2_test_metrics.pdf,official test/recorded dynamics; caption distinguishes SD and CI
+FIG07,figure,Ba E2 contrasts với paired 95% CI,results/figures/course_final/e2_paired_contrasts.png,results/figures/course_final/e2_paired_contrasts.pdf,official test/recorded dynamics; caption distinguishes SD and CI
+FIG08,figure,E2 training dynamics,results/figures/course_final/e2_training_validation.png,results/figures/course_final/e2_training_validation.pdf,official test/recorded dynamics; caption distinguishes SD and CI
+FIG09,figure,E2 runtime/latency/memory đã ghi,results/figures/course_final/e2_recorded_efficiency.png,results/figures/course_final/e2_recorded_efficiency.pdf,official test/recorded dynamics; caption distinguishes SD and CI
+FIG10,figure,E1 runtime/latency/memory đã ghi,results/figures/course_final/recorded_efficiency.png,results/figures/course_final/recorded_efficiency.pdf,official test/recorded dynamics; caption distinguishes SD and CI
+FIG11,figure,E8 error groups,results/figures/course_final/e8_error_groups.png,results/figures/course_final/e8_error_groups.pdf,official test/recorded dynamics; caption distinguishes SD and CI
+FIG12,figure,E8 phân đoạn history/popularity,results/figures/course_final/e8_history_popularity.png,results/figures/course_final/e8_history_popularity.pdf,official test/recorded dynamics; caption distinguishes SD and CI
+FIG13,figure,Phase 5C validation_curves,results/figures/phase5c/validation_curves.png,results/figures/phase5c/validation_curves.pdf,validation tuning only; never final test
+FIG14,figure,Phase 5C training_loss,results/figures/phase5c/training_loss.png,results/figures/phase5c/training_loss.pdf,validation tuning only; never final test
+FIG15,figure,Phase 5C trial_validation_comparison,results/figures/phase5c/trial_validation_comparison.png,results/figures/phase5c/trial_validation_comparison.pdf,validation tuning only; never final test
+FIG16,figure,Phase 5C selected_trial_resources,results/figures/phase5c/selected_trial_resources.png,results/figures/phase5c/selected_trial_resources.pdf,validation tuning only; never final test
+TAB01,table,Trạng thái phạm vi đã đóng,results/tables/course_final/course_status.csv,,aggregate evidence; retain stated split/units
+TAB02,table,"Mean/SD E1 và E2 full/warm, mọi K",results/tables/course_final/metric_summary.csv,,aggregate evidence; retain stated split/units
+TAB03,table,Mọi test metric từng seed,results/tables/course_final/per_seed_metrics.csv,,aggregate evidence; retain stated split/units
+TAB04,table,Paired differences và CI,results/tables/course_final/paired_bootstrap.csv,,aggregate evidence; retain stated split/units
+TAB05,table,"Provenance, stopping và runtime từng run",results/tables/course_final/runs.csv,,aggregate evidence; retain stated split/units
+TAB06,table,E2 hiệu năng tính toán mean/SD,results/tables/course_final/e2_efficiency_summary.csv,,aggregate evidence; retain stated split/units
+TAB07,table,Phát hiện khoa học và limitation,results/tables/course_final/scientific_findings.csv,,aggregate evidence; retain stated split/units
+TAB08,table,Hyperparameters chọn bằng validation,results/tables/course_final/tuning_selected.csv,,aggregate evidence; retain stated split/units
+TAB09,table,"E2 loss đầu/cuối, best epoch và stopping",results/tables/course_final/e2_training_dynamics.csv,,aggregate evidence; retain stated split/units
+TAB10,table,SD của paired differences qua ba seeds,results/tables/course_final/e2_contrast_seed_summary.csv,,aggregate evidence; retain stated split/units
+TAB11,table,E8 nhóm lỗi từng seed,results/tables/course_final/e8_error_groups.csv,,aggregate evidence; retain stated split/units
+TAB12,table,E8 metrics theo history/popularity,results/tables/course_final/e8_segments.csv,,aggregate evidence; retain stated split/units
+TAB13,table,E8 paired hit/miss,results/tables/course_final/e8_pair_outcomes.csv,,aggregate evidence; retain stated split/units
+TAB14,table,262 tệp cũ không thay đổi,results/tables/course_final/prior_run_comparison.csv,,aggregate evidence; retain stated split/units

@@ -1,0 +1,20 @@
+{
+  "publication_review_date": "2026-11-28",
+  "last_training_session_date": "2026-11-27",
+  "tests": {
+    "tests": 152,
+    "failures": 0,
+    "errors": 0,
+    "skipped": 0
+  },
+  "new_notebooks_executed": 3,
+  "png_300_dpi": 12,
+  "vector_pdf": 12,
+  "all_354_raw_files_rehashed": true,
+  "prior_262_run_files_unchanged": true,
+  "actual_hard_linked_members": 289,
+  "original_zip_inside_and_outside_repository_unchanged": true,
+  "publication_tables_have_no_per_user_columns": true,
+  "experimental_training_tuning_inference_profiling_launched_locally": false,
+  "course_training_closed": true
+}

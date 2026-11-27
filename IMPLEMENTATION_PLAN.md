@@ -1,6 +1,18 @@
 # Implementation plan
 
-## Official session 1 update — 2026-11-27
+## FINAL course closure — training ended 2026-11-27
+
+**The Data Mining course experimental scope is CLOSED, with zero requested remaining training/tuning/GPU-profiling runs.** Verified final archive `seqrec-e2-final-20261127_122610_032968.zip`, SHA256 `4bc3da79817ad1463f1c4ff16b2e9aa13efbad8e9caad20f9368cfb690acdc39`: 354 files, 28 completed runs, 55 checkpoints, 306 status-hashed artifacts. All 262 files from the prior 22 runs match byte hashes; the older archives/reports/checkpoints remain intact. Prior raw content is reused through immutable hard links, and only the six new E2 checkpoints are packaged into a delta Release.
+
+Final status: hyperparameter tuning COMPLETE (15 trials); E1 COMPLETE 16/16; E2 COMPLETE 12/12; E3/E4/E5 DEFERRED; TIGER/CRAMER THEORY_ONLY; E7 recorded-efficiency analysis COMPLETE, dedicated GPU profiling DEFERRED; E8 COMPLETE. Original 28/127 grid count is a historical research reference, not a required course deliverable. Scope closure is because of GPU resources and course requirements, not test-score selection.
+
+E2 now reports mean/sample SD for four variants × three seeds, all Recall/NDCG/MRR full/warm metrics, and 10,000 paired-user bootstrap resamples for A2−A1/A3−A2/A4−A3. Loss/validation dynamics, caps/patience, measured runtime/latency/memory and threats to validity are documented. No global causal or component-attribution claim is made. E1/E8 remain unchanged; Phase 5C validation results are separate from official test. Current report: `docs/COURSE_FINAL_REPORT_VI.md`; methods: `docs/EXPERIMENT_METHODS_REPRODUCIBILITY_VI.md`; catalog: `docs/REPORT_ASSET_CATALOG.md`.
+
+Three final notebooks and 12 final PNG/PDF figure pairs supplement the preserved historical notebooks/figures. Current scope/jobs have `training_closed=true`; the legacy course driver rejects --run even on Kaggle. Historical session-one scope/jobs are saved under `configs/experiments/history/`, and historical re-analysis cannot overwrite the current closure. No new experimental training, tuning, model inference or GPU profiling was run locally for this analysis. Unit tests use temporary synthetic fixtures, not research runs.
+
+**Remaining work is academic writing and presentation only:** use the verified catalog/CSV/JSON to write the course report and slides, keeping validation/test, SD/CI and observed/causal claims distinct. Unexecuted original-grid experiments are deferred/theoretical, not incomplete obligations of the final course scope. Milestones below are retained as historical full-research design.
+
+## Historical official session 1 update — before final E2 closure
 
 Verified the original master ZIP `seqrec-master-results-20261126_234725_576013.zip`, SHA256 `9f6b30dd3d29750b21ef64ddd7c8fea88c66d1c3ca52ea44a9809b3cc323cfab`: 279 files, 240 status-hashed artifacts, 43 checkpoints, 22 completed runs. Actual local Beauty bytes match the archived manifest; chronology and all per-user target/history/ranking contributions pass. Original private ZIP and all prior artifacts are preserved. Session state is BUDGET_STOP after the user-reported approximately 8.5 hours; original grid coverage remains 22/127.
 

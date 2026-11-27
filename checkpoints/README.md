@@ -1,5 +1,16 @@
 # Phase 5C checkpoints
 
+## Final course checkpoint index
+
+Use `configs/artifacts/course_final_checkpoints.json` for all **28 original best checkpoints** (E1 16 + E2 12), and **27 neural latest states**. Existing session-one paths are retained, with six new E2 runs under `checkpoints/e2_final/E2/attention_ablation/<variant>/<seed>/`. No weights are rewritten, retrained or copied unnecessarily; same-volume local materialization uses hard links.
+
+```bash
+python scripts/fetch_course_final_checkpoints.py
+python scripts/fetch_course_final_checkpoints.py --with-resume
+```
+
+The composite index reuses the immutable old Release and the new six-run delta Release. MostPopular still uses safe NPZ, neural states use PyTorch weights-only load. Checkpoint access does not reopen the final course scope or request new inference/evaluation/profiling. Original raw ZIP/predictions remain private. Historical sections below describe earlier snapshots.
+
 ## Official session 1 checkpoints
 
 The new original master-session states live at `checkpoints/master_session1/<E1|E2>/<model>/<variant>/<seed>/checkpoint.pt`, with `latest.pt` for the 21 neural runs. There are 22 best checkpoints and 21 latest states, matching only completed runs; no pending configuration is represented as trained. Download with:
