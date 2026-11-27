@@ -1,0 +1,10 @@
+archive_job_id,experiment,model,variant,seed,retention,max_epochs,source_runs,measured_full_retention_epoch_seconds,measured_validation_check_seconds,max_epoch_mean_rate_scenario_seconds,basis,includes_clustering_in_training,remaining_run_actually_executed
+22,E2,attention_ablation,A3,42,1.0,120,1,7.3554119228723565,2.5049319417501765,1035.4502791914435,same_variant_measured_rate,True,False
+23,E2,attention_ablation,A4,42,1.0,120,1,7.335835304866578,2.4819050907869094,1031.6964471219908,same_variant_measured_rate,True,False
+24,E2,attention_ablation,A1,2026,1.0,120,2,7.280800601174907,2.552265366557581,1029.3842595010015,same_variant_measured_rate,True,False
+25,E2,attention_ablation,A2,2026,1.0,120,2,7.143031196185291,2.53581264979645,1011.8483151798183,same_variant_measured_rate,True,False
+26,E2,attention_ablation,A3,2026,1.0,120,1,7.3554119228723565,2.5049319417501765,1035.4502791914435,same_variant_measured_rate,True,False
+27,E2,attention_ablation,A4,2026,1.0,120,1,7.335835304866578,2.4819050907869094,1031.6964471219908,same_variant_measured_rate,True,False
+28,E3,sasrec_ce,default,7,0.4,120,3,5.866926754401079,2.304556963115047,844.6091852781474,UNMEASURED_retention_0.4_uses_full_retention_surrogate,True,False
+31,E3,bert4rec,default,7,0.4,150,3,4.723512696039367,2.48936218967231,897.7184308210007,UNMEASURED_retention_0.4_uses_full_retention_surrogate,True,False
+34,E3,fenrec,default,7,0.4,120,3,106.39686722129376,2.218097037242167,12902.927985827022,UNMEASURED_retention_0.4_uses_full_retention_surrogate,True,False

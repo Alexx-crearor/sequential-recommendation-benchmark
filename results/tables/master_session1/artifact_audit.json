@@ -1,0 +1,72 @@
+{
+  "E1_success": 16,
+  "E2_success": 6,
+  "E7_gpu_state": "DEFERRED",
+  "E8_local_state": "COMPLETED",
+  "archive_members": 279,
+  "archive_sha256": "9f6b30dd3d29750b21ef64ddd7c8fea88c66d1c3ca52ea44a9809b3cc323cfab",
+  "archive_uncompressed_bytes": 402549958,
+  "archived_driver_sha256": "2a18fd5cb1a010745f5c8890691b1bca32c86c6e47d6e4630752c122790cb8a0",
+  "bootstrap_limit": "conditional on trained seeds; not full retraining uncertainty; no multiplicity adjustment or confirmatory p-values",
+  "bootstrap_method": "exact empirical paired user bootstrap, multinomial over identical seed-averaged contribution vectors; percentile 95%, seed 42",
+  "bootstrap_resamples": 10000,
+  "checkpoints_verified": 43,
+  "chronological_split_checks": "PASSED",
+  "course_scope": {
+    "CRAMER": "THEORY_ONLY",
+    "E2_pending": 6,
+    "E3_new_retention_0_4": 3,
+    "E3_reuse_available": 3,
+    "E4": "DEFERRED",
+    "E5": "DEFERRED",
+    "TIGER": "THEORY_ONLY",
+    "archived_success": 22,
+    "new_training_jobs_remaining": 9,
+    "requested_artifact_jobs": 34
+  },
+  "dataset_bytes_rehashed_against_archived_manifest": true,
+  "dataset_manifest": {
+    "files": {
+      "interactions.parquet": "fdd6185617a6f6de09dfd72f58ff3ba909307b58de50a7c938ddc2f338cc830d",
+      "mappings.json": "9f6a4e2ca389b7f00a30d30dcec5e052fa024aad15945e7487d5714312cf8a82",
+      "metadata.json": "40aad6612dc93f3894ad5f0e3bc59ba01ae83d61dc7e24726f58992331797e68",
+      "statistics.json": "8165b1c21ebff30dbb8c430536124ee59f6082470c5f82ecec130f661d1338c5",
+      "test.parquet": "0a3beadae4a163d7211c00bf7a9b365938431158ccf5c89e43660ce7ea806fc6",
+      "train.parquet": "533493a491895e2df7ccb710b54a040200aef7d6b83b2d6d33268425f952e100",
+      "validation.parquet": "3dc3a8c7fce3a53f7fe41c185405ab39118f24fee75129d3ea9fdb3ddde60b99"
+    },
+    "inputs": {
+      "interactions_sha256": "e5925ec99023f1dc9c7d3dff7ef34cfeacd40d1b981b5525e1e4ba9c8abc18fe",
+      "metadata_sha256": "c7977dc0e0ead14ac7df8c1c6de74da00e4bebfad87a0f0c5763d4c5bc9b53a0"
+    },
+    "policy": {
+      "core": 5,
+      "dataset": "beauty",
+      "rating": "all_1_to_5_implicit",
+      "repeats": "earliest_user_item",
+      "schema": 1,
+      "split": "per_user_leave_two_out",
+      "ties": "timestamp_then_lexicographic_asin"
+    },
+    "split_version": "2228499f23f01d419863d0f09b3671f098672471887c4fb37b85bae26d42f91e"
+  },
+  "experiment_training_or_tuning_launched_locally": false,
+  "hashed_artifacts": 240,
+  "master_plan_sha256": "78a5d36f66ba43b6c4420d1ecdcae70bf876b8b9060c481ec2bbef7f81178d52",
+  "new_inference_or_gpu_measurements_locally": false,
+  "original_session_state": "BUDGET_STOP",
+  "original_total": 127,
+  "pending_original": {
+    "E2": 6,
+    "E3": 27,
+    "E4": 36,
+    "E5": 36
+  },
+  "source_archive": "seqrec-master-results-20261126_234725_576013.zip",
+  "split_version": "2228499f23f01d419863d0f09b3671f098672471887c4fb37b85bae26d42f91e",
+  "state": "VERIFIED",
+  "successful_runs": 22,
+  "test_users_per_run": 22363,
+  "training_source_limit": "Archive has the driver, not a full training-source snapshot or commit attestation",
+  "validation_selected_hyperparameters_match_plan": true
+}

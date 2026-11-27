@@ -1,5 +1,13 @@
 # Kaggle guide: Phase 5A
 
+## Current course continuation after official session 1
+
+The original master export stopped at BUDGET_STOP, 22/127: E1 16/16 and E2 6/12. Use the frozen resource-limited [course scope](../configs/experiments/course_scope.yaml) and [official-session report](MASTER_SESSION1_ANALYSIS_VI.md), rather than expanding the old full grid below. Remaining new training is six E2 jobs and three E3 retention-0.4 jobs; E3 retention 1.0 reuses E1. E4/E5 are deferred; TIGER/CRAMER theory-only. This decision is resource/course driven, not based on test rankings.
+
+Attach the private original ZIP and matching Beauty bundle in the next Kaggle session; restore the ZIP with `scripts/kaggle_session.py restore` into the working repository before continuation. `python scripts/run_course_remaining.py --experiment E2` prints the state without training. Add `--archive-job-id 22 --bundle PATH --device cuda:0 --run` to run one missing job on Kaggle; pending E2 IDs are 22-27. E3 new ratio-0.4 IDs are 28,31,34; ratio-1.0 reuse IDs are 30,33,36. Driver hashes remain the original archived identities. It rejects experimental training on a personal machine and refuses to retrain archived SUCCESS runs instead of restoring them.
+
+Public checkpoint-only access: `python scripts/fetch_master_checkpoints.py`, optionally `--with-resume`. This is for weight access, not a substitute for the private full run export required to restore the original verified result tree. E7 dedicated GPU pass remains deferred; any new profiling must run on Kaggle. Four session-one analysis notebooks and all tables/figures are run locally.
+
 This workflow prepares and runs selected jobs; it does not assume previous Kaggle working files persist. Notebooks contain setup/CLI calls only. The source grid and completed local pilots are preserved.
 
 ## 1. Package and upload

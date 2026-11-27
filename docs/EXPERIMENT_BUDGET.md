@@ -1,5 +1,7 @@
 # Experiment budget and Phase 5A performance report
 
+Current course budget update (2026-11-27): the historical scenarios below are preserved. Actual official-session measurements and the reduced nine-job remaining-work scenario are now in [MASTER_SESSION1_ANALYSIS_VI.md](MASTER_SESSION1_ANALYSIS_VI.md) and `results/tables/master_session1/remaining_budget_scenarios.csv`. E4/E5 are deferred and TIGER/CRAMER are theory-only in the course scope. Do not treat the original Full/Core grid caps below as the current course execution requirement.
+
 Generated 2026-11-26 from measured artifacts. No full research grid was launched. Prior pilot artifacts and the original experiment grid are preserved.
 
 ## Actual implementation status

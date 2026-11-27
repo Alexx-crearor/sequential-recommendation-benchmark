@@ -1,5 +1,23 @@
 # Implementation plan
 
+## Official session 1 update — 2026-11-27
+
+Verified the original master ZIP `seqrec-master-results-20261126_234725_576013.zip`, SHA256 `9f6b30dd3d29750b21ef64ddd7c8fea88c66d1c3ca52ea44a9809b3cc323cfab`: 279 files, 240 status-hashed artifacts, 43 checkpoints, 22 completed runs. Actual local Beauty bytes match the archived manifest; chronology and all per-user target/history/ranking contributions pass. Original private ZIP and all prior artifacts are preserved. Session state is BUDGET_STOP after the user-reported approximately 8.5 hours; original grid coverage remains 22/127.
+
+E1 COMPLETE 16/16 (five neural models × seeds 7/42/2026 plus one deterministic MostPopular). E2 PARTIAL 6/12: A1/A2 seeds 7/42 and A3/A4 seed 7 are present. E3/E4/E5 have no completed runs in the export. E7 dedicated GPU measurements DEFERRED; real embedded training/inference measurements are analyzed without remeasurement. E8 local prediction-based analysis COMPLETE. Reports include all Recall/NDCG/MRR full/warm means and sample SD, exact empirical paired-user bootstrap (10,000 resamples of seed-averaged contributions), partial E2, errors/history/popularity, eight PNG/PDF figure pairs and four notebooks. See `docs/MASTER_SESSION1_ANALYSIS_VI.md`.
+
+**Current course scope overrides the historical milestones below because of GPU limits and course requirements, not model test scores:**
+
+- Keep E1 all three neural seeds (already complete).
+- Finish the current E2 design: six missing runs.
+- E3 only SASRec-CE/BERT4Rec/FENRec, retention 0.4/1.0, seed 7. Three ratio-1.0 sources are REUSE_AVAILABLE from E1, not yet E3 SUCCESS; three new ratio-0.4 runs remain.
+- E4/E5 DEFERRED. TIGER and CRAMER THEORY_ONLY for this course scope; future full-design code/references remain preserved.
+- Prioritize E7/E8 reuse; do not relabel dedicated E7 as complete.
+
+Frozen `configs/experiments/course_jobs.json` selects 34 original artifact requests, retaining resolved config hashes and the original common-warm protocol. Only nine new training jobs remain, plus three E3 reuse operations. `scripts/run_course_remaining.py` prints the plan locally; explicit --run is restricted to Kaggle, refuses retraining missing archived SUCCESS sources, and restores/skips verified completed runs. Original 127-job progress and original Full/Core grids remain untouched. Statistical analysis/visualization/publication are local; no experimental training/tuning or new GPU measurements were performed locally.
+
+Original completed best/resume weights are materialized under `checkpoints/master_session1/` and distributed as prediction-free Release bundles; raw source ZIP is under `artifacts/master_session1/`. Both are ignored as Git blobs. Reproduction and per-user E8 evidence stay under content-addressed raw/derived directories. Final conclusions are limited to the completed Beauty design; pending/deferred/theory-only work is not claimed complete.
+
 ## Phase 5C update — 2026-11-26
 
 Checkpoint distribution follow-up: the original private ZIP is now copied inside `artifacts/phase5c/`, and all 30 original checkpoints are materialized under `checkpoints/phase5c/beauty/<model>/trials/<trial>/`. CLI/notebook defaults are repository-relative, with explicit overrides. Public prediction-free checkpoint bundles are distributed via GitHub Release `phase5c-checkpoints-v1`; `scripts/fetch_phase5c_checkpoints.py` downloads selected/all weights with ZIP/member SHA256 verification. Large binaries remain outside Git history; no new training or numerical research result is introduced.

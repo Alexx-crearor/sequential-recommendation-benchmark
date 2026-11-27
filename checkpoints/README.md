@@ -1,5 +1,18 @@
 # Phase 5C checkpoints
 
+## Official session 1 checkpoints
+
+The new original master-session states live at `checkpoints/master_session1/<E1|E2>/<model>/<variant>/<seed>/checkpoint.pt`, with `latest.pt` for the 21 neural runs. There are 22 best checkpoints and 21 latest states, matching only completed runs; no pending configuration is represented as trained. Download with:
+
+```bash
+python scripts/fetch_master_checkpoints.py
+python scripts/fetch_master_checkpoints.py --with-resume
+```
+
+See [the official-session Release](https://github.com/Alexx-crearor/sequential-recommendation-benchmark/releases/tag/master-session1-checkpoints-v1) and `configs/artifacts/master_session1_checkpoints.json` for portable paths and ZIP/member SHA256. MostPopular's `.pt` is safe NumPy NPZ and must use `MostPopular.load`; neural states use `SequentialModel.load`. These are official E1/partial-E2 checkpoints, distinct from the older tuning checkpoints below. Raw per-user predictions/histories remain private. Weights can be inspected/loaded locally, while any new evaluation or GPU measurements must be on Kaggle.
+
+## Earlier Phase 5C tuning checkpoints
+
 The original 30 best/latest checkpoints are materialized locally as:
 
 ```text

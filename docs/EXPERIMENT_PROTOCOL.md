@@ -1,5 +1,15 @@
 # Experiment protocol v3
 
+## Current course amendment — 2026-11-27
+
+The resource-limited course scope is frozen in `configs/experiments/course_scope.yaml`, with exact original resolved jobs in `course_jobs.json`. The reason is GPU time and course requirements, independent of test performance. Preserve E1 three seeds and E2 A1-A4 three-seed design; execute E3 only for SASRec-CE/BERT4Rec/FENRec at retention 0.4/1.0 seed 7. Defer E4/E5; TIGER/CRAMER are theory-only. Original Full/Core grids remain historical optional designs, not the current execution obligation.
+
+The first official master export completes E1 16/16 and E2 6/12, not the full grid. Missing jobs remain pending. E3 retention 1.0 has exact E1 reuse sources but is not marked SUCCESS until its artifact operation verifies. Original configuration hashes, hyperparameters, objectives, held-outs, validation selection and common-warm ratios [0.4,0.7,1.0] are retained; narrowing executed ratios does not silently redefine the comparison cohort. No scope choice is made from test scores.
+
+Report full/warm Recall/NDCG@5/10/20 and MRR@10 per seed and mean/sample SD. The deterministic MostPopular predictor is recorded once, with SD undefined. Paired bootstrap aligns users/targets/split, averages neural contributions within user over seeds, and resamples users 10,000 times (seed 42), with percentile 95% intervals. The multinomial implementation over identical difference vectors is distributionally identical to empirical row resampling. Intervals condition on fitted seeds, do not capture full retraining uncertainty and are pointwise/unadjusted; do not assert confirmatory family-wide significance. E2 comparisons use only shared completed seeds and retain partial-design labels.
+
+E7 dedicated GPU measurements remain DEFERRED. Archived trainer timing/latency records may be analyzed with their actual scope (batch-1 encoding/full-catalogue scoring excluding sorting/I/O); no fresh personal-GPU benchmarking is used. E8 operates on saved E1 predictions locally; subgroup bins are fixed and target popularity comes from training interactions only. Raw examples remain private. Analysis/figures/publication are local; training/testing/evaluation/GPU measurements are Kaggle-only.
+
 ## Data and information boundary
 
 Use the 2014 category 5-core review archives and matching metadata, not Amazon 2018/2023. Reapply iterative 5-core after deduplication. Treat all ratings 1–5 as implicit interaction events; no positive-rating threshold. Retain only the earliest event for each user/item pair. Sort by timestamp then lexicographic ASIN, with rating resolving duplicate-event ties. Timestamp ties impose a deterministic order, not evidence of actual within-day order. Assign sorted user/item IDs starting at 1; 0 is padding only.

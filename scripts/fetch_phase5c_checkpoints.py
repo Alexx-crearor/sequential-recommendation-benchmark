@@ -18,15 +18,15 @@ def verify_files(root, manifest, scope):
     return True
 
 
-def fetch(root, all_trials=False, archive=None):
+def fetch(root, all_trials=False, archive=None, manifest_path=None):
     root = Path(root).resolve()
-    manifest = json.loads((root / "configs/artifacts/phase5c_checkpoints.json").read_text(encoding="utf-8"))
+    manifest = json.loads((root / (manifest_path or "configs/artifacts/phase5c_checkpoints.json")).read_text(encoding="utf-8"))
     scope = "all" if all_trials else "selected"
     bundle = manifest["bundles"][scope]
     if verify_files(root, manifest, scope):
         print("Checkpoints already present; every file SHA256 verified.")
     else:
-        path = Path(archive).resolve() if archive else root / "artifacts/phase5c" / bundle["filename"]
+        path = Path(archive).resolve() if archive else root / manifest.get("cache_directory", "artifacts/phase5c") / bundle["filename"]
         if not path.exists():
             if archive:
                 raise FileNotFoundError(path)

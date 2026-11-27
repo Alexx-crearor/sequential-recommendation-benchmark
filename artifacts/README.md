@@ -1,5 +1,13 @@
 # Local artifact downloads
 
+## Official master session 1
+
+Original private ZIP: `artifacts/master_session1/seqrec-master-results-20261126_234725_576013.zip`, SHA256 `9f6b30dd3d29750b21ef64ddd7c8fea88c66d1c3ca52ea44a9809b3cc323cfab`. The repository owner's copy is preserved here, alongside its untouched external original. Run `python scripts/analyze_master_session1.py` locally with the matching Beauty bundle to re-audit and analyze; public-summary notebook mode does not require the private raw ZIP.
+
+Public prediction-free [official checkpoint Release](https://github.com/Alexx-crearor/sequential-recommendation-benchmark/releases/tag/master-session1-checkpoints-v1): `python scripts/fetch_master_checkpoints.py` downloads all 22 completed runs' best weights/configs; `--with-resume` adds all 21 neural latest states (43 checkpoints total). Bundles cache in `artifacts/master_session1/` and extract into `checkpoints/master_session1/`. The original ZIP, private predictions/logs and datasets are never published as Release assets. Restore that private full ZIP for the original result-tree continuation; checkpoint-only bundles are not full run exports.
+
+## Phase 5C
+
 The original private Phase 5C archive belongs at:
 
 ```text

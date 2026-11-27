@@ -1,0 +1,17 @@
+{
+  "date": "2026-11-27",
+  "tests": {
+    "tests": 148,
+    "failures": 0,
+    "errors": 0,
+    "skipped": 0
+  },
+  "notebooks_executed": 4,
+  "png_300_dpi": 8,
+  "vector_pdf": 8,
+  "source_zip_and_all_279_raw_files_reverified": true,
+  "publication_tables_have_no_per_user_columns": true,
+  "experimental_training_or_tuning_locally": false,
+  "new_gpu_or_inference_measurements_locally": false,
+  "dedicated_E7": "DEFERRED"
+}
